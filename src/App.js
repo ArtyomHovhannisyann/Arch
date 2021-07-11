@@ -1,5 +1,10 @@
 import "./App.css";
-import { BrowserRouter as Router, Redirect, Route, Switch } from "react-router-dom";
+import {
+  BrowserRouter as Router,
+  Redirect,
+  Route,
+  Switch,
+} from "react-router-dom";
 import { routes } from "./Router";
 
 function App() {
@@ -10,8 +15,8 @@ function App() {
           {routes.map((el, i) => {
             return <Route path={el.path} component={el.component} key={i} />;
           })}
+          <Redirect from="/" to="/home" />
         </Switch>
-        <Redirect from = "/" to = "/home"/>
       </Router>
     </div>
   );

@@ -10,7 +10,6 @@ import Menu from "./Menu";
 export default function HomePage() {
   const AutoplaySlider = withAutoplay(AwesomeSlider);
   const [showMenu, setShowMenu] = useState(false);
-  console.log(showMenu);
   return (
     <div className="home-page">
       {showMenu && <Menu closeMenu = {setShowMenu}/>}

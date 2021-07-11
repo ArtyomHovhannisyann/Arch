@@ -87,3 +87,7 @@
   letter-spacing: 0.05em;
   color: #5d5d5d;
 }
+.studio-team-hide{
+  overflow: hidden;
+  height: 100vh;
+}

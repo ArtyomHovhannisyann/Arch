@@ -1,0 +1,38 @@
+.studio-jobs-content {
+  display: grid;
+  grid-template-columns: 40vw auto;
+  height: 80vh;
+}
+.studio-jobs-left-bar {
+  background-image: url("../../images/job.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.studio-jobs-right-bar{
+    padding:0 10vw;
+    display: grid;
+}
+.jobs-menu-icon{
+    margin:2vw 0 0 2vw;
+}
+.jobs-header-logo {
+  text-align: right;
+  margin-right: 0 !important;
+}
+.jobs-right-bar-content{
+    width: 30vw;
+}
+.jobs-right-bar-content h3 {
+  font-family: Aharoni;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 24px;
+  letter-spacing: 0.02em;
+}
+.jobs-right-bar-content p {
+  font-family: Browallia New;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 24px;
+  letter-spacing: 0.02em;
+}

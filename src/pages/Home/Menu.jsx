@@ -13,9 +13,11 @@ export default function Menu({closeMenu}) {
       },
       {
         pageName: "Jobs",
+        path:"/studio/jobs"
       },
       {
         pageName: "Contact",
+        path:"/studio/contact"
       },
     ],
     [
@@ -109,8 +111,8 @@ export default function Menu({closeMenu}) {
         </div>
         <div className="menu-footer">
           <div className="social-media-icons">
-            <img src="../images/facebook-logo.png" className = "instagram-icon"/>
-            <img src="../images/instagram-logo.png"  className = "facebook-icon"/>
+            <img src="../images/facebook-logo.png" className = "facebook-icon" alt = "facebook"/>
+            <img src="../images/instagram-logo.png"  className = "instagram-icon" alt = "instagram"/>
           </div>
           <div className = "menu-footer-languages">
             <p className = "active-language">English</p>

@@ -6,9 +6,14 @@ import Menu from "../Home/Menu";
 
 export default function StudioTeam() {
   const [showMenu, setShowMenu] = useState(false);
-  const [teamMembers,setTeamMembers] = useState(["../images/member1.png","../images/member2.png","../images/member3.png","../images/member4.png"])
+  const [teamMembers, setTeamMembers] = useState([
+    "../images/member1.png",
+    "../images/member2.png",
+    "../images/member3.png",
+    "../images/member4.png",
+  ]);
   return (
-    <div className="studio-team">
+    <div className={("studio-team", showMenu ? "studio-team-hide" : "")}>
       {showMenu && <Menu closeMenu={setShowMenu} />}
       <div className="header">
         <div className="menu-icon" onClick={() => setShowMenu(!showMenu)}>
@@ -66,30 +71,28 @@ export default function StudioTeam() {
           </p>
         </div>
         <div className="studio-team-members">
-            {
-                teamMembers.map((el,i)=>{
-                    return (
-                        <div className="studio-team-member">
-                            <img src={el} alt="member"/>
-                        </div>
-                    )
-                })
-            }
+          {teamMembers.map((el, i) => {
+            return (
+              <div className="studio-team-member" key = {i}>
+                <img src={el} alt="member" />
+              </div>
+            );
+          })}
         </div>
       </div>
       <div className="studio-team-footer">
-          <div className="team-social-media-icons">
-              <img src="../images/facebook-logo.png" alt="facebook" />
-              <img src="../images/instagram-logo.png" alt="instagram" />
-          </div>
-          <div className = "team-footer-languages">
-                <ul>
-                    <li>
-                        <img src="../images/language.png" alt="languages" />
-                        <p>English</p>
-                    </li>
-                </ul>
-          </div>
+        <div className="team-social-media-icons">
+          <img src="../images/facebook-logo.png" alt="facebook" />
+          <img src="../images/instagram-logo.png" alt="instagram" />
+        </div>
+        <div className="team-footer-languages">
+          <ul>
+            <li>
+              <img src="../images/language.png" alt="languages" />
+              <p>English</p>
+            </li>
+          </ul>
+        </div>
       </div>
     </div>
   );

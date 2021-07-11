@@ -1,0 +1,42 @@
+.studio-contact-content {
+  display: grid;
+  grid-template-columns: 40vw auto;
+  height: 80vh;
+}
+.studio-contact-left-bar {
+  background-image: url("../../images/contact.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.studio-contact-right-bar {
+  padding: 0 10vw;
+  display: grid;
+}
+.contact-header-logo {
+  text-align: right;
+  margin-right: 0 !important;
+}
+.contact-info-header {
+  font-family: Browallia New;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 24px;
+}
+.contact-right-bar-content p {
+  font-family: Browallia New;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 24px;
+}
+.contact-menu-icon {
+  margin: 2vw 0 0 2vw;
+}
+.contact-email{
+    border-bottom: 1px solid black;
+    color: #000;
+    height: 22px;
+    display: inline-block;
+}
+.contact-info-email{
+    margin-top: 2vh;
+}

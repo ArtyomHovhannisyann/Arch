@@ -80,16 +80,17 @@ export default function StudioTeam() {
           })}
         </div>
       </div>
-      <div className="studio-team-footer">
-        <div className="team-social-media-icons">
+      <div className="footer">
+        <div className="footer-social-media-icons">
           <img src="../images/facebook-logo.png" alt="facebook" />
           <img src="../images/instagram-logo.png" alt="instagram" />
         </div>
-        <div className="team-footer-languages">
+        <div className="footer-languages">
           <ul>
             <li>
               <img src="../images/language.png" alt="languages" />
               <p>English</p>
+              <img src="../images/arrow-down.png" alt="arrow"  className = "arrow"/>
             </li>
           </ul>
         </div>

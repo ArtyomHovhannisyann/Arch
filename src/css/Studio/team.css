@@ -55,30 +55,30 @@
 .studio-team-member img {
   width: 25vw;
 }
-.studio-team-footer {
+.footer {
   display: flex;
   justify-content: center;
   margin: 8vh 0 2vh 0;
 }
-.team-social-media-icons {
+.footer-social-media-icons {
   padding-right: 1vw;
   border-right: 1px solid rgba(94, 94, 94, 0.5);
 }
-.team-social-media-icons img:not(:first-child) {
+.footer-social-media-icons img:not(:first-child) {
   margin-left: 1vw;
 }
-.team-footer-languages {
+.footer-languages {
   margin-left: 1vw;
 }
-.team-footer-languages ul {
+.footer-languages ul {
   list-style: none;
   background: #f9f9f9;
 }
-.team-footer-languages ul li {
+.footer-languages ul li {
   display: flex;
   align-items: center;
 }
-.team-footer-languages ul li p {
+.footer-languages ul li p {
   margin-left: 0.5vw;
   font-family: Browallia New;
   font-weight: bold;

@@ -26,9 +26,11 @@ export default function Menu({closeMenu}) {
       },
       {
         pageName: "Selected Projects",
+        path:"/apartaments/selected-projects"
       },
       {
         pageName: "In Progress",
+        path:"/apartaments/in-progress-projects"
       },
     ],
     [
@@ -78,9 +80,9 @@ export default function Menu({closeMenu}) {
       <div className="menu-container">
         <div className="menu-content">
           <dl className="pages">
-            {pages.map((page) => {
+            {pages.map((page,pageIndex) => {
               return (
-                <div className={"menu-page"}>
+                <div className={"menu-page"} key = {pageIndex}>
                   {page.map((el, i) => {
                     if (el.pageHeader) {
                       if (el.path) {

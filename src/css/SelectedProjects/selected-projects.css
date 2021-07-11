@@ -1,0 +1,28 @@
+.selected-projects-header {
+  display: flex;
+  justify-content: space-between;
+}
+.projects {
+  display: flex;
+  justify-content: space-between;
+  align-content: space-between;
+  flex-wrap: wrap;
+  padding: 0 7vw;
+}
+.page-name {
+    margin: 3vh 0 3vh 7vw ;
+  font-family: Aharoni;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 18px;
+  letter-spacing: 0.05em;
+}
+.arrow{
+    padding:0 5px;
+}
+.project{
+    margin-bottom: 10vh;
+}
+.project-footer{
+    margin-top: 0 !important;
+}

@@ -8,15 +8,17 @@ export default function SelectedProjects({ pageInfo }) {
   const [showMenu, setShowMenu] = useState(false);
 
   return (
-    <div className={("selected-projects", showMenu ? "selected-projects-hide" : "")}>
+    <div
+      className={
+        ("selected-projects", showMenu ? "selected-projects-hide" : "")
+      }
+    >
       {showMenu && <Menu closeMenu={setShowMenu} />}
       <div className="selected-projects-header">
         <div
-          className="menu-icon contact-menu-icon"
+          className="menu-icon menu-black-icon"
           onClick={() => setShowMenu(!showMenu)}
-        >
-          <img src="../images/menu-black-icon.png" alt="menu" />
-        </div>
+        ></div>
         <div className="header-logo">
           <h3>Anarch</h3>
         </div>
@@ -26,9 +28,9 @@ export default function SelectedProjects({ pageInfo }) {
         <div className="projects">
           {pageInfo.items.map((project, i) => {
             return (
-              <div className="project" key = {i}>
-                <img src={project.url} alt="selected" key = {i + "img"}/>
-                <p key = {i + "title"}>{project.projectTitle}</p>
+              <div className="project" key={i}>
+                <img src={project.url} alt="selected" key={i + "img"} />
+                <p key={i + "title"}>{project.projectTitle}</p>
               </div>
             );
           })}
@@ -44,7 +46,11 @@ export default function SelectedProjects({ pageInfo }) {
             <li>
               <img src="../images/language.png" alt="languages" />
               <p>English</p>
-              <img src="../images/arrow-down.png" alt="arrow"  className = "arrow"/>
+              <img
+                src="../images/arrow-down.png"
+                alt="arrow"
+                className="arrow"
+              />
             </li>
           </ul>
         </div>

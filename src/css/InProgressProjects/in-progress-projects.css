@@ -1,6 +1,8 @@
 .in-progress-projects-header{
     display: flex;
     justify-content: space-between;
+    align-items: center;
+    padding: 40px 30px;
 }
 .in-progress-projects-hide{
     overflow: hidden;

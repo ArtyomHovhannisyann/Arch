@@ -14,9 +14,7 @@ export default function Jobs() {
           <div
             className="menu-icon jobs-menu-icon"
             onClick={() => setShowMenu(!showMenu)}
-          >
-            <img src="../images/menu-icon.png" alt="menu" />
-          </div>
+          ></div>
         </div>
         <div className="studio-jobs-right-bar">
           <div className="header-logo jobs-header-logo">
@@ -42,7 +40,11 @@ export default function Jobs() {
             <li>
               <img src="../images/language.png" alt="languages" />
               <p>English</p>
-              <img src="../images/arrow-down.png" alt="arrow"  className = "arrow"/>
+              <img
+                src="../images/arrow-down.png"
+                alt="arrow"
+                className="arrow"
+              />
             </li>
           </ul>
         </div>

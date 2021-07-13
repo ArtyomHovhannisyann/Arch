@@ -14,9 +14,7 @@ export default function HomePage() {
     <div className="home-page">
       {showMenu && <Menu closeMenu = {setShowMenu}/>}
       <div className="header">
-        <div className="menu-icon" onClick={() => setShowMenu(!showMenu)}>
-          <img src="../images/menu-icon.png" alt="menu" />
-        </div>
+        <div className="menu-icon" onClick={() => setShowMenu(!showMenu)}></div>
         <div className="header-logo">
           <h3>Anarch</h3>
         </div>
@@ -24,9 +22,10 @@ export default function HomePage() {
       <AutoplaySlider
         play={true}
         cancelOnInteraction={false}
-        interval={6000}
+        interval={3000}
         fillParent={true}
         organicArrows={false}
+        mobileTouch = {true}
         media={[
           {
             source: "../images/house1.png",

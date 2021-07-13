@@ -11,10 +11,9 @@ export default function InProgressProjects({ pageInfo }) {
       {showMenu && <Menu closeMenu={setShowMenu} />}
       <div className="in-progress-projects-header">
         <div
-          className="menu-icon contact-menu-icon"
+          className="menu-icon menu-black-icon"
           onClick={() => setShowMenu(!showMenu)}
         >
-          <img src="../images/menu-black-icon.png" alt="menu" />
         </div>
         <div className="header-logo">
           <h3>Anarch</h3>

@@ -15,9 +15,7 @@ export default function Contact() {
           <div
             className="menu-icon contact-menu-icon"
             onClick={() => setShowMenu(!showMenu)}
-          >
-            <img src="../images/menu-icon.png" alt="menu" />
-          </div>
+          ></div>
         </div>
         <div className="studio-contact-right-bar">
           <div className="header-logo contact-header-logo">
@@ -29,7 +27,7 @@ export default function Contact() {
               39 Maze St. Ground Floor Tel-Aviv <br />
               T. 03.6204493 F. 03.6292835
             </p>
-            <p className = "contact-info-email">
+            <p className="contact-info-email">
               <span className="contact-info-header">Studio Manger</span>:
               <a
                 href="https://mail.google.com/mail/u/0/#inbox?compose=CllgCHrdlBNjvWWFqmmfFnxtwPBxjZNXnhXjjmTpkLRjjwvLwlDhGqMLssLWTfMQSrXQrbdCkFg"
@@ -38,9 +36,14 @@ export default function Contact() {
                 office@anarch.com
               </a>
             </p>
-            <p className = "contact-info-email">
+            <p className="contact-info-email">
               <span className="contact-info-header">Press & Media</span>:
-              <a href="https://mail.google.com/mail/u/0/#inbox?compose=CllgCJqXPMrgHtlFgCJLGkcvZMhZBjQnLljGwddLFnBbxGdPqkSdWPdGHgJQlDlpGhKPrxxGQBV" className = "contact-email">anarch.press@pitsou.com</a>
+              <a
+                href="https://mail.google.com/mail/u/0/#inbox?compose=CllgCJqXPMrgHtlFgCJLGkcvZMhZBjQnLljGwddLFnBbxGdPqkSdWPdGHgJQlDlpGhKPrxxGQBV"
+                className="contact-email"
+              >
+                anarch.press@pitsou.com
+              </a>
             </p>
           </div>
         </div>
@@ -55,7 +58,11 @@ export default function Contact() {
             <li>
               <img src="../images/language.png" alt="languages" />
               <p>English</p>
-              <img src="../images/arrow-down.png" alt="arrow"  className = "arrow"/>
+              <img
+                src="../images/arrow-down.png"
+                alt="arrow"
+                className="arrow"
+              />
             </li>
           </ul>
         </div>

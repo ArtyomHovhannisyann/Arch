@@ -13,8 +13,8 @@ import HousesSelectedProjects from "./pages/Houses/HousesSelectedProjects";
 import HousesInProgressProjects from "./pages/Houses/HousesInProgressProjects";
 import ResidentialAndPublicProjectsSelectdedProjects from "./pages/ResidentialAndPublicProjects/ResidentialAndPublicProjectsSelectdedProjects";
 import ResidentialAndPublicProjectsInProgressProjects from "./pages/ResidentialAndPublicProjects/ResidentialAndPublicProjectsInProgressProjects";
-import LandscapeArchitectureSelectedProjects from "./pages/LandscapeArchitecture/LandscapeArchitectureSelectedProjects";
-import LandscapeArchitectureInProgressProjects from "./pages/LandscapeArchitecture/LandscapeArchitectureInProgressProjects";
+import LandscapeArchitectureSelectedProjects from "./pages/Landscape/LandscapeArchitectureSelectedProjects";
+import LandscapeArchitectureInProgressProjects from "./pages/Landscape/LandscapeArchitectureInProgressProjects";
 
 export const routes = [
     //Home

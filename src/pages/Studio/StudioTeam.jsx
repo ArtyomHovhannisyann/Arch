@@ -16,9 +16,7 @@ export default function StudioTeam() {
     <div className={("studio-team", showMenu ? "studio-team-hide" : "")}>
       {showMenu && <Menu closeMenu={setShowMenu} />}
       <div className="header">
-        <div className="menu-icon" onClick={() => setShowMenu(!showMenu)}>
-          <img src="../images/menu-black-icon.png" alt="menu" />
-        </div>
+        <div className="menu-icon menu-black-icon" onClick={() => setShowMenu(!showMenu)}></div>
         <div className="header-logo">
           <h3>Anarch</h3>
         </div>
@@ -73,7 +71,7 @@ export default function StudioTeam() {
         <div className="studio-team-members">
           {teamMembers.map((el, i) => {
             return (
-              <div className="studio-team-member" key = {i}>
+              <div className="studio-team-member" key={i}>
                 <img src={el} alt="member" />
               </div>
             );
@@ -90,7 +88,11 @@ export default function StudioTeam() {
             <li>
               <img src="../images/language.png" alt="languages" />
               <p>English</p>
-              <img src="../images/arrow-down.png" alt="arrow"  className = "arrow"/>
+              <img
+                src="../images/arrow-down.png"
+                alt="arrow"
+                className="arrow"
+              />
             </li>
           </ul>
         </div>

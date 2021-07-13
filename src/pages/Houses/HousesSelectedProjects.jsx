@@ -1,7 +1,7 @@
 import React, { useState } from "react";
-import InProgressProjects from "../../components/InProgressProjects/InProgressProjects";
+import SelectedProjects from "../../components/SelectedProjects/SelectedProjects";
 
-export default function ApartamentsInProgressProject() {
+export default function HousesSelectedProjects() {
   const [projects, setProjects] = useState([
     {
       projectTitle: "House of Parties",
@@ -65,12 +65,12 @@ export default function ApartamentsInProgressProject() {
     },
   ]);
   const pageInfo = {
-    pageName: "Apartaments",
+    pageName: "Houses",
     items: projects,
   };
   return (
-    <div className="apartaments-in-progress-projects">
-      <InProgressProjects pageInfo={pageInfo} />
+    <div className="houses-selected-projects">
+      <SelectedProjects pageInfo = {pageInfo}/>
     </div>
   );
 }

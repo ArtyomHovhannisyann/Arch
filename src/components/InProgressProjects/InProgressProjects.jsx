@@ -7,7 +7,7 @@ export default function InProgressProjects({ pageInfo }) {
   const [showMenu, setShowMenu] = useState(false);
 
   return (
-    <div className="in-progress-project">
+    <div className={("in-progress-projects", showMenu ? "in-progress-projects-hide" : "")}>
       {showMenu && <Menu closeMenu={setShowMenu} />}
       <div className="in-progress-projects-header">
         <div

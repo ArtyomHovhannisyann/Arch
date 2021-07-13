@@ -15,7 +15,7 @@ function App() {
           {routes.map((el, i) => {
             return <Route path={el.path} component={el.component} key={i} />;
           })}
-          <Redirect from="/" to="/home" />
+          <Redirect  from="/" to="/home" />
         </Switch>
       </Router>
     </div>

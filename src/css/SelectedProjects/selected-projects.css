@@ -22,7 +22,15 @@
 }
 .project{
     margin-bottom: 10vh;
+    cursor: pointer;
 }
 .project-footer{
     margin-top: 0 !important;
+}
+.projects-footer{
+  margin:0 0 4vh 0 !important;
+}
+.selected-projects-hide{
+  overflow: hidden;
+  height: 100vh;
 }

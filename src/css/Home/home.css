@@ -19,6 +19,7 @@
 }
 .awssld {
   z-index: -10;
+  --loader-bar-height: 0px;
 }
 .awssld__timer,
 .awssld__timer--run {

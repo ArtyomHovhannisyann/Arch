@@ -8,7 +8,7 @@ export default function SelectedProjects({ pageInfo }) {
   const [showMenu, setShowMenu] = useState(false);
 
   return (
-    <div className="selected-projects">
+    <div className={("selected-projects", showMenu ? "selected-projects-hide" : "")}>
       {showMenu && <Menu closeMenu={setShowMenu} />}
       <div className="selected-projects-header">
         <div

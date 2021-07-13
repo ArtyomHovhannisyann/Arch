@@ -24,7 +24,7 @@ export default function HomePage() {
       <AutoplaySlider
         play={true}
         cancelOnInteraction={false}
-        interval={4000}
+        interval={6000}
         fillParent={true}
         organicArrows={false}
         media={[

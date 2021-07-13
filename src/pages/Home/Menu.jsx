@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
-export default function Menu({closeMenu}) {
+export default function Menu({ closeMenu }) {
   let pages = [
     [
       {
@@ -9,15 +9,15 @@ export default function Menu({closeMenu}) {
       },
       {
         pageName: "Team",
-        path:"/studio/team"
+        path: "/studio/team",
       },
       {
         pageName: "Jobs",
-        path:"/studio/jobs"
+        path: "/studio/jobs",
       },
       {
         pageName: "Contact",
-        path:"/studio/contact"
+        path: "/studio/contact",
       },
     ],
     [
@@ -26,11 +26,11 @@ export default function Menu({closeMenu}) {
       },
       {
         pageName: "Selected Projects",
-        path:"/apartaments/selected-projects"
+        path: "/apartaments/selected-projects",
       },
       {
         pageName: "In Progress",
-        path:"/apartaments/in-progress-projects"
+        path: "/apartaments/in-progress-projects",
       },
     ],
     [
@@ -39,9 +39,11 @@ export default function Menu({closeMenu}) {
       },
       {
         pageName: "Selected Projects",
+        path: "/houses/selected-projects",
       },
       {
         pageName: "In Progress",
+        path: "/houses/in-progress-projects",
       },
     ],
     [
@@ -50,9 +52,11 @@ export default function Menu({closeMenu}) {
       },
       {
         pageName: "Selected Projects",
+        path: "/residential-and-public-projects/selected-projects",
       },
       {
         pageName: "In Progress",
+        path: "/residential-and-public-projects/in-progress-projects",
       },
     ],
     [
@@ -61,9 +65,11 @@ export default function Menu({closeMenu}) {
       },
       {
         pageName: "Selected Projects",
+        path: "/landscape/selected-projects",
       },
       {
         pageName: "In Progress",
+        path: "/landscape/in-progress-projects",
       },
     ],
   ];
@@ -71,7 +77,11 @@ export default function Menu({closeMenu}) {
     <div className="menu">
       <div className="menu-header">
         <div className="close-icon">
-          <img src="../images/close.png" alt="close" onClick = {()=>closeMenu(false)}/>
+          <img
+            src="../images/close.png"
+            alt="close"
+            onClick={() => closeMenu(false)}
+          />
         </div>
         <div className="menu-logo">
           <h3>Anarch</h3>
@@ -80,9 +90,9 @@ export default function Menu({closeMenu}) {
       <div className="menu-container">
         <div className="menu-content">
           <dl className="pages">
-            {pages.map((page,pageIndex) => {
+            {pages.map((page, pageIndex) => {
               return (
-                <div className={"menu-page"} key = {pageIndex}>
+                <div className={"menu-page"} key={pageIndex}>
                   {page.map((el, i) => {
                     if (el.pageHeader) {
                       if (el.path) {
@@ -113,11 +123,19 @@ export default function Menu({closeMenu}) {
         </div>
         <div className="menu-footer">
           <div className="social-media-icons">
-            <img src="../images/facebook-logo.png" className = "facebook-icon" alt = "facebook"/>
-            <img src="../images/instagram-logo.png"  className = "instagram-icon" alt = "instagram"/>
+            <img
+              src="../images/facebook-logo.png"
+              className="facebook-icon"
+              alt="facebook"
+            />
+            <img
+              src="../images/instagram-logo.png"
+              className="instagram-icon"
+              alt="instagram"
+            />
           </div>
-          <div className = "menu-footer-languages">
-            <p className = "active-language">English</p>
+          <div className="menu-footer-languages">
+            <p className="active-language">English</p>
             <p>Հայերեն</p>
           </div>
         </div>

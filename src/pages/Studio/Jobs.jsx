@@ -7,27 +7,27 @@ import Menu from "../Home/Menu";
 export default function Jobs() {
   const [showMenu, setShowMenu] = useState(false);
   return (
-    <div className="studio-jobs">
+    <div className={`studio-jobs ${showMenu ? "studio-jobs-hide" : ""}`}>
       {showMenu && <Menu closeMenu={setShowMenu} />}
-      <div className="studio-jobs-content">
-        <div className="studio-jobs-left-bar">
-          <div
-            className="menu-icon jobs-menu-icon"
-            onClick={() => setShowMenu(!showMenu)}
-          ></div>
+      <div className="studio-jobs-header">
+        <div
+          className="menu-black-icon jobs-menu-icon"
+          onClick={() => setShowMenu(!showMenu)}
+        ></div>
+        <div className="header-logo jobs-header-logo black-logo">
+          <h3>Anarch</h3>
         </div>
+      </div>
+      <div className="studio-jobs-content">
+        <h3 className="studio-page-name studio-jobs-page">Studio-Job</h3>
+        <div className="studio-jobs-left-bar"></div>
         <div className="studio-jobs-right-bar">
-          <div className="header-logo jobs-header-logo">
-            <h3>Anarch</h3>
-          </div>
-          <div className="jobs-right-bar-content">
-            <h3>Jobs</h3>
-            <p>
-              We’re always looking for excellent and talented architects to join
-              our team. If you think you are suitable, please send us your CV
-              and a portfolio of your work to this email jobs@anarch.com
-            </p>
-          </div>
+          <h3>Jobs</h3>
+          <p>
+            We’re always looking for excellent and talented architects to join
+            our team. If you think you are suitable, please send us your CV and
+            a portfolio of your work to this email jobs@anarch.com
+          </p>
         </div>
       </div>
       <div className="footer">

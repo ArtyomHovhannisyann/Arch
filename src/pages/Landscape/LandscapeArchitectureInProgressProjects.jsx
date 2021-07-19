@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import InProgressProjects from "../../components/InProgressProjects/InProgressProjects";
 
-export default function LandscapeArchitectureInProgressProjects() {
+export default function LandscapeArchitectureInProgressProjects({ history }) {
   const [projects, setProjects] = useState([
     {
       projectTitle: "House of Parties",
@@ -70,7 +70,7 @@ export default function LandscapeArchitectureInProgressProjects() {
   };
   return (
     <div className="landscape-architecture-in-progress-projects">
-      <InProgressProjects pageInfo = {pageInfo}/>
+      <InProgressProjects pageInfo={pageInfo} history={history} />
     </div>
   );
 }

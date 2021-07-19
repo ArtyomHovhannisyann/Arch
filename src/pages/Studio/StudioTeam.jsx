@@ -7,27 +7,59 @@ import Menu from "../Home/Menu";
 export default function StudioTeam() {
   const [showMenu, setShowMenu] = useState(false);
   const [teamMembers, setTeamMembers] = useState([
-    "../images/member1.png",
-    "../images/member2.png",
-    "../images/member3.png",
-    "../images/member4.png",
+    {
+      url: "../images/member1.png",
+      memberName: "Shirely Marco",
+      memberInfo:
+        "AA (Architectural Association) Diploma RIBA Part 2 FOUNDER SINCE 2000",
+    },
+    {
+      url: "../images/member2.png",
+      memberName: "Shirely Marco",
+      memberInfo:
+        "AA (Architectural Association) Diploma RIBA Part 2 FOUNDER SINCE 2000",
+    },
+    {
+      url: "../images/member3.png",
+      memberName: "Shirely Marco",
+      memberInfo:
+        "AA (Architectural Association) Diploma RIBA Part 2 FOUNDER SINCE 2000",
+    },
+    {
+      url: "../images/member4.png",
+      memberName: "Shirely Marco",
+      memberInfo:
+        "AA (Architectural Association) Diploma RIBA Part 2 FOUNDER SINCE 2000",
+    },
   ]);
   return (
     <div className={("studio-team", showMenu ? "studio-team-hide" : "")}>
       {showMenu && <Menu closeMenu={setShowMenu} />}
       <div className="header">
-        <div className="menu-icon menu-black-icon" onClick={() => setShowMenu(!showMenu)}></div>
-        <div className="header-logo">
+        <div
+          className="menu-icon menu-black-icon"
+          onClick={() => setShowMenu(!showMenu)}
+        ></div>
+        <div className="header-logo team-header-logo">
           <h3>Anarch</h3>
         </div>
       </div>
       <div className="studio-team-content">
-        <h3 className="studio-page-name">Studio-Team</h3>
+        <h3 className="page-name studio-team-page-name">
+          Studio
+          <span className="page-name-bold-text"> - Team</span>
+        </h3>
+
         <div className="studio-team-img">
           <img src="../images/team.png" alt="team" />
         </div>
         <div className="studio-about-team">
           <p className="studio-team-info">
+            The studio lends its language to the modernist style and its work
+            revolves around the period and design values of the modernist
+            movement.
+          </p>
+          <p className="studio-team-description">
             The studio lends its language to the modernist style and its work
             revolves around the period and design values of the modernist
             movement. In its the early years the studio engaged in constant
@@ -50,29 +82,23 @@ export default function StudioTeam() {
             experiences, the studio began adding layers of materials while trial
             and error, thus creating more enigmatic and elusive building spaces,
             that cause greater curiosity. Widespread use is made in the research
-            of innovative materials, mainly in building envelopes. In an attempt
-            to deepen the language and cast new content, the studio has in
-            recent years worked with almost contrasting materials such as corten
-            steel and exposed concrete , and thin aluminum, carbon and other
-            innovative materials from the technological industries. The
-            combination of materials and the combination of different languages
-            and sometimes even different design schools created tension and
-            drama in some of the projects. Today, after 20 years of work, when
-            you can already look back at a relatively broad perspective on the
-            studio’s body of work, it can be noted that many of the projects are
-            characterized by a contrast between simple and clean outward masses,
-            and complex and rich internal sections. In doing so, the studio
-            manages to produce a unique and powerful experience.The studio is
-            planning projects on various scales. From designing interiors of
-            restaurants, show rooms and living spaces through planning and
-            designing private homes, to large residential and office buildings.
+            of innovative materials, mainly in building envelopes. After years
+            of abstraction of the materialism in order to avoid any distraction,
+            that created the momentous moments the space user experiences, the
+            studio began adding layers of materials while trial and error, thus
+            creating more enigmatic and elusive building spaces, that cause
+            greater curiosity.
           </p>
         </div>
         <div className="studio-team-members">
           {teamMembers.map((el, i) => {
             return (
               <div className="studio-team-member" key={i}>
-                <img src={el} alt="member" />
+                <div className="studio-team-member-info">
+                  <h3 className="member-name">{el.memberName}</h3>
+                  <p className="member-info">{el.memberInfo}</p>
+                </div>
+                <img src={el.url} alt="member" />
               </div>
             );
           })}
@@ -86,7 +112,11 @@ export default function StudioTeam() {
         <div className="footer-languages">
           <ul>
             <li>
-              <img src="../images/language.png" alt="languages" />
+              <img
+                src="../images/language.png"
+                alt="languages"
+                className="language-icon"
+              />
               <p>English</p>
               <img
                 src="../images/arrow-down.png"

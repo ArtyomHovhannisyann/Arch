@@ -10,13 +10,27 @@ import Menu from "./Menu";
 export default function HomePage() {
   const AutoplaySlider = withAutoplay(AwesomeSlider);
   const [showMenu, setShowMenu] = useState(false);
+  const [isIconBlack,setIsIconBlack] = useState(false);
+
+  window.addEventListener("resize", function () {
+    if (document.body.offsetWidth <= 768) {
+      setIsIconBlack(true);
+    }
+    else{
+        setIsIconBlack(false)
+    }
+  });
+
   return (
     <div className="home-page">
-      {showMenu && <Menu closeMenu = {setShowMenu}/>}
-      <div className="header">
-        <div className="menu-icon" onClick={() => setShowMenu(!showMenu)}></div>
-        <div className="header-logo">
-          <h3>Anarch</h3>
+      {showMenu && <Menu closeMenu={setShowMenu} />}
+      <div className="home-header">
+        <div
+          className={`${isIconBlack ? "menu-black-icon" : "menu-icon"}`}
+          onClick={() => setShowMenu(!showMenu)}
+        ></div>
+        <div className="header-logo home-header-logo">
+          <h3 className = {`${isIconBlack ? "header-logo-black-text" : "header-logo-text"}`}>Anarch</h3>
         </div>
       </div>
       <AutoplaySlider
@@ -25,7 +39,7 @@ export default function HomePage() {
         interval={3000}
         fillParent={true}
         organicArrows={false}
-        mobileTouch = {true}
+        mobileTouch={true}
         media={[
           {
             source: "../images/house1.png",

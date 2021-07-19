@@ -1,7 +1,9 @@
 import React, { useState } from "react";
 import InProgressProjects from "../../components/InProgressProjects/InProgressProjects";
 
-export default function ResidentialAndPublicProjectsInProgressProjects() {
+export default function ResidentialAndPublicProjectsInProgressProjects({
+  history,
+}) {
   const [projects, setProjects] = useState([
     {
       projectTitle: "House of Parties",
@@ -70,7 +72,7 @@ export default function ResidentialAndPublicProjectsInProgressProjects() {
   };
   return (
     <div className="residential-and-public-in-progress-projects">
-      <InProgressProjects pageInfo={pageInfo} />
+      <InProgressProjects pageInfo={pageInfo} history={history} />
     </div>
   );
 }

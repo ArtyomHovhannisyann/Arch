@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import SelectedProjects from "../../components/SelectedProjects/SelectedProjects";
 
-export default function LandscapeArchitectureSelectedProjects() {
+export default function LandscapeArchitectureSelectedProjects({ history }) {
   const [projects, setProjects] = useState([
     {
       projectTitle: "House of Parties",
@@ -70,7 +70,7 @@ export default function LandscapeArchitectureSelectedProjects() {
   };
   return (
     <div className="landscape-architecture-selected-projects">
-      <SelectedProjects pageInfo={pageInfo} />
+      <SelectedProjects pageInfo={pageInfo} history = {history}/>
     </div>
   );
 }

@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import SelectedProjects from "../../components/SelectedProjects/SelectedProjects";
 
-export default function HousesSelectedProjects() {
+export default function HousesSelectedProjects({ history }) {
   const [projects, setProjects] = useState([
     {
       projectTitle: "House of Parties",
@@ -70,7 +70,7 @@ export default function HousesSelectedProjects() {
   };
   return (
     <div className="houses-selected-projects">
-      <SelectedProjects pageInfo = {pageInfo}/>
+      <SelectedProjects pageInfo={pageInfo} history={history} />
     </div>
   );
 }

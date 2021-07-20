@@ -2,34 +2,60 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 40px 30px 0;
+  padding: 29px 141px 35.4px 50px;
 }
 .projects {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
   padding: 0 7vw;
 }
+.black-logo h3 {
+  font-family: Source Serif Pro;
+  font-weight: 600;
+  font-size: 50px;
+  line-height: 63px;
+  letter-spacing: 0.12em;
+  color: #434b62;
+}
+.footer-languages {
+  display: block;
+}
 .page-name {
-  margin: 3vh 0 3vh 7vw;
-  font-family: Aharoni;
-  font-weight: bold;
-  font-size: 18px;
-  line-height: 18px;
+  padding: 0 0 24px 140px;
+  font-family: 
+  Browallia New;
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 24.85px;
   letter-spacing: 0.05em;
 }
+.page-name-bold-text {
+  font-weight: 700;
+}
 .menu-black-icon {
-  background: url("../../images//menu-black-icon.png") !important;
-  background-size: contain;
+  background: url("../../images//menu-black-icon.png");
+  background-size: cover;
   background-repeat: no-repeat !important;
-  width: 31px;
-  height: 42px;
+  width: 38px;
+  height: 24px;
+  cursor: pointer;
 }
 .arrow {
   padding: 0 5px;
 }
 .project {
-  margin-bottom: 10vh;
   cursor: pointer;
+  padding-bottom: 94px;
+  padding-right: 20px;
+}
+
+.project img {
+  width: 100%;
+  height: 100%;
+}
+.project:hover{
+  opacity: 0.8;
 }
 .project p {
   font-family: Browallia New;
@@ -42,33 +68,47 @@
   margin-top: 0 !important;
 }
 .projects-footer {
-  margin: 0 0 4vh 0 !important;
+  display: flex;
+  justify-content: center;
+  padding: 0 0 85px 0;
 }
 .selected-projects-hide {
   overflow: hidden;
   height: 100vh;
 }
-@media (max-width: 768px) {
+@media (max-width: 852px) {
+  .selected-projects-header {
+    padding: 28px 36px 42px 36px;
+  }
   .projects {
-    grid-template-columns: 1fr 1fr;
-    grid-gap: 15px;
-    padding: 0 2vw;
+    padding: 0 5vw;
   }
   .project {
-    margin-bottom: 5vh;
+    width: 338px;
+    margin-bottom: 40px;
   }
   .project p {
     font-size: 20px !important;
     line-height: 29px !important;
   }
+  .page-name {
+    padding: 0 0 25px 36px;
+  }
 }
-@media (max-width: 375px) {
+@media (max-width: 752px) {
+  .selected-projects-header {
+    padding: 33.3px 22px 20px 30px;
+  }
+  .menu-black-icon {
+    width: 30px;
+    height: 19.25px;
+  }
   .projects {
-    grid-template-columns: 1fr;
-    padding: 0 2vw;
+    justify-content: center;
   }
   .project {
-    margin-bottom: 2vh;
+    width: 335px;
+    padding-bottom: 30px;
   }
   .project p {
     font-size: 18px !important;
@@ -80,5 +120,8 @@
   .page-name {
     font-size: 12px !important;
     line-height: 12px !important;
+  }
+  .page-name {
+    padding: 0 0 37px 23px;
   }
 }

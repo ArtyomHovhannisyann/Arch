@@ -1,4 +1,7 @@
-*{
+@import url("https://fonts.googleapis.com/css2?family=Source+Serif+Pro:wght@600&display=swap");
+@import url("//db.onlinewebfonts.com/c/558e1f7c26d9405ac41942266ebac11d?family=Browallia+New");
+@import url("//db.onlinewebfonts.com/c/3c1a440c0da3e6484b92282953ca3555?family=Aharoni");
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;

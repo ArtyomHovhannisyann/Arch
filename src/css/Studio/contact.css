@@ -1,16 +1,33 @@
+.studio-contact {
+  position: relative;
+}
+.studio-contact-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 29px 140px 0 50px;
+}
 .studio-contact-content {
   display: grid;
-  grid-template-columns: 40vw auto;
-  height: 80vh;
+  grid-template-columns: 50% 50%;
+}
+.studio-contact-page {
+  display: none;
 }
 .studio-contact-left-bar {
   background-image: url("../../images/contact.png");
   background-size: cover;
-  background-repeat: no-repeat;
+  height: 990px;
 }
 .studio-contact-right-bar {
-  padding: 0 10vw;
-  display: grid;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0 140px 0 92px;
 }
 .contact-header-logo {
   text-align: right;
@@ -31,12 +48,89 @@
 .contact-menu-icon {
   margin: 2vw 0 0 2vw;
 }
-.contact-email{
-    border-bottom: 1px solid black;
-    color: #000;
-    height: 22px;
-    display: inline-block;
+.contact-email {
+  border-bottom: 1px solid black;
+  color: #000;
+  height: 22px;
+  display: inline-block;
 }
-.contact-info-email{
-    margin-top: 2vh;
+.contact-info-email {
+  margin-top: 2vh;
+}
+@media (max-width: 880px) {
+  .studio-contact-header {
+    padding: 41.8px 0 20px 36px;
+  }
+  .studio-contact-page {
+    display: block;
+  }
+  .studio-contact-content {
+    display: grid;
+    grid-template-columns: 1fr !important;
+    padding-top: 96px;
+  }
+  .studio-page-name {
+    padding: 20px 0 25px 36px;
+  }
+  .studio-contact-left-bar {
+    height: 805px;
+  }
+  .studio-contact-right-bar {
+    padding: 25px 36px 0 36px;
+  }
+  .studio-contact-right-bar h3 {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 18px;
+  }
+  .studio-contact-right-bar p {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 18px;
+  }
+  .footer-languages {
+    display: block;
+    border-left: 1px solid #5e5e5e;
+    margin-left: 2.06vw !important;
+    padding-left: 2.06vw;
+  }
+}
+@media (max-width: 425px) {
+  .studio-contact-header {
+    padding: 33px 22px 19px 30px;
+  }
+  .black-logo h3 {
+    font-size: 35px !important;
+    line-height: 44px !important;
+  }
+  .studio-contact-content {
+    padding-top: 96px;
+  }
+  .studio-contact-page {
+    display: none;
+  }
+  .studio-contact-left-bar {
+    height: 475px;
+  }
+
+  .studio-contact-right-bar {
+    padding: 30px 20px 43px 20px;
+  }
+  .studio-contact-right-bar h3 {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 18px;
+  }
+  .studio-contact-right-bar p {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 18px;
+  }
+  .footer {
+    padding: 0 4vw 3vh 4.2vw !important;
+  }
+  .footer-languages {
+    display: block;
+    border-left: 1px solid #5e5e5e;
+  }
 }

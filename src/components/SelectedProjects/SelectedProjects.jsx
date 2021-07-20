@@ -31,8 +31,12 @@ export default function SelectedProjects({ pageInfo, history }) {
         <div className="projects">
           {pageInfo.items.map((project, i) => {
             return (
-              <div className="project" key={i} onClick={() => history.push("/project")}>
-                <img src={project.url} alt="selected" />
+              <div
+                className="project"
+                key={i}
+                onClick={() => history.push(`/project/${project.id}`)}
+              >
+                <img src={project.images[0]} alt="selected" />
                 <p>{project.projectTitle}</p>
               </div>
             );

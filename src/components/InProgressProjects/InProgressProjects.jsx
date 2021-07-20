@@ -3,7 +3,7 @@ import Menu from "../../pages/Home/Menu";
 
 import "../../css/InProgressProjects/in-progress-projects.css";
 
-export default function InProgressProjects({ pageInfo ,history}) {
+export default function InProgressProjects({ pageInfo, history }) {
   const [showMenu, setShowMenu] = useState(false);
 
   return (
@@ -30,8 +30,12 @@ export default function InProgressProjects({ pageInfo ,history}) {
         <div className="projects">
           {pageInfo.items.map((project, i) => {
             return (
-              <div className="project" key={i} onClick={() => history.push("/project")}>
-                <img src={project.url} alt="in-progres"/>
+              <div
+                className="project"
+                key={i}
+                onClick={() => history.push(`/project/${project.id}`)}
+              >
+                <img src={project.images[0]} alt="in-progres" />
                 <p>{project.projectTitle}</p>
               </div>
             );

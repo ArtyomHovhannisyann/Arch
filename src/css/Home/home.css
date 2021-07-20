@@ -1,16 +1,24 @@
-.header {
+.home-header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin: 1vw;
+  padding: 45px 141px 0 50px;
 }
-.header-logo h3 {
+.header-logo-text {
   font-family: Source Serif Pro;
   font-weight: 600;
   font-size: 50px;
   line-height: 63px;
   letter-spacing: 0.12em;
   color: #fff;
+}
+.header-logo-black-text {
+  font-family: Source Serif Pro;
+  font-weight: 600;
+  font-size: 50px;
+  line-height: 63px;
+  letter-spacing: 0.12em;
+  color: #434b62;
 }
 .close-icon,
 .social-media-icons img,
@@ -20,9 +28,9 @@
 .menu-icon {
   background-image: url("../../images/menu-icon.png");
   background-size: contain;
-  width: 34px;
-  height: 41px;
   background-repeat: no-repeat;
+  width: 30px;
+  height: 42px;
 }
 .awssld {
   z-index: -10;
@@ -35,7 +43,7 @@
 }
 .awssld__bullets {
   z-index: 10;
-  bottom: 20px;
+  bottom: 35.5px;
 }
 .awssld__bullets button {
   width: 14px;
@@ -53,19 +61,26 @@
   top: 0;
   left: 0;
   position: absolute;
-  width: 100vw;
+  width: 100%;
   height: 100vh;
   background-color: #fff;
   display: grid;
   grid-template-rows: auto 1fr;
+  z-index: 1;
+  animation-name: menu-anim;
+  animation-duration: .5s;
+}
+@keyframes menu-anim {
+  from {opacity: 0;}
+  to {opacity: 1;}
 }
 .menu-header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin: 1vw;
+  padding: 35px 93px 0 50px;
 }
-.menu-logo {
+.menu-logo h3 {
   font-family: Source Serif Pro;
   font-style: normal;
   font-weight: 600;
@@ -123,14 +138,11 @@
   margin-left: 10px;
 }
 @media (max-width: 768px) {
-  .header {
-    margin: 30px 40px !important;
-  }
-  .menu-icon {
-    background-image: url("../../images/menu-black-icon.png") !important;
+  .home-header {
+    padding: 30px 40px !important;
   }
   .menu-header {
-    margin: 40px 30px !important;
+    padding: 40px 30px !important;
   }
   .menu-logo h3 {
     font-size: 35px !important;
@@ -147,29 +159,52 @@
     width: unset !important;
     margin: 10px 0 !important;
   }
-  .menu-pageheader{
-    font-family: Source Serif Pro !important;
-    font-weight: 600 !important;
-    line-height: 25px !important;
+  .menu-pageheader {
+    font-size: 20px;
+    line-height: 25px;
+    letter-spacing: 0.05em;
   }
-  .menu-footer{
+  .pages dd {
+    font-size: 18px;
+    line-height: 23px;
+    letter-spacing: 0.05em;
+  }
+  .menu-footer {
     margin-top: 0 !important;
-    padding-top: 5vh;
+    padding-top: 40px;
     padding-left: 10vw;
   }
+  .active-language {
+    font-size: 22px;
+    line-height: 25px;
+    letter-spacing: 0.05em;
+  }
+  .menu-footer-languages p {
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.05em;
+  }
 }
-@media (max-width: 375px) {
-  .header {
-    margin-right: 0 !important;
+@media (max-width: 425px) {
+  .home-header {
+    padding: 33px 0 0 30px !important;
   }
-  .header-logo {
-    margin-right: 0 !important;
-  }
-  .header-logo h3 {
+  .home-header-logo h3 {
     background-color: rgba(255, 255, 255, 0.75);
     padding: 0 20px;
   }
   .menu-icon {
-    background-image: url("../../images/menu-icon.png") !important;
+    background-image: url("../../images/menu-icon.png");
+  }
+  .menu-page-header {
+    font-family: Source Serif Pro;
+    font-size: 16px;
+    line-height: 20px;
+  }
+  .pages dd {
+    font-family: Source Serif Pro;
+    font-size: 14px;
+    line-height: 18px;
+    letter-spacing: 0.05em;
   }
 }

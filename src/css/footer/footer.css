@@ -1,0 +1,29 @@
+.footer-languages {
+  margin-left: 1vw;
+}
+.footer-languages ul {
+  list-style: none;
+  background: #f9f9f9;
+}
+.footer-languages ul li {
+  display: flex;
+  align-items: center;
+}
+.footer-languages ul li p {
+  margin-left: 0.5vw;
+  font-family: Browallia New;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 23px;
+  letter-spacing: 0.05em;
+  color: #5d5d5d;
+}
+@media (max-width: 749px) {
+  .footer-social-media-icons {
+    padding-right: 5vw !important;
+  }
+  .language-icon {
+    width: 24px;
+    height: 24px;
+  }
+}

@@ -3,6 +3,13 @@
   justify-content: space-between;
   align-items: center;
   padding: 29px 140px 112.5px 50px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+.studio-team-content{
+  padding-top: 182px;
 }
 .team-header-logo h3 {
   font-family: Source Serif Pro;
@@ -73,7 +80,7 @@
   position: absolute;
   background: rgba(0, 0, 0, 0.6);
   width: 100%;
-  height: 100%;
+  height: 98%;
   padding: 0 38px 28px 26px;
   transition-duration: 300ms;
   transition-timing-function: ease-out;
@@ -107,26 +114,6 @@
 .footer-social-media-icons img:not(:first-child) {
   margin-left: 1vw;
 }
-.footer-languages {
-  margin-left: 1vw;
-}
-.footer-languages ul {
-  list-style: none;
-  background: #f9f9f9;
-}
-.footer-languages ul li {
-  display: flex;
-  align-items: center;
-}
-.footer-languages ul li p {
-  margin-left: 0.5vw;
-  font-family: Browallia New;
-  font-weight: bold;
-  font-size: 20px;
-  line-height: 23px;
-  letter-spacing: 0.05em;
-  color: #5d5d5d;
-}
 .studio-team-hide {
   overflow: hidden;
   height: 100vh;
@@ -153,12 +140,6 @@
   }
   .studio-team-img {
     padding: 0;
-  }
-  .footer-languages ul li p {
-    font-weight: 600;
-    font-size: 12px;
-    line-height: 15px;
-    letter-spacing: 0.05em;
   }
   .member-info {
     font-size: 22px;
@@ -201,9 +182,6 @@
   .language-icon {
     width: 24px;
     height: 24px;
-  }
-  .footer-languages {
-    padding-left: 5vw;
   }
 }
 @media (max-width: 716px) {

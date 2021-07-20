@@ -3,6 +3,13 @@
   justify-content: space-between;
   align-items: center;
   padding: 29px 141px 35.4px 50px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+.selected-projects-content{
+  padding-top: 101px;
 }
 .projects {
   display: flex;

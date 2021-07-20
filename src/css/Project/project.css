@@ -10,10 +10,10 @@
   align-items: center;
   justify-content: space-between;
   width: 100%;
+  padding: 51.5px 7.3vw 0 2.6vw;
+  position: fixed;
   top: 0;
   left: 0;
-  padding: 51.5px 7.3vw 0 2.6vw;
-  position: absolute;
 }
 .project-left-bar img {
   width: 50vw;

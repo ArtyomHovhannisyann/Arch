@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import Menu from "../../pages/Home/Menu";
 
 import "../../css/InProgressProjects/in-progress-projects.css";
+import Footer from "../../components/Footer/Footer";
 
 export default function InProgressProjects({ pageInfo, history }) {
   const [showMenu, setShowMenu] = useState(false);
@@ -42,29 +43,7 @@ export default function InProgressProjects({ pageInfo, history }) {
           })}
         </div>
       </div>
-      <div className="projects-footer">
-        <div className="footer-social-media-icons">
-          <img src="../images/facebook-logo.png" alt="facebook" />
-          <img src="../images/instagram-logo.png" alt="instagram" />
-        </div>
-        <div className="footer-languages">
-          <ul>
-            <li>
-              <img
-                src="../images/language.png"
-                alt="languages"
-                className="language-icon"
-              />
-              <p>English</p>
-              <img
-                src="../images/arrow-down.png"
-                alt="arrow"
-                className="arrow"
-              />
-            </li>
-          </ul>
-        </div>
-      </div>
+      <Footer />
     </div>
   );
 }

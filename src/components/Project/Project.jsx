@@ -3,6 +3,7 @@ import Menu from "../../pages/Home/Menu";
 import "../../css/Project/project.css";
 import { useEffect } from "react";
 import { Link } from "react-router-dom";
+import Footer from "../Footer/Footer";
 
 export default function Project( {history,match} ) {
   const id = match.params.id - 1
@@ -250,25 +251,7 @@ export default function Project( {history,match} ) {
           Back
         </div>
       </div>
-      <div className="footer" id="footer">
-        <div className="footer-social-media-icons">
-          <img src="../images/facebook-logo.png" alt="facebook" />
-          <img src="../images/instagram-logo.png" alt="instagram" />
-        </div>
-        <div className="footer-languages">
-          <ul>
-            <li>
-              <img src="../images/language.png" alt="languages" />
-              <p>English</p>
-              <img
-                src="../images/arrow-down.png"
-                alt="arrow"
-                className="arrow"
-              />
-            </li>
-          </ul>
-        </div>
-      </div>
+     <Footer/>
     </div>
   );
 }

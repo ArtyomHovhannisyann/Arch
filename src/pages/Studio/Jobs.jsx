@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import Footer from "../../components/Footer/Footer";
 
 import "../../css/Studio/jobs.css";
 
@@ -30,25 +31,7 @@ export default function Jobs() {
           </p>
         </div>
       </div>
-      <div className="footer">
-        <div className="footer-social-media-icons">
-          <img src="../images/facebook-logo.png" alt="facebook" />
-          <img src="../images/instagram-logo.png" alt="instagram" />
-        </div>
-        <div className="footer-languages">
-          <ul>
-            <li>
-              <img src="../images/language.png" alt="languages" />
-              <p>English</p>
-              <img
-                src="../images/arrow-down.png"
-                alt="arrow"
-                className="arrow"
-              />
-            </li>
-          </ul>
-        </div>
-      </div>
+      <Footer showIcons = {false}/>
     </div>
   );
 }

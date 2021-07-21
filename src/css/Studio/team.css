@@ -45,7 +45,6 @@
 .studio-team-member {
   position: relative;
   margin-bottom: 50px;
-  z-index: -1;
 }
 .studio-team-member img {
   width: 100%;

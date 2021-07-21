@@ -147,6 +147,10 @@ export default function Project({ history, match }) {
       id: 12,
     },
   ]);
+  window.scroll({
+    top: 0,
+    behavior: 'smooth'
+  });
 
   return (
     <div className={`project-page ${showMenu ? "project-header-hide" : ""}`}>

@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { Link } from "react-router-dom";
 
 export default function Menu({ closeMenu }) {
@@ -73,6 +73,17 @@ export default function Menu({ closeMenu }) {
       },
     ],
   ];
+  const [isEngActive, setIsEngActive] = useState(true);
+  const [isArmActive, setIsArmActive] = useState(false);
+  function setActiveClass(e) {
+    if (e.target.innerHTML == "English") {
+      setIsArmActive(false);
+      setIsEngActive(true);
+    } else {
+      setIsArmActive(true);
+      setIsEngActive(false);
+    }
+  }
   return (
     <div className="menu">
       <div className="menu-header">
@@ -135,8 +146,18 @@ export default function Menu({ closeMenu }) {
             />
           </div>
           <div className="menu-footer-languages">
-            <p className="active-language">English</p>
-            <p>Հայերեն</p>
+            <p
+              className={`${isEngActive ? "active-language" : ""}`}
+              onClick={setActiveClass}
+            >
+              English
+            </p>
+            <p
+              className={`${isArmActive ? "active-language" : ""}`}
+              onClick={setActiveClass}
+            >
+              Հայերեն
+            </p>
           </div>
         </div>
       </div>

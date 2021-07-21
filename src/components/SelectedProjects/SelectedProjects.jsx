@@ -11,12 +11,12 @@ export default function SelectedProjects({ pageInfo, history }) {
 
   return (
     <div
-      className={
-        ("selected-projects", showMenu ? "selected-projects-hide" : "")
-      }
+      className={`selected-projects ${
+        showMenu ? "selected-projects-hide" : ""
+      }`}
     >
       {showMenu && <Menu closeMenu={setShowMenu} />}
-      <Header setShowMenu = {setShowMenu}/>
+      <Header setShowMenu={setShowMenu} />
       <div className="selected-projects-content">
         <h3 className="page-name">
           {pageInfo.pageName}

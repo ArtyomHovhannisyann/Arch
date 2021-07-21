@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import Footer from "../../components/Footer/Footer";
+import Header from "../../components/Header/Header";
 
 import "../../css/Studio/team.css";
 
@@ -36,15 +37,7 @@ export default function StudioTeam() {
   return (
     <div className={("studio-team", showMenu ? "studio-team-hide" : "")}>
       {showMenu && <Menu closeMenu={setShowMenu} />}
-      <div className="header">
-        <div
-          className="menu-icon menu-black-icon"
-          onClick={() => setShowMenu(!showMenu)}
-        ></div>
-        <div className="header-logo team-header-logo">
-          <h3>Anarch</h3>
-        </div>
-      </div>
+      <Header setShowMenu = {setShowMenu}/>
       <div className="studio-team-content">
         <h3 className="page-name studio-team-page-name">
           Studio

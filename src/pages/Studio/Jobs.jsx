@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import Footer from "../../components/Footer/Footer";
+import Header from "../../components/Header/Header";
 
 import "../../css/Studio/jobs.css";
 
@@ -10,15 +11,7 @@ export default function Jobs() {
   return (
     <div className={`studio-jobs ${showMenu ? "studio-jobs-hide" : ""}`}>
       {showMenu && <Menu closeMenu={setShowMenu} />}
-      <div className="studio-jobs-header">
-        <div
-          className="menu-black-icon jobs-menu-icon"
-          onClick={() => setShowMenu(!showMenu)}
-        ></div>
-        <div className="header-logo jobs-header-logo black-logo">
-          <h3>Anarch</h3>
-        </div>
-      </div>
+     <Header setShowMenu = {setShowMenu}/>
       <div className="studio-jobs-content">
         <h3 className="studio-page-name studio-jobs-page">Studio-Job</h3>
         <div className="studio-jobs-left-bar"></div>

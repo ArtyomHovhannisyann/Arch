@@ -1,0 +1,33 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 29px 140px 112.5px 50px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+.team-header-logo h3 {
+  font-family: Source Serif Pro;
+  font-weight: 600;
+  font-size: 50px;
+  line-height: 63px;
+  letter-spacing: 0.12em;
+  color: #434b62;
+}
+@media (max-width: 1146px) {
+  .header {
+    padding: 44px 36px 41.8px 36px;
+  }
+}
+@media (max-width: 749px) {
+  .header {
+    padding: 28px 36px 41px 36px;
+  }
+}
+@media (max-width: 716px) {
+  .header {
+    padding: 40px 22px 0 30px;
+  }
+}

@@ -3,6 +3,7 @@ import Menu from "../../pages/Home/Menu";
 
 import "../../css/InProgressProjects/in-progress-projects.css";
 import Footer from "../../components/Footer/Footer";
+import Header from "../Header/Header";
 
 export default function InProgressProjects({ pageInfo, history }) {
   const [showMenu, setShowMenu] = useState(false);
@@ -14,15 +15,7 @@ export default function InProgressProjects({ pageInfo, history }) {
       }
     >
       {showMenu && <Menu closeMenu={setShowMenu} />}
-      <div className="in-progress-projects-header">
-        <div
-          className="menu-icon menu-black-icon"
-          onClick={() => setShowMenu(!showMenu)}
-        ></div>
-        <div className="header-logo black-logo">
-          <h3>Anarch</h3>
-        </div>
-      </div>
+      <Header setShowMenu  = {setShowMenu}/>
       <div className="in-progres-projects-content">
         <h3 className="page-name">
           {pageInfo.pageName}

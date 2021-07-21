@@ -9,7 +9,7 @@ export default function Contact() {
   const [showMenu, setShowMenu] = useState(false);
 
   return (
-    <div className="studio-contact">
+    <div className={`studio-contact ${showMenu ? "studio-contact-hide" : ""}`}>
       {showMenu && <Menu closeMenu={setShowMenu} />}
       <div className="studio-contact-header">
         <div

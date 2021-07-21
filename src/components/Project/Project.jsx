@@ -4,9 +4,10 @@ import "../../css/Project/project.css";
 import { useEffect } from "react";
 import { Link } from "react-router-dom";
 import Footer from "../Footer/Footer";
+import Header from "../Header/Header";
 
-export default function Project( {history,match} ) {
-  const id = match.params.id - 1
+export default function Project({ history, match }) {
+  const id = match.params.id - 1;
   const [showMenu, setShowMenu] = useState(false);
   const [projects, setProjects] = useState([
     {
@@ -150,15 +151,7 @@ export default function Project( {history,match} ) {
   return (
     <div className={`project-page ${showMenu ? "project-header-hide" : ""}`}>
       {showMenu && <Menu closeMenu={setShowMenu} />}
-      <div className={"project-header"}>
-        <div
-          className="menu-black-icon"
-          onClick={() => setShowMenu(!showMenu)}
-        ></div>
-        <div className="header-logo contact-header-logo black-logo">
-          <h3>Anarch</h3>
-        </div>
-      </div>
+      <Header setShowMenu = {setShowMenu}/>
       <div className="project-image-name  ">
         <div className="project-left-bar">
           <img src={projects[id].images[0]} alt="" />
@@ -251,7 +244,7 @@ export default function Project( {history,match} ) {
           Back
         </div>
       </div>
-     <Footer/>
+      <Footer />
     </div>
   );
 }

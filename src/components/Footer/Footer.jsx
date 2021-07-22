@@ -6,14 +6,18 @@ export default function Footer({ showIcons = true }) {
   return (
     <div className="footer" id="footer">
       <div className="footer-social-media-icons">
-        <img src="../images/facebook-logo.png" alt="facebook" />
-        <img src="../images/instagram-logo.png" alt="instagram" />
+        <a href="#">
+          <img src="../images/facebook-logo.png" alt="facebook" />
+        </a>
+        <a href="#">
+          <img src="../images/instagram-logo.png" alt="instagram" />
+        </a>
       </div>
       {showIcons && (
         <div className="footer-languages">
           <ul onClick={() => setShowHiddenLanguages(!showHiddenLanguages)}>
             {showHiddenLanguages && (
-              <li className = "hidden-languages">
+              <li className="hidden-languages">
                 <p>Հայերեն</p>
               </li>
             )}

@@ -2,6 +2,9 @@
   cursor: pointer;
   padding-right: 20px;
 }
+.footer-social-media-icons a:not(:last-child){
+  margin-right: 20px;
+}
 .footer-languages {
   margin-left: 1vw;
   padding-left: 20px;

@@ -1,8 +1,6 @@
 import React, { useState } from "react";
 import Menu from "../../pages/Home/Menu";
 import "../../css/Project/project.css";
-import { useEffect } from "react";
-import { Link } from "react-router-dom";
 import Footer from "../Footer/Footer";
 import Header from "../Header/Header";
 
@@ -18,6 +16,10 @@ export default function Project({ history, match }) {
         "../images/project2.png",
         "../images/project3.png",
         "../images/project4.png",
+        "../images/project1.png",
+        "../images/project2.png",
+        "../images/project3.png",
+        "../images/project4.png",
       ],
       id: 1,
     },
@@ -25,6 +27,10 @@ export default function Project({ history, match }) {
       projectTitle: "SB House",
       images: [
         "../images/selected-project2.png",
+        "../images/project1.png",
+        "../images/project2.png",
+        "../images/project3.png",
+        "../images/project4.png",
         "../images/project1.png",
         "../images/project2.png",
         "../images/project3.png",
@@ -41,6 +47,10 @@ export default function Project({ history, match }) {
         "../images/project2.png",
         "../images/project3.png",
         "../images/project4.png",
+        "../images/project1.png",
+        "../images/project2.png",
+        "../images/project3.png",
+        "../images/project4.png",
       ],
       id: 3,
     },
@@ -52,6 +62,10 @@ export default function Project({ history, match }) {
         "../images/project2.png",
         "../images/project3.png",
         "../images/project4.png",
+        "../images/project1.png",
+        "../images/project2.png",
+        "../images/project3.png",
+        "../images/project4.png",
       ],
       id: 4,
     },
@@ -59,6 +73,10 @@ export default function Project({ history, match }) {
       projectTitle: "SB House",
       images: [
         "../images/selected-project2.png",
+        "../images/project1.png",
+        "../images/project2.png",
+        "../images/project3.png",
+        "../images/project4.png",
         "../images/project1.png",
         "../images/project2.png",
         "../images/project3.png",
@@ -75,6 +93,10 @@ export default function Project({ history, match }) {
         "../images/project2.png",
         "../images/project3.png",
         "../images/project4.png",
+        "../images/project1.png",
+        "../images/project2.png",
+        "../images/project3.png",
+        "../images/project4.png",
       ],
 
       id: 6,
@@ -83,6 +105,10 @@ export default function Project({ history, match }) {
       projectTitle: "House of Parties",
       images: [
         "../images/selected-project1.png",
+        "../images/project1.png",
+        "../images/project2.png",
+        "../images/project3.png",
+        "../images/project4.png",
         "../images/project1.png",
         "../images/project2.png",
         "../images/project3.png",
@@ -98,6 +124,10 @@ export default function Project({ history, match }) {
         "../images/project2.png",
         "../images/project3.png",
         "../images/project4.png",
+        "../images/project1.png",
+        "../images/project2.png",
+        "../images/project3.png",
+        "../images/project4.png",
       ],
       id: 8,
     },
@@ -105,6 +135,10 @@ export default function Project({ history, match }) {
       projectTitle: "SB House",
       images: [
         "../images/selected-project2.png",
+        "../images/project1.png",
+        "../images/project2.png",
+        "../images/project3.png",
+        "../images/project4.png",
         "../images/project1.png",
         "../images/project2.png",
         "../images/project3.png",
@@ -120,6 +154,10 @@ export default function Project({ history, match }) {
         "../images/project2.png",
         "../images/project3.png",
         "../images/project4.png",
+        "../images/project1.png",
+        "../images/project2.png",
+        "../images/project3.png",
+        "../images/project4.png",
       ],
       id: 10,
     },
@@ -127,6 +165,10 @@ export default function Project({ history, match }) {
       projectTitle: "F House",
       images: [
         "../images/selected-project2.png",
+        "../images/project1.png",
+        "../images/project2.png",
+        "../images/project3.png",
+        "../images/project4.png",
         "../images/project1.png",
         "../images/project2.png",
         "../images/project3.png",
@@ -142,6 +184,10 @@ export default function Project({ history, match }) {
         "../images/project2.png",
         "../images/project3.png",
         "../images/project4.png",
+        "../images/project1.png",
+        "../images/project2.png",
+        "../images/project3.png",
+        "../images/project4.png",
       ],
 
       id: 12,
@@ -149,13 +195,14 @@ export default function Project({ history, match }) {
   ]);
   window.scroll({
     top: 0,
-    behavior: 'smooth'
+    behavior: "smooth",
   });
+  console.log(projects);
 
   return (
     <div className={`project-page ${showMenu ? "project-header-hide" : ""}`}>
       {showMenu && <Menu closeMenu={setShowMenu} />}
-      <Header setShowMenu = {setShowMenu}/>
+      <Header setShowMenu={setShowMenu} />
       <div className="project-image-name  ">
         <div className="project-left-bar">
           <img src={projects[id].images[0]} alt="" />
@@ -241,6 +288,15 @@ export default function Project({ history, match }) {
       <div className="project-images">
         {projects[id].images.map((el, i) => {
           if (i != 0) {
+            if (i % 4 == 0) {
+              return (
+                <div
+                  key={i}
+                  className="paralax-image"
+                  style={{ backgroundImage: `url(${el})` }}
+                ></div>
+              );
+            }
             return <img src={el} alt="" key={i} />;
           }
         })}

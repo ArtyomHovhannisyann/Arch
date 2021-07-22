@@ -65,8 +65,8 @@
 }
 .project-images {
   display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
+  flex-direction: column;
+  align-items: center;
 }
 .project-images img:not(:nth-of-type(1)) {
   margin-top: 40px;
@@ -87,6 +87,14 @@
   text-align: center;
   margin-top: 150px;
   cursor: pointer;
+}
+.paralax-image {
+  width: 100%;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height:779px;
 }
 @media (max-width: 880px) {
   .project-header {
@@ -134,11 +142,8 @@
     margin-top: 120px;
     padding: 20px 0;
   }
-  .footer-languages {
-    display: block;
-    border-left: 1px solid #5e5e5e;
-    margin-left: 2.06vw !important;
-    padding-left: 2.06vw;
+  .paralax-image {
+    height: 410px !important;
   }
 }
 @media (max-width: 425px) {
@@ -174,9 +179,8 @@
   .footer {
     padding: 0 4vw 3vh 4.2vw !important;
   }
-  .footer-languages {
-    display: block;
-    border-left: 1px solid #5e5e5e;
+  .paralax-image {
+    height: 200px !important;
   }
 }
 @keyframes project-name-anim {

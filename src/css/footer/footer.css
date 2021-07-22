@@ -1,13 +1,21 @@
+.footer-social-media-icons {
+  cursor: pointer;
+  padding-right: 20px;
+}
 .footer-languages {
   margin-left: 1vw;
+  padding-left: 20px;
+  border-left: 1px solid rgba(94, 94, 94, 0.5);
+  cursor: pointer;
 }
 .footer-languages ul {
   list-style: none;
-  background: #f9f9f9;
+  position: relative;
 }
 .footer-languages ul li {
   display: flex;
   align-items: center;
+  background: #f9f9f9;
 }
 .footer-languages ul li p {
   margin-left: 0.5vw;
@@ -18,10 +26,12 @@
   letter-spacing: 0.05em;
   color: #5d5d5d;
 }
+.hidden-languages {
+  margin-bottom: 5px;
+  position: absolute;
+  top: -30px;
+}
 @media (max-width: 749px) {
-  .footer-social-media-icons {
-    padding-right: 5vw !important;
-  }
   .language-icon {
     width: 24px;
     height: 24px;

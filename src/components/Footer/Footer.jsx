@@ -1,7 +1,8 @@
-import React from "react";
+import React, { useState } from "react";
 import "../../css/footer/footer.css";
 
 export default function Footer({ showIcons = true }) {
+  const [showHiddenLanguages, setShowHiddenLanguages] = useState(false);
   return (
     <div className="footer" id="footer">
       <div className="footer-social-media-icons">
@@ -10,7 +11,12 @@ export default function Footer({ showIcons = true }) {
       </div>
       {showIcons && (
         <div className="footer-languages">
-          <ul>
+          <ul onClick={() => setShowHiddenLanguages(!showHiddenLanguages)}>
+            {showHiddenLanguages && (
+              <li className = "hidden-languages">
+                <p>Հայերեն</p>
+              </li>
+            )}
             <li>
               <img
                 src="../images/language.png"

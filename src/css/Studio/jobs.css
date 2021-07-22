@@ -90,12 +90,6 @@
     font-size: 20px;
     line-height: 18px;
   }
-  .footer-languages {
-    display: block;
-    border-left: 1px solid #5e5e5e;
-    margin-left: 2.06vw !important;
-    padding-left: 2.06vw;
-  }
 }
 
 @media (max-width: 425px) {
@@ -126,12 +120,5 @@
     font-weight: 400;
     font-size: 20px;
     line-height: 18px;
-  }
-  .footer {
-    padding: 0 4vw 3vh 4.2vw !important;
-  }
-  .footer-languages {
-    display: block;
-    border-left: 1px solid #5e5e5e;
   }
 }

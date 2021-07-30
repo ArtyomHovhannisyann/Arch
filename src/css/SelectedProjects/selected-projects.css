@@ -100,6 +100,15 @@
   .selected-projects-header {
     padding: 28px 36px 42px 36px;
   }
+  .menu-black-icon {
+    background-image: url("../../images/menu-black-icon.png") !important;
+  }
+  .header-logo h3 {
+    color: #434b62 !important;
+  }
+  .selected-projects-content {
+    padding-top: 137px;
+  }
   .projects {
     padding: 0 5vw;
   }
@@ -122,6 +131,9 @@
   .menu-black-icon {
     width: 30px;
     height: 19.25px;
+  }
+  .selected-projects-content {
+    padding-top: 115px;
   }
   .projects {
     justify-content: center;

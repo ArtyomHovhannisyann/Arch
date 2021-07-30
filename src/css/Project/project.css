@@ -100,6 +100,12 @@
   .project-header {
     padding: 44px 36px 0 36px;
   }
+  .menu-icon{
+    background-image: url("../../images/menu-icon.png") !important;
+  }
+  .header-logo h3{
+    color: #fff !important;
+  }
   .project-left-bar {
     width: 100%;
   }

@@ -13,7 +13,7 @@ export default function Contact() {
       {showMenu && <Menu closeMenu={setShowMenu} />}
       <div className="studio-contact-header">
         <div
-          className="menu-black-icon contact-menu-icon"
+          className="menu-icon menu-black-icon contact-menu-icon"
           onClick={() => setShowMenu(!showMenu)}
         ></div>
         <div className="header-logo contact-header-logo black-logo">
@@ -21,7 +21,6 @@ export default function Contact() {
         </div>
       </div>
       <div className="studio-contact-content">
-        <h3 className="studio-page-name studio-contact-page">Studio-Contact</h3>
         <div className="studio-contact-left-bar"></div>
         <div className="studio-contact-right-bar">
           <span className="contact-info-header">Anarch Kedem Architect</span>

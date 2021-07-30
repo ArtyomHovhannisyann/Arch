@@ -197,7 +197,6 @@ export default function Project({ history, match }) {
     top: 0,
     behavior: "smooth",
   });
-  console.log(projects);
 
   return (
     <div className={`project-page ${showMenu ? "project-header-hide" : ""}`}>

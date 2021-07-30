@@ -106,7 +106,6 @@
   .project-image-name {
     display: flex;
     flex-direction: column;
-    padding-top: 106px;
   }
   .project-name h3 {
     font-family: Aharoni;
@@ -156,9 +155,6 @@
     padding-top: 60px;
   }
   .project-content-about {
-    display: none;
-  }
-  .project-left-bar {
     display: none;
   }
   .black-logo h3 {

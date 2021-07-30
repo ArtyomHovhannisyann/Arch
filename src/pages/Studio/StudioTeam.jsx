@@ -35,7 +35,7 @@ export default function StudioTeam() {
     },
   ]);
   return (
-    <div className={("studio-team", showMenu ? "studio-team-hide" : "")}>
+    <div className={`studio-team ${showMenu ? "studio-team-hide" : ""}`}>
       {showMenu && <Menu closeMenu={setShowMenu} />}
       <Header setShowMenu = {setShowMenu}/>
       <div className="studio-team-content">

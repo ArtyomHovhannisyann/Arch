@@ -65,17 +65,21 @@
   .studio-jobs-page {
     display: block;
   }
+  .menu-icon {
+    background-image: url("../../images/menu-icon.png") !important;
+  }
+  .header-logo h3 {
+    color: #fff;
+  }
   .studio-jobs-content {
     display: grid;
     grid-template-columns: 1fr !important;
-    padding-top: 91px;
   }
   .studio-page-name {
     padding: 20px 0 25px 36px;
   }
   .studio-jobs-left-bar {
-    height: 805px;
-    margin-top: 30px;
+    height: 956px;
   }
   .studio-jobs-right-bar {
     padding: 25px 36px 0 36px;
@@ -96,12 +100,15 @@
   .studio-jobs-header {
     padding: 33px 22px 19px 30px;
   }
+  .menu-black-icon {
+    background-image: url("../../images/menu-black-icon.png") !important;
+  }
+  .header-logo h3 {
+    color: #434B62;
+  }
   .black-logo h3 {
     font-size: 35px !important;
     line-height: 44px !important;
-  }
-  .studio-jobs-content {
-    padding-top: 96px;
   }
 
   .studio-jobs-left-bar {

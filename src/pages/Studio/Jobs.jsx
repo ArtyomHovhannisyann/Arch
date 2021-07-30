@@ -13,7 +13,6 @@ export default function Jobs() {
       {showMenu && <Menu closeMenu={setShowMenu} />}
      <Header setShowMenu = {setShowMenu}/>
       <div className="studio-jobs-content">
-        <h3 className="studio-page-name studio-jobs-page">Studio-Job</h3>
         <div className="studio-jobs-left-bar"></div>
         <div className="studio-jobs-right-bar">
           <h3>Jobs</h3>

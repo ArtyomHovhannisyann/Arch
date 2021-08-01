@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 
 import "react-awesome-slider/dist/styles.css";
 import "../../css/Home/home.css";
@@ -6,23 +6,27 @@ import "../../css/Home/home.css";
 import AwesomeSlider from "react-awesome-slider";
 import withAutoplay from "react-awesome-slider/dist/autoplay";
 import Menu from "./Menu";
+import { getHomePagePictures } from "../../lib/requests";
+import { generalUrl } from "../../lib/constants";
 
 export default function HomePage() {
   const AutoplaySlider = withAutoplay(AwesomeSlider);
   const [showMenu, setShowMenu] = useState(false);
+  const [sliderItems, setSliderItems] = useState([]);
 
-
+  useEffect(() => {
+    getHomePagePictures((data) => {
+      setSliderItems(data);
+    });
+  }, []);
+  console.log(sliderItems);
   return (
     <div className="home-page">
       {showMenu && <Menu closeMenu={setShowMenu} />}
       <div className="home-header">
         <div className="menu-icon" onClick={() => setShowMenu(!showMenu)}></div>
         <div className="header-logo home-header-logo">
-          <h3
-            className="header-logo-text"
-          >
-            Anarch
-          </h3>
+          <h3 className="header-logo-text">Anarch</h3>
         </div>
       </div>
       <AutoplaySlider
@@ -32,18 +36,11 @@ export default function HomePage() {
         fillParent={true}
         organicArrows={false}
         mobileTouch={true}
-        media={[
-          {
-            source: "../images/house1.png",
-          },
-          {
-            source: "../images/house2.png",
-          },
-          {
-            source: "../images/house3.png",
-          },
-        ]}
-      />
+      >
+        {sliderItems.map((el, i) => {
+          return <div style ={{backgroundImage:`url(${generalUrl}/${el.path})`, backgroundSize:"cover", backgroundRepeat:"no-repeat"}} key = {i}/>;
+        })}
+      </AutoplaySlider>
     </div>
   );
 }

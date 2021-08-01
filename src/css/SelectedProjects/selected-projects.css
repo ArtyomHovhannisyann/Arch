@@ -131,6 +131,7 @@
   .menu-black-icon {
     width: 30px;
     height: 19.25px;
+    background-image: url("../../images/menu-black-icon.png") !important;
   }
   .selected-projects-content {
     padding-top: 115px;

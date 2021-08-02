@@ -18,6 +18,7 @@ import {
   SET_VIDEOS,
   GET_PROJECTS,
   GET_JOBS,
+  GET_CONTACT,
 } from "./constants";
 
 export async function getHomePagePictures(callBack) {
@@ -83,6 +84,21 @@ export async function getStudioMembers(callBack) {
 export async function getJobs(callBack) {
   const info = {
     url: GET_JOBS,
+    method: "GET",
+    headers: {
+      token: document.cookie,
+    },
+  };
+  try {
+    let teamItems = await request(info);
+    callBack(teamItems.data.data);
+  } catch (err) {
+    console.error(err);
+  }
+}
+export async function getContacts(callBack) {
+  const info = {
+    url: GET_CONTACT,
     method: "GET",
     headers: {
       token: document.cookie,

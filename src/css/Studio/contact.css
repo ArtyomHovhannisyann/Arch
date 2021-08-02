@@ -23,7 +23,6 @@
   display: none;
 }
 .studio-contact-left-bar {
-  background-image: url("../../images/contact.png");
   background-size: cover;
   height: 990px;
 }
@@ -32,6 +31,9 @@
   flex-direction: column;
   justify-content: center;
   padding: 0 140px 0 92px;
+}
+.contact-address{
+  width: 12vw;
 }
 .contact-header-logo {
   text-align: right;
@@ -94,6 +96,9 @@
   .studio-contact-right-bar a {
     font-size: 18px;
     line-height: 18px;
+  }
+  .contact-address{
+    width: 270px;
   }
 }
 @media (max-width: 425px) {

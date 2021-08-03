@@ -1,5 +1,4 @@
-import React, { useState } from "react";
-import { useEffect } from "react/cjs/react.production.min";
+import React, { useState, useEffect } from "react";
 import SelectedProjects from "../../components/SelectedProjects/SelectedProjects";
 import { getProjects } from "../../lib/requests";
 

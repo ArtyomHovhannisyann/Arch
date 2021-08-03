@@ -6,6 +6,7 @@ import Header from "../../components/Header/Header";
 import "../../css/Studio/team.css";
 import { generalUrl } from "../../lib/constants";
 import { getStudioMembers, getStudioTeam } from "../../lib/requests";
+import { useTranslation } from 'react-i18next';
 
 import Menu from "../Home/Menu";
 
@@ -13,6 +14,9 @@ export default function StudioTeam() {
   const [showMenu, setShowMenu] = useState(false);
   const [teamInfo,setTeamInfo] = useState([])
   const [teamMembers, setTeamMembers] = useState([]);
+
+  const { t, i18n } = useTranslation();
+
   useEffect(() => {
     getStudioTeam((data)=>{
       setTeamInfo(data)
@@ -28,12 +32,12 @@ export default function StudioTeam() {
       <Header setShowMenu={setShowMenu} />
       <div className="studio-team-content">
         <h3 className="page-name studio-team-page-name">
-          Studio
-          <span className="page-name-bold-text"> - Team</span>
+          {t("Studio")}
+          <span className="page-name-bold-text"> - {t("Team")}</span>
         </h3>
 
         <div className="studio-team-img">
-          <img src={teamInfo.length > 0 && `${generalUrl}/${teamInfo[0].image}`} alt="team" />
+          <img src={teamInfo.length > 0 ? `${generalUrl}/${teamInfo[0].image}` : ``} alt="team" />
         </div>
         <div className="studio-about-team">
           <p className="studio-team-info">

@@ -6,3 +6,4 @@ export const GET_MEMBERS = `${generalUrl}/api/data/members`;
 export const GET_JOBS = `${generalUrl}/api/data/jobs`;
 export const GET_CONTACT = `${generalUrl}/api/data/contacts`;
 export const GET_PROJECTS = (type,category)=>`${generalUrl}/api/data/projects?type=${type}&category=${category}`
+export const GET_PROJECT_BY_ID = (id)=>`${generalUrl}/api/data/projects/${id}`

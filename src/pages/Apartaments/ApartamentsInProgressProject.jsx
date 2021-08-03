@@ -1,5 +1,4 @@
-import React, { useState } from "react";
-import { useEffect } from "react/cjs/react.production.min";
+import React, { useState,useEffect } from "react";
 import InProgressProjects from "../../components/InProgressProjects/InProgressProjects";
 import { getProjects } from "../../lib/requests";
 
@@ -14,7 +13,7 @@ export default function ApartamentsInProgressProject({ history }) {
       (data) => {
         setProjects(data);
       },
-      1,
+      2,
       1
     );
   }, []);

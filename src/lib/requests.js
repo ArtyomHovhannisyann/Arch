@@ -19,6 +19,7 @@ import {
   GET_PROJECTS,
   GET_JOBS,
   GET_CONTACT,
+  GET_PROJECT_BY_ID,
 } from "./constants";
 
 export async function getHomePagePictures(callBack) {
@@ -107,6 +108,21 @@ export async function getContacts(callBack) {
   try {
     let teamItems = await request(info);
     callBack(teamItems.data.data);
+  } catch (err) {
+    console.error(err);
+  }
+}
+export async function getProjectById(callBack,id) {
+  const info = {
+    url: GET_PROJECT_BY_ID(id),
+    method: "GET",
+    headers: {
+      token: document.cookie,
+    },
+  };
+  try {
+    const res = await request(info);
+    callBack(res.data.data);
   } catch (err) {
     console.error(err);
   }

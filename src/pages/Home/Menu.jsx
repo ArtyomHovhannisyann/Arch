@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { useTranslation } from "react-i18next";
 import { Link } from "react-router-dom";
 
 export default function Menu({ closeMenu }) {
@@ -73,17 +74,21 @@ export default function Menu({ closeMenu }) {
       },
     ],
   ];
-  const [isEngActive, setIsEngActive] = useState(true);
-  const [isArmActive, setIsArmActive] = useState(false);
-  function setActiveClass(e) {
-    if (e.target.innerHTML == "English") {
+  const { t, i18n } = useTranslation(`common`);
+  const [isEngActive, setIsEngActive] = useState(i18n.language === `en`);
+  const [isArmActive, setIsArmActive] = useState(i18n.language === `am`);
+
+  function changeLang(lang) {
+    if ( lang === `en` ) {
       setIsArmActive(false);
       setIsEngActive(true);
     } else {
       setIsArmActive(true);
       setIsEngActive(false);
     }
+    i18n.changeLanguage(lang);
   }
+
   return (
     <div className="menu">
       <div className="menu-header">
@@ -148,13 +153,13 @@ export default function Menu({ closeMenu }) {
           <div className="menu-footer-languages">
             <p
               className={`${isEngActive ? "active-language" : ""}`}
-              onClick={setActiveClass}
+              onClick={()=>changeLang(`en`)}
             >
               English
             </p>
             <p
               className={`${isArmActive ? "active-language" : ""}`}
-              onClick={setActiveClass}
+              onClick={()=>changeLang(`am`)}
             >
               Հայերեն
             </p>

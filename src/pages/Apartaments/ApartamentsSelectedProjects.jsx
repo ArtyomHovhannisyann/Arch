@@ -14,7 +14,7 @@ export default function ApartamentsSelectedProjects({ history }) {
       (data) => {
         setProjects(data);
       },
-      1,
+      2,
       1
     );
   }, []);

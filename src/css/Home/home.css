@@ -149,8 +149,11 @@
   .menu-header {
     padding: 40px 30px !important;
   }
-  .menu-icon {
-    background-image: url("../../images/menu-icon.png");
+  .home-page .menu-icon {
+    background-image: url("../../images/menu-icon.png") !important;
+  }
+  .home-page .header-logo h3{
+    color: #fff !important;
   }
   .menu-logo h3 {
     font-size: 35px !important;

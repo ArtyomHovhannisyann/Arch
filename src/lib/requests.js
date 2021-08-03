@@ -111,9 +111,9 @@ export async function getContacts(callBack) {
     console.error(err);
   }
 }
-export async function getApartamentsSelectedProjects(callBack) {
+export async function getProjects(callBack,type,category) {
   const info = {
-    url: GET_PROJECTS(1, 1),
+    url: GET_PROJECTS(type, category),
     method: "GET",
     headers: {
       token: document.cookie,
@@ -121,112 +121,7 @@ export async function getApartamentsSelectedProjects(callBack) {
   };
   try {
     const res = await request(info);
-    callBack(res);
-  } catch (err) {
-    console.error(err);
-  }
-}
-export async function getApartamentsInProgressProjects(callBack) {
-  const info = {
-    url: GET_PROJECTS(2, 1),
-    method: "GET",
-    headers: {
-      token: document.cookie,
-    },
-  };
-  try {
-    const res = await request(info);
-    callBack(res);
-  } catch (err) {
-    console.error(err);
-  }
-}
-export async function getHousesSelectedProjects(callBack) {
-  const info = {
-    url: GET_PROJECTS(1, 2),
-    method: "GET",
-    headers: {
-      token: document.cookie,
-    },
-  };
-  try {
-    const res = await request(info);
-    callBack(res);
-  } catch (err) {
-    console.error(err);
-  }
-}
-export async function getHousesInProgressProjects(callBack) {
-  const info = {
-    url: GET_PROJECTS(2, 2),
-    method: "GET",
-    headers: {
-      token: document.cookie,
-    },
-  };
-  try {
-    const res = await request(info);
-    callBack(res);
-  } catch (err) {
-    console.error(err);
-  }
-}
-export async function getResidentialSelectedProjects(callBack) {
-  const info = {
-    url: GET_PROJECTS(1, 3),
-    method: "GET",
-    headers: {
-      token: document.cookie,
-    },
-  };
-  try {
-    const res = await request(info);
-    callBack(res);
-  } catch (err) {
-    console.error(err);
-  }
-}
-export async function getResidentialInProgressProjects(callBack) {
-  const info = {
-    url: GET_PROJECTS(2, 3),
-    method: "GET",
-    headers: {
-      token: document.cookie,
-    },
-  };
-  try {
-    const res = await request(info);
-    callBack(res);
-  } catch (err) {
-    console.error(err);
-  }
-}
-export async function getLandscapeSelectedProjects(callBack) {
-  const info = {
-    url: GET_PROJECTS(1, 4),
-    method: "GET",
-    headers: {
-      token: document.cookie,
-    },
-  };
-  try {
-    const res = await request(info);
-    callBack(res);
-  } catch (err) {
-    console.error(err);
-  }
-}
-export async function getLandscapeInProgressProjects(callBack) {
-  const info = {
-    url: GET_PROJECTS(2, 4),
-    method: "GET",
-    headers: {
-      token: document.cookie,
-    },
-  };
-  try {
-    const res = await request(info);
-    callBack(res);
+    callBack(res.data.data);
   } catch (err) {
     console.error(err);
   }

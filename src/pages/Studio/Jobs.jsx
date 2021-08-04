@@ -11,15 +11,10 @@ import Menu from "../Home/Menu";
 export default function Jobs() {
   const [showMenu, setShowMenu] = useState(false);
   const [ config, setConfig ] = useState({});
-  const [title, setTitle] = useState("");
-  const [description, setDescription] = useState("");
   const { t, i18n } = useTranslation();
   useEffect(() => {
     getJobs((data) => {
-      console.log(data[0]);
       setConfig(data[0]);
-      // data.length > 0 && setTitle(data[0].title);
-      // data.length > 0 && setDescription(data[0].description);
     });
   }, []);
   return (

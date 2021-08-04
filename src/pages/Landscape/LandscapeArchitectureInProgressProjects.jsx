@@ -20,7 +20,7 @@ export default function LandscapeArchitectureInProgressProjects({ history }) {
     items: projects,
   };
   return (
-    <div className="landscape-architecture-in-progress-projects">
+    <div className="landscape-architecture-in-progress-projects projects">
       <InProgressProjects pageInfo={pageInfo} history={history} />
     </div>
   );

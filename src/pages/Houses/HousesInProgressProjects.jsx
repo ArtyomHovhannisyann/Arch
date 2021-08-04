@@ -21,7 +21,7 @@ export default function HousesInProgressProjects({ history }) {
     );
   }, []);
   return (
-    <div className="houses-in-progress-projects">
+    <div className="houses-in-progress-projects projects">
       <InProgressProjects pageInfo={pageInfo} history={history} />
     </div>
   );

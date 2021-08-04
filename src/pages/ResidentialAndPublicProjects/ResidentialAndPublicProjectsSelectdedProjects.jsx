@@ -22,7 +22,7 @@ export default function ResidentialAndPublicProjectsSelectdedProjects({
     items: projects,
   };
   return (
-    <div className="residential-and-public-projects-selected-projects">
+    <div className="residential-and-public-projects-selected-projects projects">
       <SelectedProjects pageInfo={pageInfo} history={history} />
     </div>
   );

@@ -21,7 +21,7 @@ export default function ApartamentsSelectedProjects({ history }) {
     );
   }, []);
   return (
-    <div className="apartaments-selected-projects">
+    <div className="apartaments-selected-projects projects">
       <SelectedProjects pageInfo={pageInfo} history={history} />
     </div>
   );

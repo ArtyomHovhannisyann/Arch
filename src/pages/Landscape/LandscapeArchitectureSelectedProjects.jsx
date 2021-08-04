@@ -21,7 +21,7 @@ export default function LandscapeArchitectureSelectedProjects({ history }) {
     items: projects,
   };
   return (
-    <div className="landscape-architecture-selected-projects">
+    <div className="landscape-architecture-selected-projects projects">
       <SelectedProjects pageInfo={pageInfo} history={history} />
     </div>
   );

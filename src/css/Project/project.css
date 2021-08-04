@@ -17,7 +17,8 @@
 }
 .project-left-bar img {
   width: 50vw;
-  height: 987px;
+  height: 101vh;
+  object-fit: cover;
 }
 .project-image-name {
   display: flex;
@@ -40,7 +41,7 @@
   color: #000;
 }
 .project-name h3 {
-  font-family: var( --bac-font );
+  font-family: var(--bac-font);
   font-weight: 400;
   font-size: 48px;
   line-height: 54px;
@@ -53,7 +54,7 @@
   padding: 56px 172px;
 }
 .project-content-location {
-  font-family: var( --bac-font );
+  font-family: var(--bac-font);
   font-size: var(--font-size);
   line-height: 22px;
 }
@@ -94,22 +95,22 @@
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  height:779px;
+  height: 779px;
 }
 @media (max-width: 880px) {
   .project-header {
     padding: 44px 36px 0 36px;
   }
-  .menu-black-icon{
+  .menu-black-icon {
     background-image: url("../../images/menu-black-icon.png") !important;
   }
-  .header-logo h3{
+  .header-logo h3 {
     color: #000 !important;
   }
-  .project-page .menu-icon{
+  .project-page .menu-icon {
     background-image: url("../../images/menu-icon.png") !important;
   }
-  .project-page .header-logo h3{
+  .project-page .header-logo h3 {
     color: #fff !important;
   }
   .project-left-bar {

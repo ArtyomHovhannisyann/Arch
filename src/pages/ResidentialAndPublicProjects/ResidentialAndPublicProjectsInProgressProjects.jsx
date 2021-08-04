@@ -22,7 +22,7 @@ export default function ResidentialAndPublicProjectsInProgressProjects({
     );
   }, []);
   return (
-    <div className="residential-and-public-in-progress-projects">
+    <div className="residential-and-public-in-progress-projects projects">
       <InProgressProjects pageInfo={pageInfo} history={history} />
     </div>
   );

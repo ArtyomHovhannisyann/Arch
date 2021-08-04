@@ -20,7 +20,7 @@ export default function HousesSelectedProjects({ history }) {
     );
   }, []);
   return (
-    <div className="houses-selected-projects">
+    <div className="houses-selected-projects projects">
       <SelectedProjects pageInfo={pageInfo} history={history} />
     </div>
   );

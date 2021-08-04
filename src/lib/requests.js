@@ -9,13 +9,6 @@ import {
   GET_PICTURES,
   GET_TEAM,
   GET_VIDEOS,
-  RESET_PASSWORD,
-  RESET_PASSWORD_CODE,
-  RESET_PASSWORD_SEND_PASSWORD,
-  SEND_LOG_IN,
-  SET_PICTURE,
-  SET_TEAM,
-  SET_VIDEOS,
   GET_PROJECTS,
   GET_JOBS,
   GET_CONTACT,
@@ -112,7 +105,7 @@ export async function getContacts(callBack) {
     console.error(err);
   }
 }
-export async function getProjectById(callBack,id) {
+export async function getProjectById(callBack, id) {
   const info = {
     url: GET_PROJECT_BY_ID(id),
     method: "GET",
@@ -127,7 +120,7 @@ export async function getProjectById(callBack,id) {
     console.error(err);
   }
 }
-export async function getProjects(callBack,type,category) {
+export async function getProjects(callBack, type, category) {
   const info = {
     url: GET_PROJECTS(type, category),
     method: "GET",

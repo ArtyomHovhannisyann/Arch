@@ -19,7 +19,7 @@ export default function StudioTeam() {
 
   useEffect(() => {
     getStudioTeam((data)=>{
-      setTeamInfo(data)
+      // i18n.language == "am" setTeamInfo(data) ? :
     })
     getStudioMembers((data)=>{
       setTeamMembers(data)

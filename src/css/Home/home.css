@@ -142,7 +142,7 @@
 .instagram-icon {
   margin-left: 10px;
 }
-@media (max-width: 768px) {
+@media (max-width: 990px) {
   .home-header {
     padding: 30px 40px !important;
   }

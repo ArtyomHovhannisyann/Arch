@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import { useTranslation } from "react-i18next";
 import SelectedProjects from "../../components/SelectedProjects/SelectedProjects";
 import { getProjects } from "../../lib/requests";
 
@@ -6,6 +7,7 @@ export default function ResidentialAndPublicProjectsSelectdedProjects({
   history,
 }) {
   const [projects, setProjects] = useState([]);
+  const { t, i18n } = useTranslation();
   useEffect(() => {
     getProjects(
       (data) => {
@@ -16,7 +18,7 @@ export default function ResidentialAndPublicProjectsSelectdedProjects({
     );
   }, []);
   const pageInfo = {
-    pageName: "Residential and Public Projects",
+    pageName: t("Residential-and-Public-Projects"),
     items: projects,
   };
   return (

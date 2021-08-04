@@ -6,9 +6,12 @@ import "../../css/SelectedProjects/selected-projects.css";
 import Footer from "../Footer/Footer";
 import Header from "../Header/Header";
 import { generalUrl } from "../../lib/constants";
+import { useTranslation } from "react-i18next";
 
 export default function SelectedProjects({ pageInfo, history }) {
   const [showMenu, setShowMenu] = useState(false);
+  const { t, i18n } = useTranslation();
+
   return (
     <div
       className={`selected-projects ${
@@ -20,21 +23,31 @@ export default function SelectedProjects({ pageInfo, history }) {
       <div className="selected-projects-content">
         <h3 className="page-name">
           {pageInfo.pageName}
-          <span className="page-name-bold-text"> - Selected-Projects</span>
+          <span className="page-name-bold-text">
+            - {t("Selected-Projects")}
+          </span>
         </h3>
         <div className="projects">
-          {pageInfo.items.projects && pageInfo.items.projects.map((project, i) => {
-            return (
-              <div
-                className="project"
-                key={i}
-                onClick={() => history.push(`/project/${project.id}`)}
-              >
-                <img src={project.photos[0] ? `${generalUrl}/${project.photos[0].path}` : ""} alt="selected" />
-                <p>{project.projectTitle}</p>
-              </div>
-            );
-          })}
+          {pageInfo.items.projects &&
+            pageInfo.items.projects.map((project, i) => {
+              return (
+                <div
+                  className="project"
+                  key={i}
+                  onClick={() => history.push(`/project/${project.id}`)}
+                >
+                  <img
+                    src={
+                      project.photos[0]
+                        ? `${generalUrl}/${project.photos[0].path}`
+                        : ""
+                    }
+                    alt="selected"
+                  />
+                  <p>{project.projectTitle}</p>
+                </div>
+              );
+            })}
         </div>
       </div>
       <Footer />

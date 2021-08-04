@@ -94,7 +94,7 @@
   color: #434b62;
 }
 .menu-pageheader {
-  font-family: Aharoni;
+  font-family: var(--bold-font);
   font-weight: bold;
   font-size: 20px;
   line-height: 20px;
@@ -104,9 +104,9 @@
   display: flex;
 }
 .pages dd {
-  font-family: Browallia New;
+  font-family: var( --bac-font );
   font-weight: normal;
-  font-size: 25px;
+  font-size: var(--font-size);
   line-height: 28px;
   color: #000;
 }
@@ -118,7 +118,7 @@
   margin: auto;
 }
 .menu-footer-languages p {
-  font-family: Arial;
+  font-family: var(--bac-font);
   font-weight: normal;
   font-size: 12px;
   line-height: 14px;
@@ -127,7 +127,7 @@
   cursor: pointer;
 }
 .active-language {
-  font-family: Browallia New !important;
+  font-family: var( --bold-font ) !important;
   font-weight: bold !important;
   font-size: 20px !important;
   line-height: 23px !important;

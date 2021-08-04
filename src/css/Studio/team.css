@@ -27,7 +27,7 @@
   width: 27.5vw;
 }
 .studio-team-description {
-  font-family: Browallia New;
+  font-family: var( --bac-font );
   font-size: 24px;
   font-style: normal;
   font-weight: 400;
@@ -80,7 +80,7 @@
   color: #ffffff;
 }
 .member-info {
-  font-family: Browallia New;
+  font-family: var( --bac-font );
   font-style: normal;
   font-weight: normal;
   font-size: 24px;

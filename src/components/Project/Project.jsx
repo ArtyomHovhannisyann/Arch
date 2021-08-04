@@ -6,11 +6,13 @@ import Header from "../Header/Header";
 import { useEffect } from "react";
 import { getProjectById } from "../../lib/requests";
 import { generalUrl } from "../../lib/constants";
+import { useTranslation } from "react-i18next";
 
 export default function Project({ history, match }) {
   const id = match.params.id;
   const [showMenu, setShowMenu] = useState(false);
   const [project, setProject] = useState([]);
+  const { t, i18n } = useTranslation();
   window.scroll({
     top: 0,
     behavior: "smooth",
@@ -41,16 +43,16 @@ export default function Project({ history, match }) {
       </div>
       <div className="project-content">
         <div className="project-content-location">
-          <span className="project-info-header">Location</span>:
+          <span className="project-info-header">{t("Location")}</span>:
           {project.location} <br />
-          <span className="project-info-header">Total floor area</span>:
+          <span className="project-info-header">{t("Total-floor-area")}</span>:
           {project["total-floor-area"]}
           <br />
-          <span className="project-info-header">Total site area</span>:
+          <span className="project-info-header">{t("Total-site-area")}</span>:
           {project["total-site-area"]}
           <br />
           <span className="project-info-header">
-            Design and built: {project.program}
+            {t("Design-and-built")} {project.program}
           </span>
         </div>
         <div className="project-content-about">

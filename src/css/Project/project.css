@@ -40,7 +40,7 @@
   color: #000;
 }
 .project-name h3 {
-  font-family: Browallia New;
+  font-family: var( --bac-font );
   font-weight: 400;
   font-size: 48px;
   line-height: 54px;
@@ -53,8 +53,8 @@
   padding: 56px 172px;
 }
 .project-content-location {
-  font-family: Browallia New;
-  font-size: 24px;
+  font-family: var( --bac-font );
+  font-size: var(--font-size);
   line-height: 22px;
 }
 .project-content-about {

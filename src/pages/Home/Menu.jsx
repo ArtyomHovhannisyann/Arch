@@ -3,78 +3,78 @@ import { useTranslation } from "react-i18next";
 import { Link } from "react-router-dom";
 
 export default function Menu({ closeMenu }) {
+  const { t, i18n } = useTranslation();
   let pages = [
     [
       {
-        pageHeader: "Studio",
+        pageHeader: t("Studio"),
       },
       {
-        pageName: "Team",
+        pageName: t("Team"),
         path: "/studio/team",
       },
       {
-        pageName: "Jobs",
+        pageName: t("Jobs"),
         path: "/studio/jobs",
       },
       {
-        pageName: "Contact",
+        pageName: t("Contact"),
         path: "/studio/contact",
       },
     ],
     [
       {
-        pageHeader: "Apartments",
+        pageHeader: t("Apartaments"),
       },
       {
-        pageName: "Selected Projects",
+        pageName: t("Selected-Projects"),
         path: "/apartaments/selected-projects",
       },
       {
-        pageName: "In Progress",
+        pageName: t("In-Progress"),
         path: "/apartaments/in-progress-projects",
       },
     ],
     [
       {
-        pageHeader: "Houses",
+        pageHeader: t("Houses"),
       },
       {
-        pageName: "Selected Projects",
+        pageName: t("Selected-Projects"),
         path: "/houses/selected-projects",
       },
       {
-        pageName: "In Progress",
+        pageName: t("In-Progress"),
         path: "/houses/in-progress-projects",
       },
     ],
     [
       {
-        pageHeader: "Residential and Public Projects",
+        pageHeader: t("Residential-and-Public-Projects"),
       },
       {
-        pageName: "Selected Projects",
+        pageName: t("Selected-Projects"),
         path: "/residential-and-public-projects/selected-projects",
       },
       {
-        pageName: "In Progress",
+        pageName: t("In-Progress"),
         path: "/residential-and-public-projects/in-progress-projects",
       },
     ],
     [
       {
-        pageHeader: "Landscape Architecture",
+        pageHeader: t("Landscape-Architecture"),
       },
       {
-        pageName: "Selected Projects",
+        pageName: t("Selected-Projects"),
         path: "/landscape/selected-projects",
       },
       {
-        pageName: "In Progress",
+        pageName: t("In-Progress"),
         path: "/landscape/in-progress-projects",
       },
     ],
   ];
-  const { t, i18n } = useTranslation(`common`);
   const [isEngActive, setIsEngActive] = useState(i18n.language === `en`);
   const [isArmActive, setIsArmActive] = useState(i18n.language === `am`);
 

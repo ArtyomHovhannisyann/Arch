@@ -22,7 +22,7 @@
 }
 .footer-languages ul li p {
   margin-left: 0.5vw;
-  font-family: Browallia New;
+  font-family: var( --bac-font );
   font-weight: bold;
   font-size: 20px;
   line-height: 23px;

@@ -24,8 +24,8 @@ export default function Jobs() {
       <div className="studio-jobs-content">
         <div className="studio-jobs-left-bar"></div>
         <div className="studio-jobs-right-bar">
-          <h3>{title && title}</h3>
-          <p>{description && description}</p>
+          <h3>{title}</h3>
+          <p>{description}</p>
         </div>
       </div>
       <Footer showIcons={false} />

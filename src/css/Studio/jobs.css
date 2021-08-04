@@ -43,7 +43,7 @@
   letter-spacing: 0.02em;
 }
 .studio-jobs-right-bar p {
-  font-family: Browallia New;
+  font-family: var( --bac-font );
   font-weight: 600;
   font-size: 18px;
   line-height: 24px;

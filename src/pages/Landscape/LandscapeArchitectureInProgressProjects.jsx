@@ -1,9 +1,11 @@
 import React, { useState, useEffect } from "react";
+import { useTranslation } from "react-i18next";
 import InProgressProjects from "../../components/InProgressProjects/InProgressProjects";
 import { getProjects } from "../../lib/requests";
 
 export default function LandscapeArchitectureInProgressProjects({ history }) {
   const [projects, setProjects] = useState([]);
+  const { t, i18n } = useTranslation();
   useEffect(() => {
     getProjects(
       (data) => {
@@ -14,7 +16,7 @@ export default function LandscapeArchitectureInProgressProjects({ history }) {
     );
   }, []);
   const pageInfo = {
-    pageName: "Landscape Architecture",
+    pageName: t("Landscape-Architecture"),
     items: projects,
   };
   return (

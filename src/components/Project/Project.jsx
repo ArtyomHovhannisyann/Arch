@@ -38,7 +38,7 @@ export default function Project({ history, match }) {
         </div>
         <div className="project-name">
           <a href="#footer">
-            <h3>{project.title}</h3>
+            <h3>{i18n.language == "am" ? project.title_hy : project.title}</h3>
             <img src="../images/down.png" alt="" />
           </a>
         </div>
@@ -58,13 +58,13 @@ export default function Project({ history, match }) {
             ? project["design-and-built_hy"]
             : project["design-and-built"]}
           <br />
-          <span className="project-info-header">{t("Design-team")}</span>
+          <span className="project-info-header">{t("Design-team")}:</span>
           {i18n.language == "am"
             ? project["design-team_hy"]
             : project["design-team"]}
         </div>
         <div className="project-content-about">
-          <p>{project.description}</p>
+          <p>{i18n.language == "am" ? project.description_hy : project.description}</p>
         </div>
       </div>
       <div className="project-images">

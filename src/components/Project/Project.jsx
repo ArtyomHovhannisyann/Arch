@@ -30,7 +30,9 @@ export default function Project({ history, match }) {
       <div className="project-image-name  ">
         <div className="project-left-bar">
           <img
-            src={project.photos ? `${generalUrl}/${project.photos[0].path}` : ""}
+            src={
+              project.photos ? `${generalUrl}/${project.photos[0].path}` : ""
+            }
             alt=""
           />
         </div>
@@ -44,16 +46,22 @@ export default function Project({ history, match }) {
       <div className="project-content">
         <div className="project-content-location">
           <span className="project-info-header">{t("Location")}</span>:
-          {project.location} <br />
+          {i18n.language == "am" ? project.location_hy : project.location}
+          <br />
           <span className="project-info-header">{t("Total-floor-area")}</span>:
-          {project["total-floor-area"]}
+          {i18n.language == "am"
+            ? project["total-floor-area_hy"]
+            : project["total-floor-area_hy"]}
           <br />
-          <span className="project-info-header">{t("Total-site-area")}</span>:
-          {project["total-site-area"]}
+          <span className="project-info-header">{t("Design-and-built")}</span>:
+          {i18n.language == "am"
+            ? project["design-and-built_hy"]
+            : project["design-and-built"]}
           <br />
-          <span className="project-info-header">
-            {t("Design-and-built")} {project.program}
-          </span>
+          <span className="project-info-header">{t("Design-team")}</span>
+          {i18n.language == "am"
+            ? project["design-team_hy"]
+            : project["design-team"]}
         </div>
         <div className="project-content-about">
           <p>{project.description}</p>

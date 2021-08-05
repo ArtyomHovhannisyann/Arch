@@ -10,6 +10,12 @@
     opacity: 1;
   }
 }
+.projects>div{
+  min-height: 100vh;
+  min-width: 100%;
+  display: flex;
+  flex-direction: column;
+}
 .selected-projects-header {
   display: flex;
   justify-content: space-between;
@@ -23,7 +29,7 @@
 .selected-projects-content {
   padding-top: 101px;
 }
-.projects {
+.projects-container {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
@@ -42,7 +48,7 @@
 }
 .page-name {
   padding: 0 0 24px 140px;
-  font-family: var( --bac-font );
+  font-family: var(--bac-font);
   font-weight: 400;
   font-size: 22px;
   line-height: 24.85px;
@@ -78,7 +84,7 @@
   opacity: 0.8;
 }
 .project p {
-  font-family: var( --bac-font );
+  font-family: var(--bac-font);
   font-size: 24px;
   line-height: 24px;
   letter-spacing: 0.02em;

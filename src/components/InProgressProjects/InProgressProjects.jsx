@@ -23,7 +23,7 @@ export default function InProgressProjects({ pageInfo, history }) {
           {pageInfo.pageName}
           <span className="page-name-bold-text"> - {t("In-Progress")}</span>
         </h3>
-        <div className="projects">
+        <div className="projects-container">
           {pageInfo.items.projects &&
             pageInfo.items.projects.map((project, i) => {
               return (

@@ -94,9 +94,7 @@
   padding: 132px 0 44px 0;
 }
 .projects .footer{
-  position: absolute;
-  bottom: 0;
-  left: 50%;
+  flex: 1 1 auto;
 }
 .footer-social-media-icons img:not(:first-child) {
   margin-left: 1vw;

@@ -27,7 +27,7 @@ export default function SelectedProjects({ pageInfo, history }) {
             - {t("Selected-Projects")}
           </span>
         </h3>
-        <div className="projects">
+        <div className="projects-container">
           {pageInfo.items.projects &&
             pageInfo.items.projects.map((project, i) => {
               return (

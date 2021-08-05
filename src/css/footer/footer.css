@@ -1,6 +1,7 @@
 .footer-social-media-icons {
   cursor: pointer;
   padding-right: 20px;
+  align-self: flex-end;
 }
 .footer-social-media-icons a:not(:last-child){
   margin-right: 20px;

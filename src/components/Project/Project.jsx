@@ -51,7 +51,7 @@ export default function Project({ history, match }) {
           <span className="project-info-header">{t("Total-floor-area")}</span>:
           {i18n.language == "am"
             ? project["total-floor-area_hy"]
-            : project["total-floor-area_hy"]}
+            : project["total-floor-area"]}
           <br />
           <span className="project-info-header">{t("Design-and-built")}</span>:
           {i18n.language == "am"

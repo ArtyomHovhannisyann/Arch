@@ -1,4 +1,4 @@
-export const generalUrl = "http://api.profalbyanarch.com";
+export const generalUrl = "https://api.profalbyanarch.com";
 export const GET_PICTURES = `${generalUrl}/api/data/pictures`;
 export const GET_VIDEOS = `${generalUrl}/api/data/videos`;
 export const GET_TEAM = `${generalUrl}/api/data/team`;

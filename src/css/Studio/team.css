@@ -19,9 +19,9 @@
   margin-top: 56px;
 }
 .studio-team-info {
-  font-family: Aharoni;
+  font-family: var(--bold-font);
   font-style: normal;
-  font-weight: bold;
+  font-weight: 700;
   font-size: 17px;
   line-height: 29px;
   width: 27.5vw;

@@ -13,6 +13,9 @@
   background-color: #fff;
   border-bottom: 1px solid #cccccc;
 }
+.header-with-bg h3{
+  color: #434b62 !important;
+}
 .team-header-logo h3 {
   font-family: Source Serif Pro;
   font-weight: 600;

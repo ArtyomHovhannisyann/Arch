@@ -116,11 +116,8 @@
   .header-logo h3 {
     color: #000 !important;
   }
-  .project-page .menu-icon {
-    background-image: url("../../images/menu-icon.png") !important;
-  }
   .project-page .header-logo h3 {
-    color: #fff !important;
+    color: #434b62 !important;
   }
   .project-left-bar {
     width: 100%;

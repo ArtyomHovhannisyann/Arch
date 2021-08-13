@@ -24,7 +24,7 @@ export default function Menu({ closeMenu }) {
     ],
     [
       {
-        pageHeader: t("Apartaments"),
+        pageHeader: t("Apartments"),
       },
       {
         pageName: t("Selected-Projects"),
@@ -79,7 +79,7 @@ export default function Menu({ closeMenu }) {
   const [isArmActive, setIsArmActive] = useState(i18n.language === `am`);
 
   function changeLang(lang) {
-    if ( lang === `en` ) {
+    if (lang === `en`) {
       setIsArmActive(false);
       setIsEngActive(true);
     } else {
@@ -100,7 +100,9 @@ export default function Menu({ closeMenu }) {
           />
         </div>
         <div className="menu-logo">
-          <h3>Anarch</h3>
+          <Link to = "/home">
+            <h3>Anarch</h3>
+          </Link>
         </div>
       </div>
       <div className="menu-container">
@@ -153,13 +155,13 @@ export default function Menu({ closeMenu }) {
           <div className="menu-footer-languages">
             <p
               className={`${isEngActive ? "active-language" : ""}`}
-              onClick={()=>changeLang(`en`)}
+              onClick={() => changeLang(`en`)}
             >
               English
             </p>
             <p
               className={`${isArmActive ? "active-language" : ""}`}
-              onClick={()=>changeLang(`am`)}
+              onClick={() => changeLang(`am`)}
             >
               Հայերեն
             </p>

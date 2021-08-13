@@ -2,18 +2,22 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 29px 140px 112.5px 50px;
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
   z-index: 1;
+  padding: 29px 141px 13px 50px;
+}
+.header-with-bg {
+  background-color: #fff;
+  border-bottom: 1px solid #cccccc;
 }
 .team-header-logo h3 {
   font-family: Source Serif Pro;
   font-weight: 600;
   font-size: 50px;
-  line-height: 63px;
+  line-height: 62.65px;
   letter-spacing: 0.12em;
   color: #434b62;
 }
@@ -29,6 +33,6 @@
 }
 @media (max-width: 716px) {
   .header {
-    padding: 40px 22px 0 30px;
+    padding: 16.5px 22px 16.5px 30px;
   }
 }

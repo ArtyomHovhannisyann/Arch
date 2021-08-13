@@ -50,19 +50,28 @@
 .project-content {
   display: flex;
   align-items: flex-start;
-  justify-content: space-between;
+  justify-content: flex-end;
   padding: 56px 172px;
 }
 .project-content-location {
   font-family: var(--bac-font);
   font-size: var(--font-size);
-  line-height: 22px;
+  line-height: 27px;
+  margin-right: 69px;
+  font-size: 24px;
+  font-weight: 400;
 }
 .project-content-about {
-  width: 56vw;
+  width: 37.5vw;
+  font-size: 24px;
+  font-family: var(--bac-font);
+  font-weight: 400;
+  text-align: justify;
 }
 .project-info-header {
+  font-family: var(--bold-font);
   font-weight: 700;
+  font-size: 16px;
 }
 .project-images {
   display: flex;

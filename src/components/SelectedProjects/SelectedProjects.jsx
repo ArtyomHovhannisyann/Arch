@@ -30,6 +30,7 @@ export default function SelectedProjects({ pageInfo, history }) {
         <div className="projects-container">
           {pageInfo.items.projects &&
             pageInfo.items.projects.map((project, i) => {
+              console.log(project);
               return (
                 <div
                   className="project"
@@ -44,7 +45,9 @@ export default function SelectedProjects({ pageInfo, history }) {
                     }
                     alt="selected"
                   />
-                  <p>{project.projectTitle}</p>
+                  <p>
+                    {i18n.language == "am" ? project.title_hy : project.title}
+                  </p>
                 </div>
               );
             })}

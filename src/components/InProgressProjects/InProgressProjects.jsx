@@ -40,7 +40,9 @@ export default function InProgressProjects({ pageInfo, history }) {
                     }
                     alt="in-progres"
                   />
-                  <p>{project.projectTitle}</p>
+                  <p>
+                    {i18n.language == "am" ? project.title_hy : project.title}
+                  </p>
                 </div>
               );
             })}

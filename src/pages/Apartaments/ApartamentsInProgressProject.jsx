@@ -8,7 +8,7 @@ export default function ApartamentsInProgressProject({ history }) {
   const { t, i18n } = useTranslation();
 
   const pageInfo = {
-    pageName:t("Apartaments"),
+    pageName:t("Apartments"),
     items: projects,
   };
   useEffect(() => {

@@ -25,6 +25,7 @@
   font-size: 17px;
   line-height: 29px;
   width: 27.5vw;
+  text-align: justify;
 }
 .studio-team-description {
   font-family: var( --bac-font );
@@ -34,6 +35,7 @@
   line-height: 29px;
   letter-spacing: 0em;
   width: 47.7vw;
+  text-align: justify;
 }
 .studio-team-members {
   display: flex;

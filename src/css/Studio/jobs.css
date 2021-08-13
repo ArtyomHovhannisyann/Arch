@@ -19,7 +19,6 @@
   display: none;
 }
 .studio-jobs-left-bar {
-  background-image: url("../../images/job.png");
   background-size: cover;
   background-repeat: no-repeat;
   height: 990px;
@@ -36,16 +35,16 @@
   padding: 0 140px 0 92px;
 }
 .studio-jobs-right-bar h3 {
-  font-family: Aharoni;
-  font-weight: bold;
+  font-family: var(--bold-font);
+  font-weight: 700;
   font-size: 18px;
   line-height: 24px;
   letter-spacing: 0.02em;
 }
 .studio-jobs-right-bar p {
   font-family: var( --bac-font );
-  font-weight: 600;
-  font-size: 18px;
+  font-weight: 400;
+  font-size: 16px;
   line-height: 24px;
   letter-spacing: 0.02em;
   padding-top: 40px;

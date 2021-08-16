@@ -50,9 +50,12 @@
   position: relative;
   margin-bottom: 50px;
   width: 24vw;
+  max-height: 300px;
+  max-width: 480px;
 }
 .studio-team-member img {
   width: 100%;
+  height: 100%;
 }
 .studio-team-member:hover .studio-team-member-info {
   position: absolute;

@@ -118,7 +118,7 @@
     color: #434b62 !important;
   }
   .studio-team-member {
-    width: 40%;
+    width: 47%;
   }
   .studio-page-name {
     padding: 41px 0 30px 36px;
@@ -197,6 +197,6 @@
 }
 @media (max-width: 425px) {
   .studio-team-member {
-    width: 100%;
+    width: 88%;
   }
 }

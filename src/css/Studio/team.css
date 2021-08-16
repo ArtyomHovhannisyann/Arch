@@ -9,6 +9,7 @@
   padding: 0 11vw;
 }
 .studio-team-img img {
+  object-fit:cover;
   width: 100%;
 }
 .studio-about-team {
@@ -48,6 +49,7 @@
 .studio-team-member {
   position: relative;
   margin-bottom: 50px;
+  width: 22vw;
 }
 .studio-team-member img {
   width: 100%;
@@ -116,7 +118,7 @@
     color: #434b62 !important;
   }
   .studio-team-member {
-    width: 49%;
+    width: 40%;
   }
   .studio-page-name {
     padding: 41px 0 30px 36px;
@@ -183,7 +185,7 @@
     line-height: 17px;
   }
   .studio-team-member {
-    width: 100%;
+    width: 60%;
   }
   .studio-team-info {
     font-size: 9px;
@@ -191,5 +193,10 @@
   }
   .studio-page-name {
     display: none;
+  }
+}
+@media (max-width: 425px) {
+  .studio-team-member {
+    width: 100%;
   }
 }

@@ -11,7 +11,7 @@ import { useTranslation } from "react-i18next";
 export default function Project({ history, match }) {
   const id = match.params.id;
   const [showMenu, setShowMenu] = useState(false);
-  const [project, setProject] = useState([]);
+  const [project, setProject] = useState({});
   const { t, i18n } = useTranslation();
   window.scroll({
     top: 0,
@@ -22,7 +22,7 @@ export default function Project({ history, match }) {
       setProject(data.project);
     }, id);
   }, []);
-  console.log(project);
+  console.log(44, project);
   return (
     <div className={`project-page ${showMenu ? "project-header-hide" : ""}`}>
       {showMenu && <Menu closeMenu={setShowMenu} />}
@@ -64,24 +64,31 @@ export default function Project({ history, match }) {
             : project["design-team"]}
         </div>
         <div className="project-content-about">
-          <p>{i18n.language == "am" ? project.description_hy : project.description}</p>
+          <p>
+            {i18n.language == "am"
+              ? project.description_hy
+              : project.description}
+          </p>
         </div>
       </div>
       <div className="project-images">
-        {/* {project.photos.map((el, i) => {
-          if (i != 0) {
-            if (i % 4 == 0) {
-              return (
-                <div
-                  key={i}
-                  className="paralax-image"
-                  style={{ backgroundImage: `url(${el})` }}
-                ></div>
-              );
+        {project.photos &&
+          project.photos.length > 0 &&
+          project.photos.map((el, i) => {
+            console.log(77, generalUrl + "/" + el.path);
+            if (i != 0) {
+              if (i % 4 == 0) {
+                return (
+                  <div
+                    key={i}
+                    className="paralax-image"
+                    style={{ backgroundImage: `url(${generalUrl}/${el.path})` }}
+                  ></div>
+                );
+              }
+              return <img src={`${generalUrl}/${el.path}`} alt="" key={i} />;
             }
-            return <img src={el} alt="" key={i} />;
-          }
-        })} */}
+          })}
         <div className="back" onClick={() => history.goBack()}>
           Back
         </div>

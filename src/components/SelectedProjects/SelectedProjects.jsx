@@ -30,7 +30,6 @@ export default function SelectedProjects({ pageInfo, history }) {
         <div className="projects-container">
           {pageInfo.items.projects &&
             pageInfo.items.projects.map((project, i) => {
-              console.log(project);
               return (
                 <div
                   className="project"

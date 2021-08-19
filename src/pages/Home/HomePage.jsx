@@ -23,7 +23,6 @@ export default function HomePage() {
       setSliderVideos([...sliderItems, ...data]);
     });
   }, []);
-  console.log(sliderItems);
   return (
     <div className="home-page">
       {showMenu && <Menu closeMenu={setShowMenu} />}

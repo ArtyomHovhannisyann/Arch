@@ -22,7 +22,6 @@ export default function Project({ history, match }) {
       setProject(data.project);
     }, id);
   }, []);
-  console.log(44, project);
   return (
     <div className={`project-page ${showMenu ? "project-header-hide" : ""}`}>
       {showMenu && <Menu closeMenu={setShowMenu} />}
@@ -75,7 +74,6 @@ export default function Project({ history, match }) {
         {project.photos &&
           project.photos.length > 0 &&
           project.photos.map((el, i) => {
-            console.log(77, generalUrl + "/" + el.path);
             if (i != 0) {
               if (i % 4 == 0) {
                 return (

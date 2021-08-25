@@ -82,8 +82,12 @@
 .project-images >div{
   width: 98vw;
 }
-.project-images img:not(:nth-of-type(1)) {
+.project-images img:not(:nth-of-type(1)){
   margin-top: 100px;
+}
+.project-images div{
+  margin-top: 100px;
+
 }
 .project-images img {
   max-width: 100%;

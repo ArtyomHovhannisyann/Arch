@@ -103,7 +103,7 @@
 .pages {
   display: flex;
 }
-.menu-page dt{
+.menu-page dt {
   margin-bottom: 10px;
 }
 .pages dd {
@@ -161,6 +161,16 @@
   .menu-page:nth-child(3) dt,
   .menu-page:nth-child(5) dt {
     max-width: 130px;
+  }
+}
+@media (max-width: 1460px) {
+  .menu-page:nth-child(4),
+  .menu-page:nth-child(5) {
+    width: 15vw;
+  }
+  .menu-page:nth-child(4) dd,
+  .menu-page:nth-child(5) dd{
+    width: 10vw;
   }
 }
 

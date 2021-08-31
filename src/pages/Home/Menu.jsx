@@ -100,7 +100,7 @@ export default function Menu({ closeMenu }) {
           />
         </div>
         <div className="menu-logo">
-          <Link to = "/home">
+          <Link to="/home">
             <h3>Anarch</h3>
           </Link>
         </div>
@@ -141,16 +141,26 @@ export default function Menu({ closeMenu }) {
         </div>
         <div className="menu-footer">
           <div className="social-media-icons">
-            <img
-              src="../images/facebook-logo.png"
-              className="facebook-icon"
-              alt="facebook"
-            />
-            <img
-              src="../images/instagram-logo.png"
-              className="instagram-icon"
-              alt="instagram"
-            />
+            <a
+              href="https://www.facebook.com/ProfAlArchitecturalStudio"
+              target="_blank"
+            >
+              <img
+                src="../images/facebook-logo.png"
+                className="facebook-icon"
+                alt="facebook"
+              />
+            </a>
+            <a
+              href="https://www.instagram.com/profal_by_anarch/"
+              target="_blank"
+            >
+              <img
+                src="../images/instagram-logo.png"
+                className="instagram-icon"
+                alt="instagram"
+              />
+            </a>
           </div>
           <div className="menu-footer-languages">
             <p

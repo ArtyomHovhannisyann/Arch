@@ -50,9 +50,8 @@
   padding-bottom: 24px;
   font-family: var(--bac-font);
   font-weight: 400;
-  font-size: 22px;
-  line-height: 24.85px;
-  letter-spacing: 0.05em;
+  font-size: 18px;
+  line-height: 25px;
 }
 .page-name-bold-text {
   font-weight: 700;

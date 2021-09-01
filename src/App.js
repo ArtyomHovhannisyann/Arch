@@ -27,7 +27,7 @@ function App() {
     );
     document.documentElement.style.setProperty(
       "--menu-width",
-      i18n.language === "am" ? "15vw" : "8vw"
+      i18n.language === "am" ? "20vw" : "8vw"
     );
   }, [i18n.language]);
 

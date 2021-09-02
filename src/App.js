@@ -9,6 +9,22 @@ import {
 import { routes } from "./Router";
 import { useTranslation } from "react-i18next";
 
+function resize (i18n) {
+  const w = window.innerWidth;
+  if ( w <= 950 ) {      
+    document.documentElement.style.setProperty(
+      "--menu-4th-column-width",
+      i18n.language === "am" ? "205px" : "110px"
+    );
+  }        
+  else  if ( w <= 1150 ) {        
+    document.documentElement.style.setProperty(
+      "--menu-4th-column-width",
+      i18n.language === "am" ? "235px" : "120px"
+    );
+  }
+}
+
 function App() {
   const { t, i18n } = useTranslation();
   useEffect(() => {
@@ -26,10 +42,20 @@ function App() {
       i18n.language === "am" ? "Arial" : "Aharoni"
     );
     document.documentElement.style.setProperty(
-      "--menu-width",
-      i18n.language === "am" ? "20vw" : "8vw"
+      "--menu-4th-column-width",
+      i18n.language === "am" ? "235px" : "120px"
     );
+
+    resize(i18n);
   }, [i18n.language]);
+
+  useEffect(()=>{
+    resize(i18n);
+    window.addEventListener(`resize`, resize.bind(null, i18n));
+    return function () {
+      window.removeEventListener(`resize`,resize);
+    }
+  }, [])
 
   return (
     <Suspense fallback="loading">

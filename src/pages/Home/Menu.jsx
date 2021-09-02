@@ -89,6 +89,12 @@ export default function Menu({ closeMenu }) {
     i18n.changeLanguage(lang);
   }
 
+  function getTitle ( title ) {
+    if ( title.split( `Բնակելի և` ).length > 1 )
+      return [ ...title.split( ` և ` )].map( el => `<span>${el}</span>` ).join( ` և <br />` )
+    return title;
+  }
+
   return (
     <div className="menu">
       <div className="menu-header">
@@ -108,35 +114,38 @@ export default function Menu({ closeMenu }) {
       <div className="menu-container">
         <div className="menu-content">
           <dl className="pages">
-            {pages.map((page, pageIndex) => {
-              return (
-                <div className={"menu-page"} key={pageIndex}>
-                  {page.map((el, i) => {
-                    if (el.pageHeader) {
-                      if (el.path) {
+            <div className="menu-item-titles">
+              {pages.map((page, pageIndex) => {
+                return (
+                  <div className={"menu-item-title"} key={pageIndex} dangerouslySetInnerHTML={{__html: getTitle( page[0] && page[0].pageHeader) }} >
+                    {/* { } */}
+                    {/* {page.map((el, i) => {
+                      if (el.pageHeader) {
+                        if (el.path) {
+                          return (
+                            <Link to={el.path ? el.path : "/"} key={i}>
+                              <dt className="menu-pageheader" key={i}>
+                                {el.pageHeader}
+                              </dt>
+                            </Link>
+                          );
+                        }
                         return (
-                          <Link to={el.path ? el.path : "/"} key={i}>
-                            <dt className="menu-pageheader" key={i}>
-                              {el.pageHeader}
-                            </dt>
-                          </Link>
+                          <dt className="menu-pageheader" key={i}>
+                            {el.pageHeader}
+                          </dt>
                         );
                       }
                       return (
-                        <dt className="menu-pageheader" key={i}>
-                          {el.pageHeader}
-                        </dt>
+                        <Link to={el.path ? el.path : "/"} key={i}>
+                          <dd key={i}>{el.pageName}</dd>
+                        </Link>
                       );
-                    }
-                    return (
-                      <Link to={el.path ? el.path : "/"} key={i}>
-                        <dd key={i}>{el.pageName}</dd>
-                      </Link>
-                    );
-                  })}
-                </div>
-              );
-            })}
+                    })} */}
+                  </div>
+                );
+              })}
+            </div>
           </dl>
         </div>
         <div className="menu-footer">

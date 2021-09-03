@@ -68,7 +68,7 @@
   grid-template-rows: auto 1fr;
   z-index: 11;
   animation-name: menu-anim;
-  animation-duration: 0.5s;
+  overflow: hidden;
 }
 @keyframes menu-anim {
   from {
@@ -100,46 +100,74 @@
   line-height: 20px;
   color: #000000;
 }
-
-
-.pages dd {
+.menu-page dt {
+  margin-bottom: 10px;
+}
+.pages a {
   font-family: var(--bac-font);
   font-weight: normal;
   font-size: var(--font-size);
   line-height: 28px;
   color: #000;
-  width: min-content;
 }
-
-
-.menu-item-titles {
+.menu-page:not(:first-child) {
+  margin-left: 4vw;
+  width: 10vw;
+}
+.menu-container {
   width: 100%;
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-end;
+  padding: 0 20vw;
+  margin-top: 24.5vh;
+}
+.menu-columns {
+  width: 100%;
+}
+.menu-item-titles {
+  display: grid;
+  grid-template-columns:
+    3.2vw 6.7vw 6.7vw var(--menu-4th-column-width)
+    var(--menu-4th-5th-column-width);
+  grid-column-gap: 6.7vw;
+  align-items: flex-end; 
 }
 
-.menu-item-title {  
+.menu-items {
+  display: grid;
+  grid-template-columns: 3.2vw 6.7vw 6.7vw var(--menu-4th-column-width) var(
+      --menu-4th-5th-column-width
+    );
+  grid-column-gap: 6.7vw; 
+}
+.lang-am .menu-item-titles {
+  grid-template-columns:
+    7vw 11vw 11vw var(--menu-4th-column-width)
+    var(--menu-4th-5th-column-width);
+}
+.lang-am .menu-items {
+  grid-template-columns:
+    7vw 11vw 11vw var(--menu-4th-column-width)
+    var(--menu-4th-5th-column-width);
+}
+.menu-items > div a {
+  font-family: var(--bac-font);
+  font-size: var(--font-size);
+  font-style: normal;
+  font-weight: normal;
+  line-height: 28px;
+  color: #000;
+}
+
+.lang-am {
+  font-size: 14px;
+  padding: 0 10vw;
+}
+.menu-item-title {
   font-family: var(--bold-font);
+  font-size: 0.8vw;
   font-weight: bold;
   line-height: 20px;
   color: #000000;
 }
-
-.menu-item-title:nth-child(4) {
-  max-width: var(--menu-4th-column-width);
-}
-.menu-item-title:nth-child(5) {
-  max-width: 160px;
-}
-
-
-.menu-container {
-  width: 100%;
-  padding: 0 22vw;
-  margin-top: 24.5vh;
-}
-
 
 .menu-footer-languages p {
   font-family: var(--bac-font);
@@ -165,49 +193,28 @@
   margin-left: 10px;
 }
 
-
-@media (max-width: 1550px) {  
-  .menu-container {
-    padding: 0 17vw;
-  }  
-}
-
-@media (max-width: 1460px) {
-
-}
-
-@media (max-width: 1300px) {  
-  .menu-container {
-    padding: 0 14vw;
-  }  
-}
-
-@media (max-width: 1150px) {
-  .menu-container {
-    padding: 0 12vw;
-  }
+@media (max-width: 1507px) {
   .menu-item-title {
-    font-size: 13px;
+    font-size: 1.2vw;
   }
-  
-  .menu-item-title:nth-child(5)
-  {
-    max-width: var(--menu-4th-column-width); 
+  .lang-am .menu-item-title {
+    font-size: 0.8vw;
   }
 }
 
-@media (max-width: 950px) {
+@media (max-width: 1050px) {
+  .menu-item-title {
+    font-size: 1.5vw;
+  }
+}
+@media (max-width: 900px) {
   .menu-container {
     padding: 0 8vw;
   }
-  .menu-item-title {
-    font-size: 11px;
-  }
 }
 
-
-@media (max-width: 1261px) {
-  /* .home-header {
+@media (max-width: 881px) {
+  .home-header {
     padding: 30px 40px !important;
   }
   .menu-header {
@@ -226,18 +233,29 @@
   .menu-container {
     margin: unset !important;
   }
-  
+  .pages {
+    flex-direction: column;
+    padding-left: 10vw;
+  }
+  .menu-page {
+    width: unset !important;
+    margin: 10px 0 !important;
+  }
   .menu-pageheader {
-    font-size: 20px;
+    font-size: 18px;
     line-height: 25px;
     letter-spacing: 0.05em;
   }
-  
+  .pages dd {
+    font-size: 18px;
+    line-height: 23px;
+    letter-spacing: 0.05em;
+  }
   .menu-footer {
     margin-top: 0 !important;
     padding-top: 40px;
     padding-left: 10vw;
-    padding: 40px 0 159px 40px;
+    padding: 40px 0 159px  10vw;
   }
   .active-language {
     font-size: 22px;
@@ -248,7 +266,7 @@
     font-size: 14px;
     line-height: 16px;
     letter-spacing: 0.05em;
-  } */
+  }
 }
 
 @media (max-width: 425px) {
@@ -263,5 +281,15 @@
     font-size: 16px;
     line-height: 20px;
   }
-  
+  .menu-pageheader {
+    font-size: 14px;
+    line-height: 14px;
+    letter-spacing: 0.05em;
+  }
+  .pages dd {
+    font-family: Source Serif Pro;
+    font-size: 14px;
+    line-height: 18px;
+    letter-spacing: 0.05em;
+  }
 }

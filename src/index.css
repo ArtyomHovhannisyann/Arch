@@ -18,9 +18,10 @@ html {
 }
 :root{
   --bac-font: Browallia New;
-  --font-size:25px;
+  --font-size:11px;
   --bold-font:Aharoni;
   --menu-width: 8vw;
   --menu-4th-column-width: 160px;
+  --menu-4th-5th-column-width: 200px;
 }
 

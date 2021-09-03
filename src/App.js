@@ -9,18 +9,12 @@ import {
 import { routes } from "./Router";
 import { useTranslation } from "react-i18next";
 
-function resize (i18n) {
+function resize(i18n) {
   const w = window.innerWidth;
-  if ( w <= 950 ) {      
+  if (w <= 950) {
     document.documentElement.style.setProperty(
       "--menu-4th-column-width",
-      i18n.language === "am" ? "205px" : "110px"
-    );
-  }        
-  else  if ( w <= 1150 ) {        
-    document.documentElement.style.setProperty(
-      "--menu-4th-column-width",
-      i18n.language === "am" ? "235px" : "120px"
+      i18n.language === "am" ? "12vw" : "130px"
     );
   }
 }
@@ -35,7 +29,7 @@ function App() {
     );
     document.documentElement.style.setProperty(
       "--font-size",
-      i18n.language === "am" ? "18px" : "25px"
+      i18n.language === "am" ? ".8vw" : "1.3vw"
     );
     document.documentElement.style.setProperty(
       "--bold-font",
@@ -43,19 +37,29 @@ function App() {
     );
     document.documentElement.style.setProperty(
       "--menu-4th-column-width",
-      i18n.language === "am" ? "235px" : "120px"
+      i18n.language === "am" ? "15vw" : "130px"
     );
+    document.documentElement.style.setProperty(
+      "--menu-4th-5th-column-width",
+      i18n.language === "am" ? "15vw" : "130px"
+    );
+
+    const pages = document.querySelector(`.menu-container`);
+    if (pages) {
+      if (i18n.language === `am`) pages.classList.add(`lang-am`);
+      else pages.classList.remove(`lang-am`);
+    }
 
     resize(i18n);
   }, [i18n.language]);
 
-  useEffect(()=>{
+  useEffect(() => {
     resize(i18n);
     window.addEventListener(`resize`, resize.bind(null, i18n));
     return function () {
-      window.removeEventListener(`resize`,resize);
-    }
-  }, [])
+      window.removeEventListener(`resize`, resize);
+    };
+  }, []);
 
   return (
     <Suspense fallback="loading">

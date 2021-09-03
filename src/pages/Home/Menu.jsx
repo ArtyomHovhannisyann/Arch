@@ -1,10 +1,24 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { useTranslation } from "react-i18next";
 import { Link } from "react-router-dom";
 
 export default function Menu({ closeMenu }) {
   const { t, i18n } = useTranslation();
-  let pages = [
+  const [isEngActive, setIsEngActive] = useState(i18n.language === `en`);
+  const [isArmActive, setIsArmActive] = useState(i18n.language === `am`);
+  const [isTablet, setIsTablet] = useState(false);
+  function resize() {
+    const w = window.innerWidth;
+    setIsTablet(w <= 881);
+  }
+  useEffect(() => {
+    resize()
+    window.addEventListener("resize", resize);
+    return () => {
+      window.removeEventListener("resize", resize);
+    };
+  }, []);
+  const pages = [
     [
       {
         pageHeader: t("Studio"),
@@ -75,8 +89,6 @@ export default function Menu({ closeMenu }) {
       },
     ],
   ];
-  const [isEngActive, setIsEngActive] = useState(i18n.language === `en`);
-  const [isArmActive, setIsArmActive] = useState(i18n.language === `am`);
 
   function changeLang(lang) {
     if (lang === `en`) {
@@ -89,9 +101,11 @@ export default function Menu({ closeMenu }) {
     i18n.changeLanguage(lang);
   }
 
-  function getTitle ( title ) {
-    if ( title.split( `Բնակելի և` ).length > 1 )
-      return [ ...title.split( ` և ` )].map( el => `<span>${el}</span>` ).join( ` և <br />` )
+  function getTitle(title) {
+    if (title.split(`Բնակելի և`).length > 1)
+      return [...title.split(` և `)]
+        .map((el) => `<span>${el}</span>`)
+        .join(` և <br />`);
     return title;
   }
 
@@ -113,13 +127,37 @@ export default function Menu({ closeMenu }) {
       </div>
       <div className="menu-container">
         <div className="menu-content">
-          <dl className="pages">
-            <div className="menu-item-titles">
+          {!isTablet ? (
+            <div className="pages">
+              <div className="menu-item-titles menu-columns">
+                {pages.map((page, pageIndex) => (
+                  <div
+                    className={"menu-item-title"}
+                    key={pageIndex}
+                    dangerouslySetInnerHTML={{
+                      __html: getTitle(page[0] && page[0].pageHeader),
+                    }}
+                  />
+                ))}
+              </div>
+              <div className="menu-items menu-columns">
+                {pages.map((subPages) => (
+                  <div key={subPages[0].pageHeader}>
+                    {subPages.map((subpage) => (
+                      <Link to={subpage.path ?? "/"} key={`${subpage.path}`}>
+                        <div>{subpage.pageName}</div>
+                      </Link>
+                    ))}
+                  </div>
+                ))}
+              </div>
+            </div>
+          ) : (
+            <dl className="pages" style={{ display: "flex" }}>
               {pages.map((page, pageIndex) => {
                 return (
-                  <div className={"menu-item-title"} key={pageIndex} dangerouslySetInnerHTML={{__html: getTitle( page[0] && page[0].pageHeader) }} >
-                    {/* { } */}
-                    {/* {page.map((el, i) => {
+                  <div className={"menu-page"} key={pageIndex}>
+                    {page.map((el, i) => {
                       if (el.pageHeader) {
                         if (el.path) {
                           return (
@@ -141,12 +179,12 @@ export default function Menu({ closeMenu }) {
                           <dd key={i}>{el.pageName}</dd>
                         </Link>
                       );
-                    })} */}
+                    })}
                   </div>
                 );
               })}
-            </div>
-          </dl>
+            </dl>
+          )}
         </div>
         <div className="menu-footer">
           <div className="social-media-icons">

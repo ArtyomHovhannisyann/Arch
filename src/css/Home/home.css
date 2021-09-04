@@ -68,7 +68,6 @@
   grid-template-rows: auto 1fr;
   z-index: 11;
   animation-name: menu-anim;
-  overflow: hidden;
 }
 @keyframes menu-anim {
   from {
@@ -118,6 +117,7 @@
   width: 100%;
   padding: 0 20vw;
   margin-top: 24.5vh;
+  overflow: hidden;
 }
 .menu-columns {
   width: 100%;
@@ -128,7 +128,8 @@
     3.2vw 6.7vw 6.7vw var(--menu-4th-column-width)
     var(--menu-4th-5th-column-width);
   grid-column-gap: 6.7vw;
-  align-items: flex-end; 
+  align-items: flex-end;
+  margin-bottom: 10px;
 }
 
 .menu-items {
@@ -136,7 +137,7 @@
   grid-template-columns: 3.2vw 6.7vw 6.7vw var(--menu-4th-column-width) var(
       --menu-4th-5th-column-width
     );
-  grid-column-gap: 6.7vw; 
+  grid-column-gap: 6.7vw;
 }
 .lang-am .menu-item-titles {
   grid-template-columns:
@@ -255,7 +256,7 @@
     margin-top: 0 !important;
     padding-top: 40px;
     padding-left: 10vw;
-    padding: 40px 0 159px  10vw;
+    padding: 40px 0 159px 10vw;
   }
   .active-language {
     font-size: 22px;

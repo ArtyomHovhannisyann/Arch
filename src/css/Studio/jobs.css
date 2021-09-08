@@ -49,6 +49,11 @@
   letter-spacing: 0.02em;
   padding-top: 40px;
 }
+
+.lang-eng .studio-jobs-right-bar p {
+  font-size: 18px;  
+}
+
 .footer-languages {
   display: none;
 }

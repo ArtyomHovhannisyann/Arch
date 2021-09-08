@@ -158,7 +158,7 @@
   color: #000;
 }
 
-.lang-am {
+.lang-am:not(.App) {
   font-size: 14px;
   padding: 0 10vw;
 }
@@ -199,7 +199,7 @@
     font-size: 1.2vw;
   }
   .lang-am .menu-item-title {
-    font-size: 0.8vw;
+    font-size: 0.9vw;
   }
 }
 

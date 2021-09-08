@@ -35,6 +35,12 @@
 .contact-address{
   width: 12vw;
 }
+
+.lang-eng .contact-address{ 
+  font-family: var(--bac-font);
+  font-size: 21px;
+}
+
 .contact-header-logo {
   text-align: right;
   margin-right: 0 !important;
@@ -59,6 +65,12 @@
   height: 22px;
   display: inline-block;
 }
+
+.lang-eng .contact-email {
+  font-family: var(--bac-font);
+  font-size: 21px;  
+}
+
 .contact-info-email {
   margin-top: 2vh;
 }

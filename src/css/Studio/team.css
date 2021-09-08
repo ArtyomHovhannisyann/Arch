@@ -38,6 +38,11 @@
   width: 47.7vw;
   text-align: justify;
 }
+
+.lang-eng .studio-team-description {
+  font-size: 24px;
+}
+
 .studio-team-members {
   display: flex;
   justify-content: space-between;
@@ -86,6 +91,11 @@
   letter-spacing: 0.05em;
   color: #ffffff;
 }
+
+.lang-am .member-name {
+  font-size: 13.3px;
+}
+
 .member-info {
   font-family: var( --bac-font );
   font-style: normal;
@@ -95,6 +105,11 @@
   letter-spacing: 0.04em;
   color: #ffffff;
 }
+
+.lang-am .member-info {
+  font-size: 18px;
+}
+
 .footer {
   display: flex;
   justify-content: center;

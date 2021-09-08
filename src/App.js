@@ -44,10 +44,17 @@ function App() {
       i18n.language === "am" ? "15vw" : "130px"
     );
 
-    const pages = document.querySelector(`.menu-container`);
-    if (pages) {
-      if (i18n.language === `am`) pages.classList.add(`lang-am`);
-      else pages.classList.remove(`lang-am`);
+    const app = document.querySelector(`#root > .App`);
+    console.log( app );
+    if (app) {
+      if (i18n.language === `am`) {
+        app.classList.add(`lang-am`);
+        app.classList.remove(`lang-eng`);
+      }
+      else {
+        app.classList.add(`lang-eng`);
+        app.classList.remove(`lang-am`);
+      }
     }
 
     resize(i18n);

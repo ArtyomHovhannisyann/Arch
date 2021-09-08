@@ -53,6 +53,11 @@
   font-size: 17px;
   line-height: 25px;
 }
+
+.lang-am .page-name {
+  font-size: 12px;
+}
+
 .page-name-bold-text {
   font-weight: 700;
 }
@@ -90,6 +95,12 @@
   color: #000000;
   padding-top: 10px;
 }
+
+.lang-am .project p {  
+  font-size: 20px;
+  line-height: 20px;
+}
+
 .project-footer {
   margin-top: 0 !important;
 }
@@ -154,6 +165,12 @@
     font-size: 18px !important;
     line-height: 18px !important;
   }
+
+  .lang-am .project p {
+    font-size: 14px !important;
+    line-height: 14px !important;
+  }
+
   .header-logo h3 {
     padding: unset !important;
   }
@@ -161,6 +178,11 @@
     font-size: 12px !important;
     line-height: 12px !important;
   }
+
+  .lang-am .page-name {
+    font-size: 9px !important;
+  }
+
   .page-name {
     padding: 0 0 37px 23px;
   }

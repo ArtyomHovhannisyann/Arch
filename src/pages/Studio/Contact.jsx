@@ -30,7 +30,7 @@ export default function Contact() {
       <div className="studio-contact-content">
         <div
           className="studio-contact-left-bar"
-          style={{ background: `url(${image})` }}
+          style={{ background: `url(${image})`, backgroundSize:"cover", }}
         ></div>
         <div className="studio-contact-right-bar">
           <span className="contact-info-header">Anarch Kedem Architect</span>

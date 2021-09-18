@@ -1,4 +1,4 @@
-import React, { useState,useEffect } from "react";
+import React, { useState, useEffect } from "react";
 import { useTranslation } from "react-i18next";
 import InProgressProjects from "../../components/InProgressProjects/InProgressProjects";
 import { getProjects } from "../../lib/requests";
@@ -8,7 +8,7 @@ export default function ApartamentsInProgressProject({ history }) {
   const { t, i18n } = useTranslation();
 
   const pageInfo = {
-    pageName:t("Apartments"),
+    pageName: t("Apartments"),
     items: projects,
   };
   useEffect(() => {
@@ -16,8 +16,8 @@ export default function ApartamentsInProgressProject({ history }) {
       (data) => {
         setProjects(data);
       },
-      2,
-      1
+      1,
+      2
     );
   }, []);
   return (

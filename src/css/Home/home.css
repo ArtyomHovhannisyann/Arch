@@ -115,9 +115,12 @@
 }
 .menu-container {
   width: 100%;
-  padding: 0 10vw;
+  padding: 0 20vw;
   margin-top: 24.5vh;
   overflow: hidden;
+}
+.lang-am .menu-container{
+  padding: 0 10vw;
 }
 .menu-columns {
   width: 100%;

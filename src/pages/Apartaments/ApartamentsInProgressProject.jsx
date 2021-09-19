@@ -16,8 +16,8 @@ export default function ApartamentsInProgressProject({ history }) {
       (data) => {
         setProjects(data);
       },
-      2,
-      1
+      1,
+      2
     );
   }, []);
   return (

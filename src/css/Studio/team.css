@@ -30,17 +30,13 @@
 }
 .studio-team-description {
   font-family: var(--bac-font);
-  font-size: 18px;
+  font-size: 17px;
   font-style: normal;
   font-weight: 400;
   line-height: 29px;
   letter-spacing: 0em;
   width: 47.7vw;
   text-align: justify;
-}
-
-.lang-eng .studio-team-description {
-  font-size: 9px;
 }
 
 .studio-team-members {

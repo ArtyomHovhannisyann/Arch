@@ -45,7 +45,6 @@ function App() {
     );
 
     const app = document.querySelector(`#root > .App`);
-    console.log( app );
     if (app) {
       if (i18n.language === `am`) {
         app.classList.add(`lang-am`);

@@ -9,6 +9,5 @@
   height: 100vh;
 }
 .in-progres-projects-content {
-  margin-top: 151px;
-  margin-left: unset;
+  margin: 151px auto;
 }

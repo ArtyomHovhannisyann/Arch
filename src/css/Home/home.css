@@ -117,7 +117,8 @@
   width: 100%;
   padding: 0 20vw;
   margin-top: 24.5vh;
-  overflow: hidden;
+  max-height: -webkit-fill-available;
+  overflow: auto;
 }
 .lang-am .menu-container{
   padding: 0 10vw;

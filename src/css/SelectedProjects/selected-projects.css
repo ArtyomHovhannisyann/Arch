@@ -112,7 +112,7 @@
   overflow: hidden;
   height: 100vh;
 }
-@media(max-width: 1280px){
+@media (max-width: 1280px) {
   .projects-container {
     grid-template-columns: repeat(3, 26vw);
     grid-column-gap: 2.6vw;
@@ -192,13 +192,17 @@
   }
 }
 @media (max-width: 425px) {
+  .selected-projects-content {
+    margin-left: unset;
+    margin-right: unset;
+  }
   .projects-container {
     display: grid;
     grid-template-columns: 78vw;
     justify-content: center;
     grid-column-gap: unset;
   }
-  .project{
+  .project {
     padding-right: unset;
   }
 }

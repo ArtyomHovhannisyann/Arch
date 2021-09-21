@@ -58,7 +58,7 @@
 }
 .project-content-location {
   font-family: var(--bac-font);
-  font-size: var(--font-size);
+  font-size: 16px;
   line-height: 27px;
   margin-right: 69px;
   font-weight: 400;
@@ -69,6 +69,9 @@
   font-family: var(--bac-font);
   font-weight: 400;
   text-align: justify;
+}
+.lang-am .project-content-about{
+  font-size: 14px;
 }
 .project-info-header {
   font-family: var(--bold-font);
@@ -154,10 +157,11 @@
   .project-content {
     flex-wrap: wrap;
     padding: 30px 35px 50px 35px;
+    justify-content: flex-start;
   }
   .project-content-location,
   .project-content-about p {
-    font-size: 20px;
+    font-size: 16px;
     line-height: 22px;
   }
   .project-content-about {

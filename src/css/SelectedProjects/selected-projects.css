@@ -27,13 +27,12 @@
   width: 100%;
 }
 .selected-projects-content {
-  margin-top: 151px;
-  margin-left: 10vw;
+  margin: 151px auto;
 }
 .projects-container {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
+  display: grid;
+  grid-template-columns: repeat(4, 17.7vw);
+  grid-column-gap: 8.75vw;
 }
 .black-logo h3 {
   font-family: Source Serif Pro;
@@ -76,7 +75,6 @@
   cursor: pointer;
   padding-bottom: 94px;
   padding-right: 20px;
-  width: 366px;
 }
 
 .project img {
@@ -89,15 +87,15 @@
 }
 .project p {
   font-family: var(--bac-font);
-  font-size: 24px;
+  font-size: 17px;
   line-height: 24px;
   letter-spacing: 0.02em;
   color: #000000;
   padding-top: 10px;
 }
 
-.lang-am .project p {  
-  font-size: 20px;
+.lang-am .project p {
+  font-size: 12px;
   line-height: 20px;
 }
 
@@ -114,6 +112,12 @@
   overflow: hidden;
   height: 100vh;
 }
+@media (max-width: 1280px) {
+  .projects-container {
+    grid-template-columns: repeat(3, 26vw);
+    grid-column-gap: 2.6vw;
+  }
+}
 @media (max-width: 852px) {
   .selected-projects-header {
     padding: 28px 36px 42px 36px;
@@ -121,17 +125,21 @@
   .menu-black-icon {
     background-image: url("../../images/menu-black-icon.png") !important;
   }
+  .projects-container {
+    grid-template-columns: repeat(2, 44vw);
+    grid-column-gap: 2.6vw;
+  }
   .header-logo h3 {
     color: #434b62 !important;
   }
   .selected-projects-content {
     margin-top: 137px;
+    margin-left: unset;
   }
   .projects {
     padding: 0 5vw;
   }
   .project {
-    width: 338px;
     margin-bottom: 40px;
   }
   .project p {
@@ -154,11 +162,7 @@
   .selected-projects-content {
     margin-top: 115px;
   }
-  .projects {
-    justify-content: center;
-  }
   .project {
-    width: 335px;
     padding-bottom: 30px;
   }
   .project p {
@@ -185,5 +189,20 @@
 
   .page-name {
     padding: 0 0 37px 23px;
+  }
+}
+@media (max-width: 425px) {
+  .selected-projects-content {
+    margin-left: unset;
+    margin-right: unset;
+  }
+  .projects-container {
+    display: grid;
+    grid-template-columns: 78vw;
+    justify-content: center;
+    grid-column-gap: unset;
+  }
+  .project {
+    padding-right: unset;
   }
 }

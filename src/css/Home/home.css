@@ -120,7 +120,7 @@
   max-height: -webkit-fill-available;
   overflow: auto;
 }
-.lang-am .menu-container{
+.lang-am .menu-container {
   padding: 0 10vw;
 }
 .menu-columns {
@@ -128,9 +128,7 @@
 }
 .menu-item-titles {
   display: grid;
-  grid-template-columns:
-    3.2vw 6.7vw 6.7vw var(--menu-4th-column-width)
-    var(--menu-4th-5th-column-width);
+  grid-template-columns: 3.2vw 6.7vw 6.7vw 9vw 7vw;
   grid-column-gap: 6.7vw;
   align-items: flex-end;
   margin-bottom: 10px;
@@ -138,9 +136,7 @@
 
 .menu-items {
   display: grid;
-  grid-template-columns: 3.2vw 6.7vw 6.7vw var(--menu-4th-column-width) var(
-      --menu-4th-5th-column-width
-    );
+  grid-template-columns: 3.2vw 6.7vw 6.7vw 9vw 7vw;
   grid-column-gap: 6.7vw;
 }
 .lang-am .menu-item-titles {
@@ -155,7 +151,7 @@
 }
 .menu-items > div a {
   font-family: var(--bac-font);
-  font-size: var(--font-size);
+  font-size: 25px;
   font-style: normal;
   font-weight: normal;
   line-height: 28px;
@@ -168,7 +164,7 @@
 }
 .menu-item-title {
   font-family: var(--bold-font);
-  font-size: 0.8vw;
+  font-size: 20px;
   font-weight: bold;
   line-height: 20px;
   color: #000000;
@@ -248,11 +244,11 @@
   }
   .menu-pageheader {
     font-size: 18px;
-    line-height: 25px;
+    line-height: 18px;
     letter-spacing: 0.05em;
   }
   .pages dd {
-    font-size: 18px;
+    font-size: 23px;
     line-height: 23px;
     letter-spacing: 0.05em;
   }
@@ -287,8 +283,8 @@
     line-height: 20px;
   }
   .menu-pageheader {
-    font-size: 14px;
-    line-height: 14px;
+    font-size: 20px;
+    line-height: 23px;
     letter-spacing: 0.05em;
   }
   .pages dd {

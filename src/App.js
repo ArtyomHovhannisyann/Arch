@@ -37,7 +37,7 @@ function App() {
     );
     document.documentElement.style.setProperty(
       "--menu-4th-column-width",
-      i18n.language === "am" ? "15vw" : "130px"
+      i18n.language === "am" ? "7.9vw" : "130px"
     );
     document.documentElement.style.setProperty(
       "--menu-4th-5th-column-width",

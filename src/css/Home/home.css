@@ -195,12 +195,12 @@
 }
 
 @media (max-width: 1507px) {
-  .menu-item-title {
+  /* .menu-item-title {
     font-size: 1.2vw;
   }
   .lang-am .menu-item-title {
     font-size: 0.9vw;
-  }
+  } */
 }
 
 @media (max-width: 1050px) {

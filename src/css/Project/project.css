@@ -141,8 +141,8 @@
     flex-direction: column;
   }
   .project-name h3 {
-    font-family: Aharoni;
-    font-size: 35px;
+    font-family: var(--bac-font);
+    font-size: 40px;
     font-weight: bold;
     line-height: 35px;
     letter-spacing: 0.05em;
@@ -161,7 +161,7 @@
   }
   .project-content-location,
   .project-content-about p {
-    font-size: 16px;
+    font-size: 20px;
     line-height: 22px;
   }
   .project-content-about {
@@ -184,7 +184,7 @@
     padding: 33px 22px 19px 30px;
   }
   .project-name h3 {
-    font-size: 25px;
+    font-size: 32px;
     line-height: 25px;
     padding-top: 60px;
   }

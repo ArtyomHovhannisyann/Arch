@@ -25,8 +25,9 @@
 .menu-icon {
   cursor: pointer;
 }
+
 .menu-icon {
-  background-image: url("../../images/menu-icon.png");
+  background-color: white !important;
   background-size: contain;
   background-repeat: no-repeat;
   width: 30px;
@@ -222,7 +223,8 @@
     padding: 40px 30px !important;
   }
   .home-page .menu-icon {
-    background-image: url("../../images/menu-icon.png") !important;
+    background-color: white !important;
+    /* background-image: url("../../images/menu-icon.png") !important; */
   }
   .home-page .header-logo h3 {
     color: #fff !important;

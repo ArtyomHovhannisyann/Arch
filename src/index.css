@@ -25,3 +25,12 @@ html {
   --menu-4th-5th-column-width: 200px;
 }
 
+.menu-icon, .menu-black-icon {
+  mask-image: url(images/menu.svg) !important;
+  mask-size: 27px 27px;
+  mask-repeat: no-repeat;
+  mask-position: center;
+  width: 27px;
+  height: 27px;
+}
+

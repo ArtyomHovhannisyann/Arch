@@ -126,7 +126,7 @@
     padding: 0 36px;
   }
   .studio-team .menu-black-icon {
-    background-image: url("../../images/menu-black-icon.png") !important;
+    background-color: black !important;
   }
   .studio-team .header-logo h3 {
     color: #434b62 !important;

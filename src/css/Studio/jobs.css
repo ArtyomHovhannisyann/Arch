@@ -65,7 +65,7 @@
     display: block;
   }
   .menu-icon {
-    background-image: url("../../images/menu-icon.png") !important;
+    background-color: white !important;
   }
   .header-logo h3 {
     color: #fff;
@@ -100,7 +100,7 @@
     padding: 33px 22px 19px 30px;
   }
   .menu-black-icon {
-    background-image: url("../../images/menu-black-icon.png") !important;
+    background-color: black !important;
   }
   .header-logo h3 {
     color: #434B62;

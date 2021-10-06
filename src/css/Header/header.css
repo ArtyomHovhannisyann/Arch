@@ -35,7 +35,7 @@
   }
   .studio-jobs .header .menu-icon,
   .studio-contact .header .menu-icon {
-    background-image: url("../../images/menu-icon.png") !important;
+    background-color: white !important;
   }
 
   .studio-jobs .header .header-logo h3,
@@ -51,7 +51,7 @@
 @media(max-width:425px){
   .studio-jobs .header .menu-icon,
   .studio-contact .header .menu-icon {
-    background-image: url("../../images/menu-black-icon.png") !important;
+    background-color: black !important;
   }
 
   .studio-jobs .header .header-logo h3,

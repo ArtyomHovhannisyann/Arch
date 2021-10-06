@@ -23,9 +23,7 @@ export default function SelectedProjects({ pageInfo, history }) {
       <div className="selected-projects-content">
         <h3 className="page-name">
           {pageInfo.pageName}
-          <span className="page-name-bold-text">
-            - {t("Selected-Projects")}
-          </span>
+          <span className="page-name-bold-text"> - {t("Selected-Projects")}</span>
         </h3>
         <div className="projects-container">
           {pageInfo.items.projects &&

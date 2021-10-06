@@ -49,7 +49,7 @@
   padding-bottom: 24px;
   font-family: var(--bac-font);
   font-weight: 400;
-  font-size: 17px;
+  font-size: 22px;
   line-height: 25px;
 }
 
@@ -61,12 +61,16 @@
   font-weight: 700;
 }
 .menu-black-icon {
-  background: url("../../images/menu-black-icon.png");
+  background-color: white !important;
   background-size: cover;
   background-repeat: no-repeat !important;
   width: 27px;
   height: 27px;
   cursor: pointer;
+}
+
+.header-with-bg .menu-black-icon {
+  background-color: black !important;
 }
 .arrow {
   padding: 0 5px;
@@ -123,7 +127,7 @@
     padding: 28px 36px 42px 36px;
   }
   .menu-black-icon {
-    background-image: url("../../images/menu-black-icon.png") !important;
+    background-color: black;
   }
   .projects-container {
     grid-template-columns: repeat(2, 44vw);
@@ -158,7 +162,7 @@
   .menu-black-icon {
     width: 23px;
     height: 19.25px;
-    background-image: url("../../images/menu-black-icon.png") !important;
+    background-color: black;
   }
   .selected-projects-content {
     margin-top: 115px;
@@ -208,5 +212,20 @@
   }
   .project p{
     font-size: 14px;
+  }
+}
+
+@media screen and ( max-width: 770px ) {
+  .page-name, .project p {
+    font-size: 18px !important;
+  }
+}
+
+@media screen and ( max-width: 425px ) {
+  .page-name {
+    font-size: 10px !important;
+  }
+  .project p {
+    font-size: 14px !important;
   }
 }

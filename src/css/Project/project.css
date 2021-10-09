@@ -58,11 +58,17 @@
 }
 .project-content-location {
   font-family: var(--bac-font);
-  font-size: 23 px;
+  font-size: 23px;
   line-height: 27px;
   margin-right: 69px;
   font-weight: 400;
 }
+@media screen and (max-width:800px) {
+  .project-info-header {
+    font-size: 14px !important;
+  }
+}
+
 .project-content-about {
   width: 37.5vw;
   font-size: 24px;

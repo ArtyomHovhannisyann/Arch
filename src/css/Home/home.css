@@ -26,6 +26,16 @@
   cursor: pointer;
 }
 
+.close-icon {
+  width: 17px;
+  height: 17px;
+  mask-image: url(../../images/close-button.svg);
+  mask-repeat: no-repeat;
+  mask-position: center;
+  mask-size: cover;
+  background-color: black;
+}
+
 .menu-icon {
   background-color: white !important;
   background-size: contain;

@@ -61,12 +61,18 @@
   font-weight: 700;
 }
 .menu-black-icon {
-  background-color: white !important;
+  background-color: black !important;
   background-size: cover;
   background-repeat: no-repeat !important;
   width: 27px;
   height: 27px;
   cursor: pointer;
+}
+
+.studio-contact .menu-black-icon,
+.studio-jobs .menu-black-icon,
+.project-page .menu-black-icon {
+  background-color: white !important;
 }
 
 .header-with-bg .menu-black-icon {
@@ -135,6 +141,10 @@
   }
   .header-logo h3 {
     color: #434b62 !important;
+  }
+
+  .studio-contact .header-logo h3 {
+    color: white !important;
   }
   .selected-projects-content {
     margin-top: 137px;

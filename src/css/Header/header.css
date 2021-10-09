@@ -48,14 +48,23 @@
     padding: 16.5px 22px 16.5px 30px;
   }
 }
-@media(max-width:425px){
+@media(max-width:880px){
   .studio-jobs .header .menu-icon,
   .studio-contact .header .menu-icon {
+    background-color: white !important;
+  }
+  .studio-jobs .header-with-bg .menu-icon,
+  .studio-contact .header-with-bg .menu-icon {
     background-color: black !important;
   }
 
   .studio-jobs .header .header-logo h3,
   .studio-contact .header .header-logo h3 {
-    color: #434B62 !important;
+    color: white !important;
+  }
+
+  .studio-jobs .header-with-bg .header-logo h3,
+  .studio-contact .header-with-bg .header-logo h3 {
+    color: #434b62 !important;
   }
 }

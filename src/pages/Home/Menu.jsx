@@ -112,12 +112,7 @@ export default function Menu({ closeMenu }) {
   return (
     <div className="menu">
       <div className="menu-header">
-        <div className="close-icon">
-          <img
-            src="../images/close.png"
-            alt="close"
-            onClick={() => closeMenu(false)}
-          />
+        <div className="close-icon" onClick={() => closeMenu(false)}>
         </div>
         <div className="menu-logo">
           <Link to="/home">

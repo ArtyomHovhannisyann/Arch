@@ -77,11 +77,12 @@
 
 .page-name-bold-text {
   font-weight: 700;
-}
-
-.page-name-bold-text {
   font-family: var(--bold-font);
   font-size: 14px;
+}
+
+.page-name-bold-text.team-page-name {
+  font-size: 15px;
 }
 
 .menu-black-icon {

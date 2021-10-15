@@ -32,7 +32,7 @@ export default function StudioTeam() {
       <div className="studio-team-content">
         <h3 className="page-name studio-team-page-name">
           {t("Studio")}
-          <span className="page-name-bold-text"> - {t("Team")}</span>
+          <span className="page-name-bold-text team-page-name"> - {t("Team")}</span>
         </h3>
 
         <div className="studio-team-img">

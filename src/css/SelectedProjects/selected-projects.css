@@ -64,17 +64,11 @@
   display: block;
 }
 .page-name {
-  padding-bottom: 24px;
+  padding-bottom: 22px;
   font-family: var(--bac-font);
   font-weight: 400;
-  font-size: 24px;
+  font-size: 22px;
   line-height: 25px;
-}
-
-@media (max-width: 1146px) {
-  .page-name {
-    font-size: 18px;
-  }
 }
 
 .lang-am .page-name {
@@ -84,6 +78,12 @@
 .page-name-bold-text {
   font-weight: 700;
 }
+
+.page-name-bold-text:not(.team-page-name) {
+  font-family: var(--bold-font);
+  font-size: 14px;
+}
+
 .menu-black-icon {
   background-color: black !important;
   background-size: cover;
@@ -257,8 +257,13 @@
 
 @media screen and ( max-width: 425px ) {
   .page-name {
+    font-size: 14px !important;
+  }
+  .page-name-bold-text:not(.team-page-name) {
+    font-family: var(--bold-font);
     font-size: 10px !important;
   }
+  
   .project p {
     font-size: 14px !important;
   }

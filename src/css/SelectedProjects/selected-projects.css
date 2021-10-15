@@ -64,7 +64,7 @@
   display: block;
 }
 .page-name {
-  padding-bottom: 22px;
+  padding-bottom: 64px;
   font-family: var(--bac-font);
   font-weight: 400;
   font-size: 22px;
@@ -187,7 +187,7 @@
     line-height: 29px !important;
   }
   .page-name {
-    padding: 0 0 25px 36px;
+    padding: 0 0 44px 36px;
   }
 }
 @media (max-width: 752px) {

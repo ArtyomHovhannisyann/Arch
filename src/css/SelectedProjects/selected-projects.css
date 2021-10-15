@@ -79,7 +79,7 @@
   font-weight: 700;
 }
 
-.page-name-bold-text:not(.team-page-name) {
+.page-name-bold-text {
   font-family: var(--bold-font);
   font-size: 14px;
 }
@@ -259,7 +259,7 @@
   .page-name {
     font-size: 14px !important;
   }
-  .page-name-bold-text:not(.team-page-name) {
+  .page-name-bold-text {
     font-family: var(--bold-font);
     font-size: 10px !important;
   }

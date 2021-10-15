@@ -43,24 +43,26 @@ export default function Project({ history, match }) {
         </div>
       </div>
       <div className="project-content">
-        <div className="project-content-location">
-          <span className="project-info-header">{t("Location")}</span>:
-          {i18n.language == "am" ? project.location_hy : project.location}
-          <br />
-          <span className="project-info-header">{t("Total-floor-area")}</span>:
-          {i18n.language == "am"
-            ? project["total-floor-area_hy"]
-            : project["total-floor-area"]}
-          <br />
-          <span className="project-info-header">{t("Design-and-built")}</span>:
-          {i18n.language == "am"
-            ? project["design-and-built_hy"]
-            : project["design-and-built"]}
-          <br />
-          <span className="project-info-header">{t("Design-team")}:</span>
-          {i18n.language == "am"
-            ? project["design-team_hy"]
-            : project["design-team"]}
+        <div className="project-content-location-wrapper">
+          <div className="project-content-location">
+            <span className="project-info-header">{t("Location")}</span>:
+            {i18n.language == "am" ? project.location_hy : project.location}
+            <br />
+            <span className="project-info-header">{t("Total-floor-area")}</span>:
+            {i18n.language == "am"
+              ? project["total-floor-area_hy"]
+              : project["total-floor-area"]}
+            <br />
+            <span className="project-info-header">{t("Design-and-built")}</span>:
+            {i18n.language == "am"
+              ? project["design-and-built_hy"]
+              : project["design-and-built"]}
+            <br />
+            <span className="project-info-header">{t("Design-team")}:</span>
+            {i18n.language == "am"
+              ? project["design-team_hy"]
+              : project["design-team"]}
+          </div>
         </div>
         <div className="project-content-about">
           <p>

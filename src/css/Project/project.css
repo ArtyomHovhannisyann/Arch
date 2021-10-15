@@ -51,10 +51,22 @@
   font-size: 30px;
 }
 .project-content {
-  display: flex;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
   align-items: flex-start;
   justify-content: flex-end;
   padding: 56px 172px;
+}
+@media (max-width: 880px) {
+  .project-content {
+    display: flex;
+    grid-template-columns: unset;
+  }
+}
+
+.project-content-location-wrapper {
+  display: flex;
+  justify-content: flex-end;
 }
 .project-content-location {
   font-family: var(--bac-font);
@@ -70,7 +82,6 @@
 }
 
 .project-content-about {
-  width: 37.5vw;
   font-size: 24px;
   font-family: var(--bac-font);
   font-weight: 400;
@@ -192,9 +203,7 @@
     line-height: 25px;
     padding-top: 60px;
   }
-  .project-content-about {
-    display: none;
-  }
+
   .black-logo h3 {
     font-size: 35px !important;
     line-height: 44px !important;

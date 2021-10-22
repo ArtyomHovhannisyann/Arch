@@ -327,14 +327,13 @@
     line-height: 20px;
   }
   .menu-pageheader {
-    font-size: 20px;
-    line-height: 23px;
+    font-size: 16px;
+    line-height: 16px;
     letter-spacing: 0.05em;
   }
   .pages dd {
-    font-family: Source Serif Pro;
-    font-size: 14px;
-    line-height: 18px;
+    font-size: 20px;
+    line-height: 22.59px;
     letter-spacing: 0.05em;
   }
 }

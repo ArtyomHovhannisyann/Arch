@@ -227,6 +227,7 @@
   }
   .studio-team-info{
     font-size: 9px;
+    word-spacing: -1px;
   }
   .studio-team-description{
     font-size: 14px;

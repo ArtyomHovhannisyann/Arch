@@ -193,6 +193,7 @@
   .paralax-image {
     height: 410px !important;
     background-attachment: unset;
+    width: 100% !important;
   }
 }
 @media (max-width: 425px) {

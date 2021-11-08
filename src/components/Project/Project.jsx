@@ -80,15 +80,18 @@ export default function Project({ history, match }) {
           project.photos.length > 0 &&
           project.photos.map((el, i) => {
             if (i != 0) {
-              if (i % 4 == 0 && !isMobile) {
-                return (
-                  <></>
-                  // <div
-                  //   key={i}
-                  //   className="paralax-image"
-                  //   style={{ backgroundImage: `url(${generalUrl}/${el.path})` }}
-                  // ></div>
-                );
+              if (i % 4 == 0 ) {
+                if (!isMobile) {
+                  return (
+                    <div
+                      key={i}
+                      className="paralax-image"
+                      style={{ backgroundImage: `url(${generalUrl}/${el.path})` }}
+                    ></div>
+                  );
+                }
+                else 
+                  return <></>;
               }
               return <img src={`${generalUrl}/${el.path}`} alt="" key={i} />;
             }

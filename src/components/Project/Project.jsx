@@ -22,6 +22,9 @@ export default function Project({ history, match }) {
       setProject(data.project);
     }, id);
   }, []);
+
+
+  const isMobile = window.innerWidth <= 880;
   return (
     <div className={`project-page ${showMenu ? "project-header-hide" : ""}`}>
       {showMenu && <Menu closeMenu={setShowMenu} />}
@@ -77,13 +80,14 @@ export default function Project({ history, match }) {
           project.photos.length > 0 &&
           project.photos.map((el, i) => {
             if (i != 0) {
-              if (i % 4 == 0) {
+              if (i % 4 == 0 && !isMobile) {
                 return (
-                  <div
-                    key={i}
-                    className="paralax-image"
-                    style={{ backgroundImage: `url(${generalUrl}/${el.path})` }}
-                  ></div>
+                  <></>
+                  // <div
+                  //   key={i}
+                  //   className="paralax-image"
+                  //   style={{ backgroundImage: `url(${generalUrl}/${el.path})` }}
+                  // ></div>
                 );
               }
               return <img src={`${generalUrl}/${el.path}`} alt="" key={i} />;

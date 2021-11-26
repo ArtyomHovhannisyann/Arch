@@ -34,7 +34,7 @@ function App() {
     );
     document.documentElement.style.setProperty(
       "--bold-font",
-      i18n.language === "am" ? "ArTarumianHelevetacia" : "Aharoni"
+      i18n.language === "am" ? "Arial" : "Aharoni"
     );
     document.documentElement.style.setProperty(
       "--menu-4th-column-width",

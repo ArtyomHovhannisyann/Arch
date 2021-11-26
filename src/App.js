@@ -23,18 +23,18 @@ function App() {
   const { t, i18n } = useTranslation();
   useEffect(() => {
     document.cookie = `token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImFuYXJjaC5oZWxwQGdtYWlsLmNvbSIsInRva2VuIjoiJDJiJDEwJDVqYTRIS0xKanFXek9xWlVNV3ZTVGVqajJ4a0hzVkhrOHhCa0xlcGlkRGY3d0dDOWM4RFp5IiwiaWF0IjoxNjI3NzIyMDg1LCJleHAiOjE2Mjc3MjIzODV9.-_RPYrEYrSMMOJRv1sb9o_AyI1hjS3n2ZEdKbn70Hw8`;
-    //remove Am font
-    // document.documentElement.style.setProperty(
-    //   "--bac-font",
-    //   i18n.language === "am" ? "Arial" : "Browallia New"
-    // );
+    // remove Am font
+    document.documentElement.style.setProperty(
+      "--bac-font",
+      i18n.language === "am" ? "Arial" : "Browallia New"
+    );
     document.documentElement.style.setProperty(
       "--font-size",
       i18n.language === "am" ? ".8vw" : "1.3vw"
     );
     document.documentElement.style.setProperty(
       "--bold-font",
-      i18n.language === "am" ? "Arial" : "Aharoni"
+      i18n.language === "am" ? "ArTarumianHelevetacia" : "Aharoni"
     );
     document.documentElement.style.setProperty(
       "--menu-4th-column-width",

@@ -32,11 +32,11 @@
   justify-content: center;
   padding: 0 140px 0 92px;
 }
-.contact-address{
+.contact-address {
   width: 12vw;
 }
 
-.lang-eng .contact-address{ 
+.lang-eng .contact-address {
   font-family: var(--bac-font);
   font-size: 21px;
 }
@@ -46,16 +46,22 @@
   margin-right: 0 !important;
 }
 .contact-info-header {
-  font-family: var( --bac-font );
+  font-family: var(--bac-font);
   font-size: 24px;
   font-weight: 700;
   line-height: 24px;
 }
+.lang-am .contact-info-header {
+  font-size: 14px !important;
+}
 .contact-right-bar-content p {
-  font-family: var( --bac-font );
+  font-family: var(--bac-font);
   font-weight: 400;
   font-size: 24px;
   line-height: 24px;
+}
+.lang-am .studio-contact-right-bar p {
+  font-size: 13px !important;
 }
 .contact-menu-icon {
   margin: 2vw 0 0 2vw;
@@ -68,7 +74,7 @@
 
 .lang-eng .contact-email {
   font-family: var(--bac-font);
-  font-size: 21px;  
+  font-size: 21px;
 }
 
 .contact-info-email {
@@ -108,7 +114,7 @@
     font-size: 18px !important;
     line-height: 18px;
   }
-  .contact-address{
+  .contact-address {
     width: 270px;
   }
 }

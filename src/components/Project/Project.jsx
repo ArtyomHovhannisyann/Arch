@@ -23,7 +23,6 @@ export default function Project({ history, match }) {
     }, id);
   }, []);
 
-
   const isMobile = window.innerWidth <= 880;
   return (
     <div className={`project-page ${showMenu ? "project-header-hide" : ""}`}>
@@ -51,12 +50,14 @@ export default function Project({ history, match }) {
             <span className="project-info-header">{t("Location")}</span>:
             {i18n.language == "am" ? project.location_hy : project.location}
             <br />
-            <span className="project-info-header">{t("Total-floor-area")}</span>:
+            <span className="project-info-header">{t("Total-floor-area")}</span>
+            :
             {i18n.language == "am"
               ? project["total-floor-area_hy"]
               : project["total-floor-area"]}
             <br />
-            <span className="project-info-header">{t("Design-and-built")}</span>:
+            <span className="project-info-header">{t("Design-and-built")}</span>
+            :
             {i18n.language == "am"
               ? project["design-and-built_hy"]
               : project["design-and-built"]}
@@ -80,24 +81,24 @@ export default function Project({ history, match }) {
           project.photos.length > 0 &&
           project.photos.map((el, i) => {
             if (i != 0) {
-              if (i % 4 == 0 ) {
+              if (i % 4 == 0) {
                 if (!isMobile) {
                   return (
                     <div
                       key={i}
                       className="paralax-image"
-                      style={{ backgroundImage: `url(${generalUrl}/${el.path})` }}
+                      style={{
+                        backgroundImage: `url(${generalUrl}/${el.path})`,
+                      }}
                     ></div>
                   );
-                }
-                else 
-                  return <></>;
+                } else return <></>;
               }
               return <img src={`${generalUrl}/${el.path}`} alt="" key={i} />;
             }
           })}
         <div className="back" onClick={() => history.goBack()}>
-          Back
+          {t("Back")}
         </div>
       </div>
       <Footer />

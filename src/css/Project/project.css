@@ -47,7 +47,7 @@
   line-height: 54px;
   letter-spacing: 0.05em;
 }
-.lang-am .project-name h3{
+.lang-am .project-name h3 {
   font-size: 30px;
 }
 .project-content {
@@ -75,7 +75,7 @@
   margin-right: 110px;
   font-weight: 400;
 }
-@media screen and (max-width:800px) {
+@media screen and (max-width: 800px) {
   .project-info-header {
     font-size: 14px !important;
   }
@@ -87,7 +87,7 @@
   font-weight: 400;
   text-align: justify;
 }
-.lang-am .project-content-about{
+.lang-am .project-content-about {
   font-size: 14px;
 }
 .project-info-header {
@@ -95,21 +95,24 @@
   font-weight: 700;
   font-size: 16px;
 }
+.lang-am .project-info-header,
+.lang-am .project-content-location {
+  font-size: 13px !important;
+}
 .project-images {
   display: flex;
   flex-direction: column;
   align-items: center;
   padding: 0 18vw;
 }
-.project-images >div{
+.project-images > div {
   width: 98vw;
 }
-.project-images img:not(:nth-of-type(1)){
+.project-images img:not(:nth-of-type(1)) {
   margin-top: 100px;
 }
-.project-images div{
+.project-images div {
   margin-top: 100px;
-
 }
 .project-images img {
   max-width: 100%;

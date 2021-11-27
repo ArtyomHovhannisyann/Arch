@@ -37,7 +37,10 @@
   font-size: 17px;
   line-height: 29px;
   width: 27.5vw;
-  text-align: justify;
+}
+.lang-am .studio-team-info {
+  font-size: 14px !important;
+  line-height: 17px !important;
 }
 .studio-team-description {
   font-family: var(--bac-font);
@@ -48,6 +51,10 @@
   letter-spacing: 0em;
   width: 47.7vw;
   text-align: justify;
+}
+.lang-am .studio-team-description {
+  font-size: 13px !important;
+  line-height: 17px !important;
 }
 
 .studio-team-members {
@@ -100,7 +107,7 @@
 }
 
 .lang-am .member-name {
-  font-size: 18px;
+  font-size: 14px;
 }
 
 .member-info {
@@ -114,7 +121,7 @@
 }
 
 .lang-am .member-info {
-  font-size: 13.3px;
+  font-size: 13px;
 }
 
 .footer {
@@ -225,11 +232,11 @@
   .studio-team-member {
     width: 88%;
   }
-  .studio-team-info{
+  .studio-team-info {
     font-size: 9px;
     word-spacing: -1px;
   }
-  .studio-team-description{
+  .studio-team-description {
     font-size: 14px;
   }
 }

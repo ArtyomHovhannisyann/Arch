@@ -41,6 +41,9 @@
   line-height: 24px;
   letter-spacing: 0.02em;
 }
+.lang-am .studio-jobs-right-bar h3{
+  font-size: 14px !important;
+}
 .studio-jobs-right-bar p {
   font-family: var( --bac-font );
   font-weight: 400;
@@ -48,6 +51,9 @@
   line-height: 24px;
   letter-spacing: 0.02em;
   padding-top: 40px;
+}
+.lang-am .studio-jobs-right-bar p{
+  font-size: 13px !important;
 }
 .footer-languages {
   display: none;

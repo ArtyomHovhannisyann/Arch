@@ -72,13 +72,13 @@
 }
 
 .lang-am .page-name {
-  font-size: 12px;
+  font-size: 13px !important;
 }
 
 .page-name-bold-text {
   font-weight: 700;
   font-family: var(--bold-font);
-  font-size: 14px;
+  font-size: 14px !important;
 }
 
 .page-name-bold-text.team-page-name {
@@ -221,10 +221,6 @@
   .page-name {
     font-size: 12px !important;
     line-height: 12px !important;
-  }
-
-  .lang-am .page-name {
-    font-size: 9px !important;
   }
 
   .page-name {

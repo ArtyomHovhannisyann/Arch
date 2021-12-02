@@ -116,7 +116,6 @@
 .pages a {
   font-family: var(--bac-font);
   font-weight: normal;
-  font-size: var(--font-size);
   line-height: 28px;
   color: #000;
 }
@@ -217,6 +216,12 @@
   line-height: 20px;
   color: #000000;
 }
+.lang-am .menu-item-title {
+  font-size: 14px !important;
+}
+.lang-am .menu-items > div a {
+  font-size: 13px !important;
+}
 
 .menu-footer-languages p {
   font-family: var(--bac-font);
@@ -242,15 +247,6 @@
   margin-left: 10px;
 }
 
-@media (max-width: 1507px) {
-  /* .menu-item-title {
-    font-size: 1.2vw;
-  }
-  .lang-am .menu-item-title {
-    font-size: 0.9vw;
-  } */
-}
-
 @media (max-width: 1050px) {
   .menu-item-title {
     font-size: 1.5vw;
@@ -266,7 +262,6 @@
   }
   .home-page .menu-icon {
     background-color: white !important;
-    /* background-image: url("../../images/menu-icon.png") !important; */
   }
   .home-page .header-logo h3 {
     color: #fff !important;
@@ -289,11 +284,6 @@
   .menu-pageheader {
     font-size: 18px;
     line-height: 18px;
-    letter-spacing: 0.05em;
-  }
-  .pages dd {
-    font-size: 23px;
-    line-height: 23px;
     letter-spacing: 0.05em;
   }
   .menu-footer {

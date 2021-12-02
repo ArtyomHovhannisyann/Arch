@@ -88,7 +88,7 @@
   text-align: justify;
 }
 .lang-am .project-content-about {
-  font-size: 14px;
+  font-size: 14px !important;
 }
 .project-info-header {
   font-family: var(--bold-font);
@@ -177,8 +177,8 @@
     padding: 30px 35px 50px 35px;
     justify-content: flex-start;
   }
-  .project-content-location,
-  .project-content-about p {
+  .lang-eng .project-content-location,
+  .lang-eng.project-content-about p {
     font-size: 20px;
     line-height: 22px;
   }

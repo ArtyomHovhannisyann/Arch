@@ -35,22 +35,21 @@
   grid-column-gap: 60px;
 }
 
-@media screen and ( max-width: 1580px ) {
+@media screen and (max-width: 1580px) {
   .projects-container {
     display: grid;
     grid-template-columns: repeat(4, 300px);
     grid-column-gap: 50px;
-  }  
+  }
 }
 
-@media screen and ( max-width: 1400px ) {
+@media screen and (max-width: 1400px) {
   .projects-container {
     display: grid;
     grid-template-columns: repeat(4, 270px);
     grid-column-gap: 40px;
-  }  
+  }
 }
-
 
 .black-logo h3 {
   font-family: Source Serif Pro;
@@ -78,7 +77,6 @@
 .page-name-bold-text {
   font-weight: 700;
   font-family: var(--bold-font);
-  font-size: 14px !important;
 }
 
 .page-name-bold-text.team-page-name {
@@ -241,7 +239,7 @@
   .project {
     padding-right: unset;
   }
-  .project p{
+  .project p {
     font-size: 14px;
   }
   .selected-projects-content .page-name {
@@ -249,22 +247,19 @@
   }
 }
 
-@media screen and ( max-width: 770px ) {
-  .page-name, .project p {
+@media screen and (max-width: 770px) {
+  .lang-eng .page-name,
+  .lang-eng .project p {
     font-size: 18px !important;
   }
 }
 
-@media screen and ( max-width: 425px ) {
-  .page-name {
+@media screen and (max-width: 425px) {
+  .lang-eng .page-name {
     font-size: 14px !important;
   }
-  .page-name-bold-text {
-    font-family: var(--bold-font);
-    font-size: 10px !important;
-  }
-  
-  .project p {
+
+  .lang-eng .project p {
     font-size: 14px !important;
   }
 }

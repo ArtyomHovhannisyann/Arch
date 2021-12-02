@@ -8,6 +8,7 @@ import { getContacts } from "../../lib/requests";
 import Header from "../../components/Header/Header";
 
 import Menu from "../Home/Menu";
+import { useTranslation } from "react-i18next";
 
 export default function Contact() {
   const [showMenu, setShowMenu] = useState(false);
@@ -15,6 +16,7 @@ export default function Contact() {
   const [address, setAddress] = useState("");
   const [phoneNumber, setPhoneNumber] = useState("");
   const [email, setEmail] = useState("");
+  const { t } = useTranslation();
   useEffect(() => {
     getContacts((data) => {
       data.length > 0 && setAddress(data[0].address);
@@ -30,13 +32,13 @@ export default function Contact() {
       <div className="studio-contact-content">
         <div
           className="studio-contact-left-bar"
-          style={{ backgroundImage: `url(${image})`, backgroundSize:"cover", }}
+          style={{ backgroundImage: `url(${image})`, backgroundSize: "cover" }}
         ></div>
         <div className="studio-contact-right-bar">
-          <span className="contact-info-header">Anarch Kedem Architect</span>
+          <span className="contact-info-header">{t("CallBackTitle1")}</span>
           <p className="contact-address">{address}</p>
           <p className="contact-info-email">
-            <span className="contact-info-header">Studio Manger</span>:
+            <span className="contact-info-header">{t("CallBackTitle2")}</span>:
             <a
               href="https://mail.google.com/mail/u/0/#inbox?compose=CllgCHrdlBNjvWWFqmmfFnxtwPBxjZNXnhXjjmTpkLRjjwvLwlDhGqMLssLWTfMQSrXQrbdCkFg"
               className="contact-email"

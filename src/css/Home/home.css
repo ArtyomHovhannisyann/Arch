@@ -221,6 +221,12 @@
   color: #000000;
   cursor: pointer;
 }
+.lang-am .menu-footer-languages p {
+  font-size: 18px;
+}
+.lang-am .active-language {
+  font-size: 12px !important;
+}
 .active-language {
   font-family: var(--bold-font) !important;
   font-weight: bold !important;

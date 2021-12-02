@@ -52,15 +52,19 @@ export default function Project({ history, match }) {
             <br />
             <span className="project-info-header">{t("Total-floor-area")}</span>
             :
-            {i18n.language == "am"
-              ? project["total-floor-area_hy"]
-              : project["total-floor-area"]}
+            <span className="project-info-number">
+              {i18n.language == "am"
+                ? project["total-floor-area_hy"]
+                : project["total-floor-area"]}
+            </span>
             <br />
             <span className="project-info-header">{t("Design-and-built")}</span>
             :
-            {i18n.language == "am"
-              ? project["design-and-built_hy"]
-              : project["design-and-built"]}
+            <span className="project-info-number">
+              {i18n.language == "am"
+                ? project["design-and-built_hy"]
+                : project["design-and-built"]}
+            </span>
             <br />
             <span className="project-info-header">{t("Design-team")}:</span>
             {i18n.language == "am"
@@ -81,7 +85,7 @@ export default function Project({ history, match }) {
           project.photos.length > 0 &&
           project.photos.map((el, i) => {
             if (i != 0) {
-              if (i % 4 ==  0) {
+              if (i % 4 == 0) {
                 if (!isMobile) {
                   return (
                     <div

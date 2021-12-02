@@ -90,6 +90,9 @@
 .lang-am .project-content-about {
   font-size: 14px !important;
 }
+.lang-am .project-info-number{
+  font-size: 18px;
+}
 .project-info-header {
   font-family: var(--bold-font);
   font-weight: 700;

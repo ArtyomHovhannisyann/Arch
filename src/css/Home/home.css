@@ -316,8 +316,10 @@
     line-height: 16px;
     letter-spacing: 0.05em;
   }
-  .pages dd {
+  .lang-eng .pages dd {
     font-size: 20px;
+  }
+  .pages dd {
     line-height: 22.59px;
     letter-spacing: 0.05em;
   }

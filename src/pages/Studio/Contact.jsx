@@ -47,7 +47,7 @@ export default function Contact() {
             </a>
           </p>
           <p className="contact-info-email">
-            <span className="contact-info-header">Press & Media</span>:
+            <span className="contact-info-header">{t("CallBackTitle3")}</span>:
             <a
               href="https://mail.google.com/mail/u/0/#inbox?compose=CllgCJqXPMrgHtlFgCJLGkcvZMhZBjQnLljGwddLFnBbxGdPqkSdWPdGHgJQlDlpGhKPrxxGQBV"
               className="contact-email"

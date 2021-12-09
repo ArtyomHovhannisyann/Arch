@@ -59,7 +59,11 @@ export default function Project({ history, match, location }) {
             {i18n.language == "am" ? project.location_hy : project.location}
             <br />
             <span className="project-info-header">
-              {i18n.language == "am" ? totalFloorArea : t("Total-floor-area")}
+              {i18n.language == "am"
+                ? totalFloorArea
+                : location.state == "Landscape Architecture"
+                ? t("Total-site-area")
+                : t("Total-floor-area")}
             </span>
             :
             <span className="project-info-number">

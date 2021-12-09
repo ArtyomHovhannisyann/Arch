@@ -8,11 +8,19 @@ import { getProjectById } from "../../lib/requests";
 import { generalUrl } from "../../lib/constants";
 import { useTranslation } from "react-i18next";
 
-export default function Project({ history, match }) {
+export default function Project({ history, match, location }) {
   const id = match.params.id;
   const [showMenu, setShowMenu] = useState(false);
   const [project, setProject] = useState({});
   const { t, i18n } = useTranslation();
+  console.log(location.state);
+  let totalFloorArea =
+    location.state != "Բնակարաններ"
+      ? t("Total-floor-area2")
+      : t("Total-floor-area");
+  if (location.state == "Լանդշաֆտային ճարտարապետություն") {
+    totalFloorArea = t("Total-floor-area3");
+  }
   window.scroll({
     top: 0,
     behavior: "smooth",
@@ -50,7 +58,9 @@ export default function Project({ history, match }) {
             <span className="project-info-header">{t("Location")}</span>:
             {i18n.language == "am" ? project.location_hy : project.location}
             <br />
-            <span className="project-info-header">{t("Total-floor-area")}</span>
+            <span className="project-info-header">
+              {i18n.language == "am" ? totalFloorArea : t("Total-floor-area")}
+            </span>
             :
             <span className="project-info-number">
               {i18n.language == "am"

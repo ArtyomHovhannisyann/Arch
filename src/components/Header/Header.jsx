@@ -28,7 +28,11 @@ export default function Header({ setShowMenu }) {
     ></div>
     <div className="header-logo team-header-logo">
       <Link to="/home">
-        <h3>Anarch</h3>
+        <img
+          alt="logo"
+          className="logo-image" 
+          src="/images/anarch-logo.png"
+        />
       </Link>
     </div>
   </div>

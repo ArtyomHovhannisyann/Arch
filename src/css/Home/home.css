@@ -103,6 +103,25 @@
   letter-spacing: 0.12em;
   color: #434b62;
 }
+
+.logo-image {
+  width: 192px;
+  height: 60px;
+  object-fit: cover;
+}
+
+.white-logo-image {
+  background-color: white;
+  width: 192px;
+  height: 60px;
+  -webkit-mask-image: url(../../images/anarch-logo.png);
+  mask-image: url(../../images/anarch-logo.png);
+  -webkit-mask-size: cover;
+  mask-size: cover;
+  -webkit-mask-position: center;
+  mask-position: center;
+}
+
 .menu-pageheader {
   font-family: var(--bold-font);
   font-weight: bold;

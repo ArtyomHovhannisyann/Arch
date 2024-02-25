@@ -29,7 +29,7 @@ export default function HomePage() {
       <div className="home-header">
         <div className="menu-icon" onClick={() => setShowMenu(!showMenu)}></div>
         <div className="header-logo home-header-logo">
-          <h3 className="header-logo-text">Anarch</h3>
+          <div className="white-logo-image" />
         </div>
       </div>
       <AutoplaySlider

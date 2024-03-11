@@ -188,11 +188,11 @@ export default function Menu({ closeMenu }) {
         <div className="menu-footer">
           <div className="social-media-icons">
             <a
-              href="https://www.facebook.com/ProfAlArchitecturalStudio"
+              href="https://www.facebook.com/anarch.architectural.studio?mibextid=LQQJ4d"
               target="_blank"
             >
               <img
-                src="../images/facebook-logo.png"
+                src="../images/facebook-logo.svg"
                 className="facebook-icon"
                 alt="facebook"
               />

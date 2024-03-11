@@ -9,8 +9,8 @@ export default function Footer() {
         <a href="https://www.facebook.com/anarch.architectural.studio?mibextid=LQQJ4d" target = "_blank">
           <img src="../images/facebook-logo.svg" alt="facebook" />
         </a>
-        <a href="https://www.instagram.com/profal_by_anarch/" target = "_blank">
-          <img src="../images/instagram-logo.png" alt="instagram" />
+        <a href="https://www.instagram.com/anarch_architectural_studio?igsh=Y2Fmb2M3YzhnN256&utm_source=qr" target = "_blank">
+          <img src="../images/instagram-logo.svg" alt="instagram" />
         </a>
       </div>
     </div>

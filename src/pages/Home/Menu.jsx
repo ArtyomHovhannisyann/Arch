@@ -198,11 +198,11 @@ export default function Menu({ closeMenu }) {
               />
             </a>
             <a
-              href="https://www.instagram.com/profal_by_anarch/"
+              href="https://www.instagram.com/anarch_architectural_studio?igsh=Y2Fmb2M3YzhnN256&utm_source=qr"
               target="_blank"
             >
               <img
-                src="../images/instagram-logo.png"
+                src="../images/instagram-logo.svg"
                 className="instagram-icon"
                 alt="instagram"
               />

@@ -77,7 +77,7 @@ export default function Menu({ closeMenu }) {
     ],
     [
       {
-        pageHeader: t("Landscape-Architecture"),
+        pageHeader: t("Offices"),
       },
       {
         pageName: t("Selected-Projects"),

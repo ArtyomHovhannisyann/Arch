@@ -80,10 +80,6 @@
   font-family: var(--bold-font);
 }
 
-.page-name-bold-text.team-page-name {
-  font-size: 15px;
-}
-
 .menu-black-icon {
   background-color: black !important;
   background-size: cover;

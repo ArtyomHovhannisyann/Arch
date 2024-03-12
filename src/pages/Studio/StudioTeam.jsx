@@ -60,7 +60,7 @@ export default function StudioTeam() {
             return (
               <div className="studio-team-member" key={i}>
                 <div className="studio-team-member-info">
-                  <h3 className="member-name">{i18n.language == "am" ? el.name_hy : el.name}</h3>
+                  <h3 className="member-name" style={i18n.language === "am" ? {fontFamily: "var(--bold-font)"} : {}}>{i18n.language == "am" ? el.name_hy : el.name}</h3>
                   <p className="member-info">{i18n.language == "am" ? el.description_hy : el.description}</p>
                 </div>
                 <img src={`${generalUrl}/${el.image}`} alt="member" />

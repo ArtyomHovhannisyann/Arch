@@ -105,8 +105,8 @@
 }
 
 .logo-image {
-  width: 192px;
-  height: 60px;
+  width: 200px;
+  height: 62px;
   object-fit: cover;
 }
 
@@ -280,6 +280,12 @@
   .home-page .header-logo h3 {
     color: #fff !important;
   }
+
+  .logo-image{
+    width: 192px;
+    height: 60px;
+  }
+
   .menu-logo h3 {
     font-size: 35px !important;
     line-height: 44px !important;

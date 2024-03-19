@@ -217,6 +217,7 @@ export default function Menu({ closeMenu }) {
             </p>
             <p
               className={`${isArmActive ? "active-language" : ""}`}
+              style={isArmActive ? {} : {fontFamily: "sans-serif"}}
               onClick={() => changeLang(`am`)}
             >
               Հայերեն

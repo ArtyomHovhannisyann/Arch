@@ -36,7 +36,7 @@ export default function Contact() {
         ></div>
         <div className="studio-contact-right-bar">
           <span className="contact-info-header">{t("CallBackTitle1")}</span>
-          <p className="contact-address">{address}</p>
+          <p className="contact-address">{t("CallBackValue1")}</p>
           <p className="contact-info-email">
             <span className="contact-info-header">{t("CallBackTitle2")}</span>:
             <a

@@ -9,5 +9,11 @@
   height: 100vh;
 }
 .in-progres-projects-content {
-  margin: 151px auto;
+  margin: 151px 50px;
+}
+
+@media screen and (max-width: 852px) {
+  .in-progres-projects-content {
+    margin: 151px 0;
+  }
 }

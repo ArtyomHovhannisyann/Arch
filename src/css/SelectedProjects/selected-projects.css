@@ -75,12 +75,9 @@
 }
 
 .page-name-bold-text {
+  font-size: 0.8em;
   font-weight: 700;
   font-family: var(--bold-font);
-}
-
-.page-name-bold-text.team-page-name {
-  font-size: 15px;
 }
 
 .menu-black-icon {
@@ -185,7 +182,7 @@
     line-height: 29px !important;
   }
   .page-name {
-    padding: 0 0 44px 36px;
+    padding: 0 0 44px;
   }
 }
 @media (max-width: 752px) {
@@ -222,7 +219,7 @@
   }
 
   .page-name {
-    padding: 0 0 37px 23px;
+    padding: 0 0 37px;
   }
 }
 @media (max-width: 425px) {
@@ -232,8 +229,7 @@
   }
   .projects-container {
     display: grid;
-    grid-template-columns: 78vw;
-    justify-content: center;
+    grid-template-columns: 1fr;
     grid-column-gap: unset;
   }
   .project {
@@ -242,8 +238,8 @@
   .project p {
     font-size: 14px;
   }
-  .selected-projects-content .page-name {
-    padding: 0 0 37px 46px;
+  .selected-projects-content  {
+    padding: 0 0 37px;
   }
 }
 

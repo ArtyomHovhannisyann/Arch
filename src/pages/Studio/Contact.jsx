@@ -40,7 +40,7 @@ export default function Contact() {
           <p className="contact-info-email">
             <span className="contact-info-header">{t("CallBackTitle2")}</span>:
             <a
-              href="https://mail.google.com/mail/u/0/#inbox?compose=CllgCHrdlBNjvWWFqmmfFnxtwPBxjZNXnhXjjmTpkLRjjwvLwlDhGqMLssLWTfMQSrXQrbdCkFg"
+              href={`tel:${phoneNumber}`}
               className="contact-email"
             >
               {phoneNumber}
@@ -49,7 +49,7 @@ export default function Contact() {
           <p className="contact-info-email">
             <span className="contact-info-header">{t("CallBackTitle3")}</span>:
             <a
-              href="https://mail.google.com/mail/u/0/#inbox?compose=CllgCJqXPMrgHtlFgCJLGkcvZMhZBjQnLljGwddLFnBbxGdPqkSdWPdGHgJQlDlpGhKPrxxGQBV"
+              href={`mailto:${email}`}
               className="contact-email"
             >
               {email}

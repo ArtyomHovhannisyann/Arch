@@ -37,7 +37,7 @@
 }
 
 .menu-icon {
-  background-color: white !important;
+  background-color: black !important;
   background-size: contain;
   background-repeat: no-repeat;
   width: 30px;
@@ -275,7 +275,7 @@
     padding: 40px 30px !important;
   }
   .home-page .menu-icon {
-    background-color: white !important;
+    background-color: black !important;
   }
   .home-page .header-logo h3 {
     color: #fff !important;

@@ -16,7 +16,7 @@ export default function LandscapeArchitectureInProgressProjects({ history }) {
     );
   }, []);
   const pageInfo = {
-    pageName: t("Landscape-Architecture"),
+    pageName: t("Offices"),
     items: projects,
   };
   return (

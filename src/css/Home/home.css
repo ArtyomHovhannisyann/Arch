@@ -111,11 +111,11 @@
 }
 
 .white-logo-image {
-  background-color: white;
-  width: 192px;
-  height: 60px;
-  -webkit-mask-image: url(../../images/anarch-logo.png);
-  mask-image: url(../../images/anarch-logo.png);
+  background-color: black !important;
+  width: 200px;
+  height: 62px;
+  -webkit-mask-image: url(../../images/anarch-logo-black.svg);
+  mask-image: url(../../images/anarch-logo-black.svg);
   -webkit-mask-size: cover;
   mask-size: cover;
   -webkit-mask-position: center;
@@ -282,8 +282,8 @@
   }
 
   .logo-image{
-    width: 192px;
-    height: 60px;
+    width: 196px;
+    height: 61px;
   }
 
   .menu-logo h3 {

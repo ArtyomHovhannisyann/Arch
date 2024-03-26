@@ -74,6 +74,10 @@
   font-size: 13px !important;
 }
 
+.lang-am .page-name-bold-text {
+  font-size: 1em;
+}
+
 .page-name-bold-text {
   font-size: 0.8em;
   font-weight: 700;

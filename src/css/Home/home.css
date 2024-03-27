@@ -301,10 +301,16 @@
     width: unset !important;
     margin: 10px 0 !important;
   }
+  .lang-am .menu-pageheader{
+    font-size: 14px !important;
+  }
   .menu-pageheader {
     font-size: 18px;
     line-height: 18px;
     letter-spacing: 0.05em;
+  }
+  .lang-am .pages a{
+    font-size: 13px !important;
   }
   .menu-footer {
     margin-top: 0 !important;

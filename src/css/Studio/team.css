@@ -34,8 +34,8 @@
   font-family: var(--bold-font);
   font-style: normal;
   font-weight: 700;
-  font-size: 17px;
-  line-height: 29px;
+  font-size: 22px;
+  line-height: 24px;
   width: 27.5vw;
 }
 .lang-am .studio-team-info {
@@ -44,10 +44,10 @@
 }
 .studio-team-description {
   font-family: var(--bac-font);
-  font-size: 24px;
+  font-size: 22px;
   font-style: normal;
   font-weight: 400;
-  line-height: 29px;
+  line-height: 24px;
   letter-spacing: 0em;
   text-align: justify;
 }
@@ -159,15 +159,12 @@
     line-height: 20px;
   }
   .studio-team-info {
-    font-size: 18px;
-    line-height: 20px;
     letter-spacing: 0em;
     width: 100%;
     padding-bottom: 20px;
   }
   .studio-team-description {
     width: 100%;
-    font-size: 22px;
   }
   .studio-team-img {
     padding: 0;
@@ -177,6 +174,12 @@
   }
   .member-name {
     font-size: 16px;
+  }
+}
+@media (max-width: 880px) {
+  .studio-team-info, .studio-team-description{
+    font-size: 20px;
+    line-height: 18px;
   }
 }
 @media (max-width: 749px) {
@@ -197,14 +200,7 @@
   .studio-page-name {
     padding: 41px 0 25px 36px;
   }
-  .studio-team-info {
-    font-size: 14px;
-    line-height: 12px;
-  }
-  .studio-team-description {
-    font-size: 20px;
-    line-height: 12px;
-  }
+
   .language-icon {
     width: 24px;
     height: 24px;
@@ -221,10 +217,6 @@
   .studio-team-member {
     width: 60%;
   }
-  .studio-team-info {
-    font-size: 14px;
-    line-height: 12px;
-  }
   .studio-page-name {
     display: none;
   }
@@ -234,11 +226,6 @@
     width: 88%;
   }
   .studio-team-info {
-    font-size: 18px;
-    line-height: 16px;
     word-spacing: -1px;
-  }
-  .studio-team-description {
-    font-size: 20px;
   }
 }

@@ -33,10 +33,6 @@
   .header {
     padding: 28px 36px 41px 36px;
   }
-  .studio-jobs .header .menu-icon,
-  .studio-contact .header .menu-icon {
-    background-color: white !important;
-  }
 
   .studio-jobs .header .header-logo h3,
   .studio-contact .header .header-logo h3 {
@@ -49,10 +45,6 @@
   }
 }
 @media(max-width:880px){
-  .studio-jobs .header .menu-icon,
-  .studio-contact .header .menu-icon {
-    background-color: white !important;
-  }
   .studio-jobs .header-with-bg .menu-icon,
   .studio-contact .header-with-bg .menu-icon {
     background-color: black !important;

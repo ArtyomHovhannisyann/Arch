@@ -31,7 +31,7 @@ export default function Header({ setShowMenu }) {
         <img
           alt="logo"
           className="logo-image" 
-          src="/images/anarch-logo.png"
+          src="/images/anarch-logo.svg"
         />
       </Link>
     </div>

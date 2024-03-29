@@ -37,6 +37,7 @@
   font-size: 14px;
   line-height: 24px;
   width: 27.5vw;
+  hyphens: auto;
 }
 .lang-am .studio-team-info {
   font-size: 14px !important;

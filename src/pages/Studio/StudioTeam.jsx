@@ -44,7 +44,7 @@ export default function StudioTeam() {
           />
         </div>
         <div className="studio-about-team">
-          <p className="studio-team-info">
+          <p className="studio-team-info" lang={i18n.language == "am" && "hy"}>
             {teamInfo.length > 0 &&
               (i18n.language == "am" ? teamInfo[0].info_hy : teamInfo[0].info)}
           </p>
